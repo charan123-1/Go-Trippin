@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+import HeroSection from '../components/HeroSection';
+import Footer from '../components/Footer';
+import Cards from '../components/Cards';
+
 function Home() {
     return (
-        <div className="home">
-            <h1>Home Page</h1>
-        </div>
+    <>
+        <HeroSection/>
+        <Cards/>
+        <Footer/>
+    </>
     );
 }
 export default Home;
