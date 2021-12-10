@@ -7,6 +7,7 @@ import { BsFillBagCheckFill ,BsFillCartFill } from 'react-icons/bs';
 import { GiTireIronCross , GiHamburgerMenu} from 'react-icons/gi';
 import { AiFillInfoCircle,AiFillHome,AiOutlineShoppingCart } from 'react-icons/ai';
 import { FaUserEdit } from 'react-icons/fa';
+
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -104,8 +105,8 @@ function Navbar() {
           </ul>
           {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
           {button && <Button buttonStyle='btn--outline'>LOGIN</Button>}
-         <Link className='cart-img' to='/todo'> <img src="https://img.icons8.com/external-icongeek26-flat-icongeek26/64/ffffff/external-cart-ecommerce-icongeek26-flat-icongeek26.png"/></Link>
-
+          <Link className='cart-img' to='/todo'> <img src="https://img.icons8.com/external-icongeek26-flat-icongeek26/64/ffffff/external-cart-ecommerce-icongeek26-flat-icongeek26.png" /></Link>
+          <Link className='cart-img' to='/todo'> <img src={'images/cart-icon-28356-Windows.ico'} className="logo-img"/></Link>
 
 
 
