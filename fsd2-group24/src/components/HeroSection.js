@@ -2,13 +2,19 @@ import React from 'react';
 import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css';
-
+import Navbar from './Navbar'
+import {BsSearch} from 'react-icons/bs'
 function HeroSection() {
   return (
     <div className='hero-container'>
+
       <video src='/videos/video-1.mp4' autoPlay loop muted />
       <h1>ADVENTURE AWAITS</h1>
-      <p>What are you waiting for?</p>
+
+        <div className='search-bar'>
+            <input placeholder='What are you looking for?'/>
+            <button className='search-btn' type='submit'><BsSearch/></button>
+        </div>
       <div className='hero-btns'>
         <Button
           className='btns'

@@ -2,7 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-
+import { BiSearchAlt ,BiShoppingBag} from 'react-icons/bi';
+import { BsFillBagCheckFill ,BsFillCartFill } from 'react-icons/bs';
+import { GiTireIronCross , GiHamburgerMenu} from 'react-icons/gi';
+import { AiFillInfoCircle,AiFillHome,AiOutlineShoppingCart } from 'react-icons/ai';
+import { FaUserEdit } from 'react-icons/fa';
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -33,12 +37,12 @@ function Navbar() {
             <i class='fab fa-typo3' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+            {click ? <GiTireIronCross/> : <GiHamburgerMenu/>}
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
+                <AiFillHome/>Home
               </Link>
             </li>
             <li className='nav-item'>
@@ -47,7 +51,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                About
+                <AiFillInfoCircle/>About
               </Link>
             </li>
             <li className='nav-item'>
@@ -56,7 +60,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Browse
+               <BiSearchAlt/> Browse
               </Link>
             </li>
             <li className='nav-item'>
@@ -65,10 +69,19 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Shop
+               <BsFillBagCheckFill/> Shop
               </Link>
             </li>
-        
+            <li className='nav-item'>
+                 <Link
+                  to='/products'
+                     className='nav-links'
+                     onClick={closeMobileMenu}
+                    >
+                <FaUserEdit/> Experience
+              </Link>
+            </li>
+
 
             <li>
               <Link
@@ -79,8 +92,24 @@ function Navbar() {
                 Sign Up
               </Link>
             </li>
+            <li>
+              <Link
+                to='/login'
+                className='nav-links-mobile'
+                onClick={closeMobileMenu}
+              >
+                Login
+              </Link>
+            </li>
           </ul>
           {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {button && <Button buttonStyle='btn--outline'>LOGIN</Button>}
+         <Link className='cart-img' to='/cart'> <img src="https://img.icons8.com/external-icongeek26-flat-icongeek26/64/ffffff/external-cart-ecommerce-icongeek26-flat-icongeek26.png"/></Link>
+
+
+
+
+
         </div>
       </nav>
     </>
