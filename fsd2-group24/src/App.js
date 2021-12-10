@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import TodoList from './components/TodoList';
 
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom'
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -13,10 +14,9 @@ function App() {
         <Navbar/>
         <Routes>
           <Route exact path="/" element={<Home />}/>
-
-
+          <Route path="/todo" element={ <TodoList/>}/>
         </Routes>
-        <TodoList/>
+        <Footer/>
       </div>
       </Router>
   );
