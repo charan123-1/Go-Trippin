@@ -97,20 +97,15 @@ function Navbar() {
               <Link
                 to='/login'
                 className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
+                onClick={closeMobileMenu}>
                 Login
               </Link>
             </li>
           </ul>
           {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
           {button && <Button buttonStyle='btn--outline'>LOGIN</Button>}
-          <Link className='cart-img' to='/todo'> <img src="https://img.icons8.com/external-icongeek26-flat-icongeek26/64/ffffff/external-cart-ecommerce-icongeek26-flat-icongeek26.png" /></Link>
-          <Link className='cart-img' to='/todo'> <img src={'images/cart-icon-28356-Windows.ico'} className="logo-img"/></Link>
-
-
-
-
+        <Link className='cart-img' to='/todo'> <img src={'images/cart-icon-28356-Windows.ico'} className="logo-img" /></Link>
+        <Link className='cart-img' to='/todo'> <img src={'images/9068936.png'} className="logo-img" /></Link>
         </div>
       </nav>
     </>
