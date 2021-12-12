@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 
     margin: 0;
     padding: 0;
@@ -7,14 +7,10 @@
       'Lucida Sans', Arial, sans-serif;
   }
 
-  body {
-        background : url('tent.jpg') no-repeat ;
-        background-size : 100% 110vh;
-
-
-  }
 
   .todolist{
+    background : url('tent.jpg') no-repeat ;
+    background-size : 100% 110vh;
     height : 90vh;
 
   }
@@ -32,9 +28,10 @@
   }
 
   h1 {
-    margin: 32px 0;
+    margin-bottom: 32px;
     color: #fff;
     font-size: 24px;
+    padding-top: 50px;
   }
 
   .complete {
