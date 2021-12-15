@@ -4,9 +4,11 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home'
 import TodoList from './components/TodoList';
 
+
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom'
 import Footer from './components/Footer';
 import Shop from './pages/Shop';
+import Item from './pages/Item';
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
           <Route exact path="/" element={<Home />}/>
           <Route path="/todo" element={ <TodoList/>}/>
           <Route path="/shop" element={<Shop/>}/>
+          <Route path="/item" element={<Item/>}/>
         </Routes>
         <Footer/>
       </div>

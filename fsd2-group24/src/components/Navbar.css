@@ -1,5 +1,5 @@
 /* .navbar {
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  background: black;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -14,7 +14,6 @@
   width: 50px;
   margin-left: 20px;
 }
-
 
 
 .navbar-container {
@@ -61,6 +60,7 @@
 
 .nav-item {
   height: 80px;
+  font-size : 18px;
 }
 
 .nav-links {

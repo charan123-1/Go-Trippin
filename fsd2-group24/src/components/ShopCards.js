@@ -13,29 +13,29 @@ function ShopCards() {
             <ShopCardItem
               src='images/travel-backpacks.jpg'
               text='Travel Backpacks'
-              path='/shop'
+              path='/item'
             />
             <ShopCardItem
               src='images/Waterbottles.jpg'
               text='Waterbottles- Hydrate yourself'
-              path='/shop'
+              path='/item'
             />
           </ul>
           <ul className='cards__items'>
             <ShopCardItem
               src='images/InstantCamera.jpg'
               text='Capture every moment of your journey'
-              path='/shop'
+              path='/item'
             />
             <ShopCardItem
               src='images/Shoes.jpg'
               text='Do not stop until you done all yout Todo things '
-              path='/shop'
+              path='/item'
             />
             <ShopCardItem
               src='images/Wallets.jpg'
               text='Keep your money safe..'
-              path='/shop'
+              path='/item'
             />
           </ul>
 
