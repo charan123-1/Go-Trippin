@@ -13,7 +13,7 @@ function Cards() {
               src='images/Visakhapatnam.jpg'
               text='Visakhapatnam - the city of Destiny'
               label='Adventure'
-              path='/services'
+              path='/places'
             />
             <CardItem
               src='images/Hyderabad.jpg'

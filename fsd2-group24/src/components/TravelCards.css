@@ -1,4 +1,4 @@
-.shop_cards {
+.travel_cards {
     padding: 4rem;
     background: #fff;
 
@@ -8,7 +8,7 @@
     text-align: center;
   }
   
-  .shop_cards__container {
+  .travel_cards__container {
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -17,24 +17,24 @@
     margin: 0 auto;
   }
   
-  .shop_cards__wrapper {
+  .travel_cards__wrapper {
     position: relative;
     margin: 50px 0 45px;
   }
   
-  .shop_cards__items {
+  .travel_cards__items {
     margin-bottom: 24px;
   }
   
-  .shop_cards__item {
+  .travel_cards__item {
     display: flex;
     flex: 1;
     margin: 0 1rem;
     border-radius: 10px;
-    width: 700px;
+    width: 300px;
   }
   
-  .shop_cards__item__link {
+  .travel_cards__item__link {
     display: flex;
     flex-flow: column;
     width: 100%;
@@ -46,7 +46,7 @@
     text-decoration: none;
   }
   
-  .shop_cards__item__pic-wrap {
+  .travel_cards__item__pic-wrap {
     position: relative;
     width: 100%;
     padding-top: 67%;
@@ -58,7 +58,7 @@
     animation-duration: 2s;
   }
   
-  .shop_cards__item__pic-wrap::after {
+  .travel_cards__item__pic-wrap::after {
     content: attr(data-category);
     position: absolute;
     bottom: 0;
@@ -72,7 +72,7 @@
     box-sizing: border-box;
   }
   
-  .shop_cards__item__img {
+  .travel_cards__item__img {
     position: absolute;
     top: 0;
     right: 0;
@@ -87,15 +87,15 @@
     transition: all 0.2s linear;
   }
   
-  .shop_cards__item__img:hover {
+  .travel_cards__item__img:hover {
     transform: scale(1.1);
   }
   
-  .shop_cards__item__info {
+  .travel_cards__item__info {
     padding: 20px 30px 30px;
   }
   
-  .shop_cards__item__text {
+  .travel_cards__item__text {
     color: #252e48;
     font-size: 18px;
     line-height: 24px;
@@ -108,13 +108,13 @@
   }
   
   @media only screen and (min-width: 1024px) {
-    .shop_cards__items {
+    .travel_cards__items {
       display: flex;
     }
   }
   
   @media only screen and (max-width: 1024px) {
-    .shop_cards__item {
+    .travel_cards__item {
       margin-bottom: 2rem;
     }
   }

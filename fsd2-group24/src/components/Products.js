@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './Products.css'
+import { Link } from 'react-router-dom';
 
 function Products(){
     return(
@@ -28,7 +29,7 @@ function Products(){
         <span></span>
         <span></span>
       </div>
-      <a href="/cart">Add to Cart</a>
+      <Link to="/cart">Add to Cart</Link>
     </div>
   </div>
   </div>
@@ -39,7 +40,7 @@ function Products(){
       <img src="https://assets.codepen.io/4164355/shoes.png"/>
     </div>
     <div class="contentBx">
-      <h2>Nike Shoes</h2>
+      <h2>Puma Shoes</h2>
       <div class="size">
         <h3>Size :</h3>
         <span>7</span>
@@ -53,7 +54,7 @@ function Products(){
         <span></span>
         <span></span>
       </div>
-      <a href="#">Add to Cart</a>
+                  <Link to="/cart">Add to Cart</Link>
     </div>
   </div>
   </div>
@@ -63,7 +64,7 @@ function Products(){
       <img src="https://assets.codepen.io/4164355/shoes.png"/>
     </div>
     <div class="contentBx">
-      <h2>Nike Shoes</h2>
+      <h2>Adidas Shoes</h2>
       <div class="size">
         <h3>Size :</h3>
         <span>7</span>
@@ -77,7 +78,7 @@ function Products(){
         <span></span>
         <span></span>
       </div>
-      <a href="#">Add to Cart</a>
+                  <Link to="/cart">Add to Cart</Link>
     </div>
   </div>
   </div>
