@@ -28,7 +28,7 @@ function Products(){
         <span></span>
         <span></span>
       </div>
-      <a href="#">Add to Cart</a>
+      <a href="/cart">Add to Cart</a>
     </div>
   </div>
   </div>
