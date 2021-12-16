@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route,Routes } from 'react-router-dom'
 import Footer from './components/Footer';
 import Shop from './pages/Shop';
 import Item from './pages/Item';
+import Feedback from './pages/Feedback';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/todo" element={ <TodoList/>}/>
           <Route path="/shop" element={<Shop/>}/>
           <Route path="/item" element={<Item/>}/>
+          <Route path="/feedback" element={<Feedback/>}/>
         </Routes>
         <Footer/>
       </div>
