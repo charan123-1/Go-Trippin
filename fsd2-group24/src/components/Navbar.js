@@ -190,7 +190,7 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          TRVL <i className='fab fa-firstdraft' />
+          GoTrippin <i className='fab fa-firstdraft' />
         </Link>
         <div className='menu-icon' onClick={handleClick}>
           {click ? <GiTireIronCross style={{ color: 'white' }} /> : <GiHamburgerMenu style={{ color: 'white' }}/>}
