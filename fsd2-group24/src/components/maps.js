@@ -8,6 +8,8 @@ const mapStyles = {
 
 export class MapContainer extends Component {
   render() {
+
+
     return (
       <Map
         google={this.props.google}
@@ -18,6 +20,7 @@ export class MapContainer extends Component {
             lat: 17.714294
           }}>
         <Marker key="marker_1"
+
 
           position={{
 

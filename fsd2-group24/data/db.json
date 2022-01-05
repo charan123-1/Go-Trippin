@@ -1,20 +1,47 @@
 {
   "todos": [
     {
-      "id": 9810,
-      "text": "Add buccket list updated"
-    },
-    {
       "id": 9684,
       "text": "New bucket list1 updated"
     },
     {
       "id": 5331,
       "text": "new bucket list"
+    }
+  ],
+  "places": [
+    {
+      "id": 1,
+      "Visakhapatnam": [
+        {
+          "title": "Kailash Giri",
+          "lng":17.748298645238204,
+          "lat": 83.34519670139929
+        },
+        {
+          "title": "Kursura Submarine",
+          "lng" : 17.717481135950656,
+           "lat":  83.33003082944325
+        }
+      ]
     },
     {
-      "id": 3751,
-      "text": "charan"
+      "id": 2,
+      "Araku" : [
+        {
+          "title": "Araku Valley",
+          "lng":18.32246705318015,
+          "lat":82.8792522280164
+        },
+        {
+          "title": "Borra Caves",
+          "lng": 18.280804936122628,
+          "lat":83.03970993015982
+        }
+
+      ]
     }
   ]
 }
+
+

@@ -13,7 +13,7 @@ export const MenuItems = [
     ,
     {
         title: "Feedback",
-        path: "/feedback",
+        path: "/feedba",
         cName: 'dropdown-link'
     },
 ]

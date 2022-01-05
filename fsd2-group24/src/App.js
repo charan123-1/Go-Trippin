@@ -11,6 +11,7 @@ import Item from './pages/Item';
 import Travel from './pages/Travel';
 import Adventure from './pages/Adventure';
 import  MapContainer  from './components/maps';
+import Review from './components/Review';
 function App() {
   return (
     <Router>
@@ -25,6 +26,7 @@ function App() {
           <Route path="/travelessential" element={<Travel />} />
           <Route path="/adventure" element={<Adventure />} />
           <Route path="/places" element={<MapContainer />} />
+          <Route path="/review" element={<Review/>} />
         </Routes>
         <Footer />
       </div>
