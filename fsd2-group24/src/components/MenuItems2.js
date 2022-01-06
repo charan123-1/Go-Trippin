@@ -10,10 +10,5 @@ export const MenuItems = [
         path: "/post",
         cName: 'dropdown-link'
     }
-    ,
-    {
-        title: "Feedback",
-        path: "/feedba",
-        cName: 'dropdown-link'
-    },
+
 ]

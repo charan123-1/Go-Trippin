@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import "./Review.css"
-import { BiTired, BiMeh,BiSmile } from 'react-icons/bi';
-import { FiFrown } from 'react-icons/fi';
-import { FaRegGrinHearts } from 'react-icons/fa';
+import { FaRegGrinHearts,FaRegTired,FaRegFrownOpen,FaRegMeh,FaRegSmile } from 'react-icons/fa';
 
+import Box from '@mui/material/Box';
+import Rating from '@mui/material/Rating';
+import Typography from '@mui/material/Typography';
 
 function Review() {
   const [firstname, setFirstname] = useState("");
@@ -12,7 +13,9 @@ function Review() {
   const [comment, setComment] = useState(false);
   const [suggestions, setSuggestions] = useState(false);
   const [questions, setQuestions] = useState(false);
-  const [rate, setRate] = useState("1");
+  const [rate, setRate] = useState(1);
+  const [value, setValue] = useState(2);
+  const [rate1, setRate1] = useState("6");
   const [remarks, setRemarks] = useState("");
   const newExperience = () => {
     const ExperienceData = new FormData()
@@ -20,6 +23,7 @@ function Review() {
     ExperienceData.append('suggestions', suggestions);
     ExperienceData.append('questions', questions);
     ExperienceData.append('rate', rate);
+    ExperienceData.append('rate1', rate1);
     ExperienceData.append('remarks', remarks);
     fetch("http://127.0.0.1:8000/Frontend/experiences/", {
       method: 'POST',
@@ -54,45 +58,36 @@ function Review() {
         <div class="column">
           <form className="Form">
 
-        <div class="rating-css custom">
+        <div class="rating-css-1">
          <label for="satisfaction">Overall satisfaction</label>
         <div class="star-icon">
           <input type="radio" name="rating1"  value={rate} onChange={() => setRate("1")} />
-          <label for="rating1" class="BiTired"><BiTired/></label>
+          <label for="rating1" ><FaRegTired size ={40}/></label>
           <input type="radio" name="rating1" id="rating2" value={rate} onChange={() => setRate("2")} />
-          <label for="rating2" class="far fa-frown"><FiFrown/></label>
+          <label for="rating2" ><FaRegFrownOpen size ={40}/></label>
           <input type="radio" name="rating1" id="rating3" value={rate} onChange={() => setRate("3")} />
-          <label for="rating3" class="far fa-meh"><BiMeh/></label>
+          <label for="rating3" ><FaRegMeh size ={40}/></label>
           <input type="radio" name="rating1" id="rating4" value={rate} onChange={() => setRate("4")} />
-          <label for="rating4" class="far fa-smile"><BiSmile/></label>
+          <label for="rating4" ><FaRegSmile size ={40}/></label>
           <input type="radio" name="rating1" id="rating5" value={rate} onChange={() => setRate("5")} />
-          <label for="rating5" class="far fa-grin-beam"><FaRegGrinHearts/></label>
+          <label for="rating5" ><FaRegGrinHearts size ={40}/></label>
         </div>
       </div>
-            <label for="lname">Last Name</label>
 
-      <div class="chart-scale">
-        <input type="radio" />
-          <label for="rating1" class="BiTired">1</label>
-        <input type="radio" name="rating1"  value={rate} onChange={() => setRate("1")} />
-          <label for="rating1" class="BiTired">2</label>
-        <input type="radio" name="rating1"  value={rate} onChange={() => setRate("1")} />
-          <label for="rating1" class="BiTired">3</label>
-        <input type="radio" name="rating1"  value={rate} onChange={() => setRate("1")} />
-          <label for="rating1" class="BiTired">4</label>
-         <input type="radio" name="rating1"  value={rate} onChange={() => setRate("1")} />
-          <label for="rating1" class="BiTired">5</label>
-         <input type="radio" name="rating1"  value={rate} onChange={() => setRate("1")} />
-          <label for="rating1" class="BiTired">6</label>
-          <input type="radio" name="rating1"  value={rate} onChange={() => setRate("1")} />
-          <label for="rating1" class="BiTired">7</label>
-          <input type="radio" name="rating1"  value={rate} onChange={() => setRate("1")} />
-          <label for="rating1" class="BiTired">8</label>
-          <input type="radio" name="rating1"  value={rate} onChange={() => setRate("1")} />
-          <label for="rating1" class="BiTired">9</label>
-          <input type="radio" name="rating1"  value={rate} onChange={() => setRate("1")} />
-          <label for="rating1" class="BiTired">10</label>
-        </div>
+      <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+      <Typography component="legend">Rate the tour</Typography>
+      <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+      </Box>
 
             <label for="subject">Review</label>
             <textarea id="csubject" name="subject" placeholder="Write something.." value={message} onChange={(e) => setMessage(e.target.value)}></textarea>

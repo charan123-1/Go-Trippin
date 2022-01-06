@@ -6,6 +6,7 @@ function Aboutpage(){
     
     return(
         <div class="about">
+
             <ul class="flex-container">
                 <li class="aboutus">
                     <h1>About Us</h1>
@@ -13,9 +14,9 @@ function Aboutpage(){
                 </li>
                 <li class="aboutuspic">
                 
-                    
+
                 </li>
-             
+
             </ul>
             <ul class="flex-container2" id="flex-container2">
                 <li class="flex-item2">

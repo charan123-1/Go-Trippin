@@ -139,7 +139,7 @@ function Navbar() {
             {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
           </li>
           </Link>
-          <Link to='/login'>
+          <Link to='/login' >
           <li className='nav-item'>
             {button && <Button buttonStyle='btn--outline'>LOGIN</Button>}
           </li>

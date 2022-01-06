@@ -19,6 +19,7 @@ import Review from './components/Review';
 import SignUp from './pages/SignUp';
 import Login from './pages/Login';
 import About from './pages/About';
+
 //import Form from './components/Form';
 function App() {
   return (
@@ -30,7 +31,6 @@ function App() {
           <Route path="/todo" element={<TodoList />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/item" element={<Item />} />
-          {/* <Route path="/feedback" element={<Feedback />} /> */}
           <Route path="/travelessential" element={<Travel />} />
           <Route path="/adventure" element={<Adventure />} />
           <Route path="/vizag" element={<MapContainer />} />

@@ -2,9 +2,6 @@
   box-sizing: border-box;
 }
 
-.custom{
-
-}
 
 #ch2{
     font-size:40px;
@@ -58,6 +55,7 @@
     padding-left:450px;
     padding-bottom:70px;
 
+
 }
 
 
@@ -70,12 +68,12 @@
 }
 
 
-.rating-css {
+.rating-css-1 {
   height: 100px;
   width: 1000px;
 
 }
-.rating-css  .star-icon{
+.rating-css-1  .star-icon {
   color: #e8f539;
   font-size: 30px;
   font-family: sans-serif;
@@ -83,7 +81,7 @@
 
   text-transform: uppercase;
   padding-top: 10px;
-  padding-left:300px;
+
 }
 
 .rate{
@@ -95,19 +93,19 @@
 
 }
 
-.rating-css input {
+.rating-css-1 input {
   display: none;
 }
-.rating-css input + label {
+.rating-css-1 input + label {
   font-size: 60px;
   text-shadow: 1px 1px 0 #e8f539;
   cursor: pointer;
   padding-right: 2%;
 }
-.rating-css input:checked + label ~ label {
+.rating-css-1 input:checked + label ~ label {
   color: #838383;
 }
-.rating-css label:active {
+.rating-css-1 label:active {
   transform: scale(0.8);
   transition: 0.3s ease;
 }

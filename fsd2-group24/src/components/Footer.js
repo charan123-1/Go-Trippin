@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
-import {FiTwitter,FiFacebook,FiInstagram} from 'react-icons/fi'
+import {FiTwitter,FiFacebook,FiInstagram,FiMail} from 'react-icons/fi'
 
 function Footer() {
   return (
@@ -41,6 +41,7 @@ function Footer() {
             <Link to='/' className='social'><FiInstagram /></Link>
             <Link to='/' className='social'><FiTwitter/></Link>
             <Link to='/' className='social'><FiFacebook /></Link>
+            <Link to='/' className='social'><FiMail /></Link>
           </div>
           </div>
 
