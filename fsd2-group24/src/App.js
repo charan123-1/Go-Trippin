@@ -12,6 +12,9 @@ import Travel from './pages/Travel';
 import Adventure from './pages/Adventure';
 import  MapContainer  from './components/maps';
 import Review from './components/Review';
+import SignUp from './pages/SignUp';
+import Login from './pages/Login';
+//import Form from './components/Form';
 function App() {
   return (
     <Router>
@@ -27,6 +30,8 @@ function App() {
           <Route path="/adventure" element={<Adventure />} />
           <Route path="/places" element={<MapContainer />} />
           <Route path="/review" element={<Review/>} />
+          <Route path="/sign-up" element={<SignUp/>} />
+          <Route path="/login" element={<Login/>} />
         </Routes>
         <Footer />
       </div>

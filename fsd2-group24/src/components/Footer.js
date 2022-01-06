@@ -19,7 +19,9 @@ function Footer() {
               type='email'
               placeholder='Your Email'
             />
+            <Link to='/sign-up'>
             <Button buttonStyle='btn--outline'>Sign Up</Button>
+            </Link>
           </form>
         </div>
       </section>
