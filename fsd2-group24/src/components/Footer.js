@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+import {FiTwitter,FiFacebook,FiInstagram} from 'react-icons/fi'
 
 function Footer() {
   return (
@@ -12,17 +13,9 @@ function Footer() {
         </p>
         
         <div className='input-areas'>
-          <form>
-            <input
-              className='footer-input'
-              name='email'
-              type='email'
-              placeholder='Your Email'
-            />
-            <Link to='/sign-up'>
+
             <Button buttonStyle='btn--outline'>Sign Up</Button>
-            </Link>
-          </form>
+
         </div>
       </section>
       <div class='footer-links'>
@@ -43,9 +36,12 @@ function Footer() {
         </div>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <h2>Videos</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Influencer</Link>
+            <h2>Follow us on</h2>
+            <div class="social">
+            <Link to='/' className='social'><FiInstagram /></Link>
+            <Link to='/' className='social'><FiTwitter/></Link>
+            <Link to='/' className='social'><FiFacebook /></Link>
+          </div>
           </div>
 
         </div>
