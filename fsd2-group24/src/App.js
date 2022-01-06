@@ -14,6 +14,9 @@ import  MapContainer  from './components/maps';
 import  MapContainerHyd  from './components/hydmap';
 import  MapContainerTirupati  from './components/tirupatimap';
 import Review from './components/Review';
+import SignUp from './pages/SignUp';
+import Login from './pages/Login';
+//import Form from './components/Form';
 function App() {
   return (
     <Router>
@@ -31,6 +34,8 @@ function App() {
           <Route path="/hyderabad" element={<MapContainerHyd />} />
           <Route path="/tirupati" element={<MapContainerTirupati/>} />
           <Route path="/review" element={<Review/>} />
+          <Route path="/sign-up" element={<SignUp/>} />
+          <Route path="/login" element={<Login/>} />
         </Routes>
         <Footer />
       </div>

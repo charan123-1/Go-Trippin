@@ -134,12 +134,16 @@ function Navbar() {
                 Login
               </Link>
             </li>
+            <Link to='/sign-up'>
           <li className='nav-item'>
             {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
           </li>
+          </Link>
+          <Link to='/login'>
           <li className='nav-item'>
             {button && <Button buttonStyle='btn--outline'>LOGIN</Button>}
           </li>
+          </Link>
           <li className='nav-item'>
             <Link className='cart-img' to='/todo'> <img src={'images/cart-icon-28356-Windows.ico'} className="logo-img" /></Link>
           </li>
