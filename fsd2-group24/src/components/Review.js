@@ -17,21 +17,6 @@ function Review() {
   const [value, setValue] = useState(2);
   const [rate1, setRate1] = useState("6");
   const [remarks, setRemarks] = useState("");
-  const newExperience = () => {
-    const ExperienceData = new FormData()
-    ExperienceData.append('comment', comment);
-    ExperienceData.append('suggestions', suggestions);
-    ExperienceData.append('questions', questions);
-    ExperienceData.append('rate', rate);
-    ExperienceData.append('rate1', rate1);
-    ExperienceData.append('remarks', remarks);
-    fetch("http://127.0.0.1:8000/Frontend/experiences/", {
-      method: 'POST',
-      body: ExperienceData
-    })
-      .then(res => console.log(res))
-      .catch(error => console.log(error))
-  }
   function SuBmiT() {
     alert("We have received your request");
   }
@@ -91,7 +76,7 @@ function Review() {
 
             <label for="subject">Review</label>
             <textarea id="csubject" name="subject" placeholder="Write something.." value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
-            <input type="submit" id="csubmit" onClick={() => newReview()} />
+            <input type="submit" value="Submit" id="csubmit" onClick={() => newReview()} />
           </form>
         </div>
       </div>
