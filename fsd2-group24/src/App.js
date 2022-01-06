@@ -11,9 +11,11 @@ import Item from './pages/Item';
 import Travel from './pages/Travel';
 import Adventure from './pages/Adventure';
 import  MapContainer  from './components/maps';
+import MapContainerWarangal from './components/warmap';
 import Review from './components/Review';
 import SignUp from './pages/SignUp';
 import Login from './pages/Login';
+import About from './pages/About';
 //import Form from './components/Form';
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
           <Route path="/review" element={<Review/>} />
           <Route path="/sign-up" element={<SignUp/>} />
           <Route path="/login" element={<Login/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/warangal" element={<MapContainerWarangal/>} />
         </Routes>
         <Footer />
       </div>

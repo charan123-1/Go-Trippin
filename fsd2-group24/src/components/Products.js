@@ -35,7 +35,7 @@ function Products(){
   </div>
 
   <div class="column">
-  <div class="card">
+  <div class="card" >
     <div class="imgBx">
       <img src="https://assets.codepen.io/4164355/shoes.png"/>
     </div>

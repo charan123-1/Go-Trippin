@@ -17,24 +17,24 @@ function Cards() {
             <CardItem
               src='images/Hyderabad.jpg'
               text='Hyderabad - the city of Pearls'
-              path='/services'
+              path='/places'
             />
           </ul>
           <ul className='cards__items'>
             <CardItem
               src='images/Tirupati.jpg'
               text='Tirumala & Tirupati - Spiritual City'
-              path='/services'
+              path='/places'
             />
             <CardItem
               src='images/Araku.jpg'
               text='Araku - Ooty of Andhra'
-              path='/products'
+              path='/places'
             />
             <CardItem
               src='images/Warangal.jpg'
               text='Warangal - Historical city of Telangana'
-              path='/sign-up'
+              path='/warangal'
             />
           </ul>
         </div>

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
+.about{
+padding-bottom:10% ;
+}
+h1{
+    font-size: 3.5rem;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+
+
+}
+h3{
+    font-size: 2.5rem;
+    font-family: 'Amiri', serif;
+}
+p{
+    text-align: center;
+    font-size:1.5rem ;
+    color:black;
+    padding-bottom: 20px;
+    
+}
+img{
+    width:100%
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+    align-items: center; 
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+.flex-container2 {
+    height: 450px;
+    background-color: #f25287;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+     align-items: center; 
+    padding: 0;
+    list-style: none;
+  }
+  
+  
+  .aboutus{
+    background-color:#fff;
+    padding: 200px 15px 200px 15px;
+    height: 650px;
+    width:50%;
+    margin-top: 0px;
+    color:black;
+    text-align: center;
+    
+
+  }
+  .aboutuspic{
+    padding: 0px;
+    height: 650px;
+    width:50%;
+    margin-top: 0px;
+    
+  }
+
+    
+  .flex-item2 {
+    width:33.33%;
+    background-color: #f25287;
+    padding: 150px 10px 0px 10px;
+    height: 450px;
+    color:black;
+    text-align: center;
+    
+  }
+  .icon{
+    color:white;
+    margin-bottom: 1rem;
+  }
+  .icon:hover{
+    color:#fff600;
+  }
+.howitwork{
+  text-align: center;
+  color: #f25287;
+  padding-top:100px;
+  padding-left: 200px;
+  padding-right: 200px;
+  line-height: 1.5;
+}
+.feature{
+  padding-left: 40px;
+  text-align: left;
+  color:black;
+  font-size: 1.5rem;
+}
+
+
