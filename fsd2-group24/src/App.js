@@ -14,6 +14,7 @@ import  MapContainer  from './components/maps';
 import MapContainerWarangal from './components/warmap';
 import  MapContainerHyd  from './components/hydmap';
 import  MapContainerTirupati  from './components/tirupatimap';
+import MapContainerAraku from './components/Arakumap';
 import Review from './components/Review';
 import SignUp from './pages/SignUp';
 import Login from './pages/Login';
@@ -32,14 +33,16 @@ function App() {
           {/* <Route path="/feedback" element={<Feedback />} /> */}
           <Route path="/travelessential" element={<Travel />} />
           <Route path="/adventure" element={<Adventure />} />
-          <Route path="/places" element={<MapContainer />} />
+          <Route path="/vizag" element={<MapContainer />} />
           <Route path="/hyderabad" element={<MapContainerHyd />} />
           <Route path="/tirupati" element={<MapContainerTirupati/>} />
+          <Route path="/warangal" element={<MapContainerWarangal/>} />
+          <Route path="/araku" element={<MapContainerAraku/>} />
           <Route path="/review" element={<Review/>} />
           <Route path="/sign-up" element={<SignUp/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/about" element={<About/>} />
-          <Route path="/warangal" element={<MapContainerWarangal/>} />
+          
         </Routes>
         <Footer />
       </div>

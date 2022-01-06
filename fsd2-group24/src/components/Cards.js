@@ -12,24 +12,24 @@ function Cards() {
             <CardItem
               src='images/Visakhapatnam.jpg'
               text='Visakhapatnam - the city of Destiny'
-              path='/places'
+              path='/vizag'
             />
             <CardItem
               src='images/Hyderabad.jpg'
               text='Hyderabad - the city of Pearls'
-              path='/places'
+              path='/hyderabad'
             />
           </ul>
           <ul className='cards__items'>
             <CardItem
               src='images/Tirupati.jpg'
               text='Tirumala & Tirupati - Spiritual City'
-              path='/places'
+              path='/tirupati'
             />
             <CardItem
               src='images/Araku.jpg'
               text='Araku - Ooty of Andhra'
-              path='/places'
+              path='/araku'
             />
             <CardItem
               src='images/Warangal.jpg'
