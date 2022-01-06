@@ -1,5 +1,6 @@
 import React from 'react';
 import './Aboutpage.css';
+//import A from './images/aboutusimg.jpg'
 //import A from '../img/A.jpg'
 function Aboutpage(){
     
@@ -8,45 +9,46 @@ function Aboutpage(){
             <ul class="flex-container">
                 <li class="aboutus">
                     <h1>About Us</h1>
-                    <p>Our team provides a platform for young entrepreneurs to showcase their product and attract audience who might be interested in what they can offer.</p>
+                    <h2>GoTrippin is an online travel planning web application supporting a platform to enjoy a perfect vacation by fulfilling the demands of people looking for travel experiences.</h2>
                 </li>
                 <li class="aboutuspic">
+                
                     
                 </li>
              
             </ul>
-            <ul class="flex-container2">
+            <ul class="flex-container2" id="flex-container2">
                 <li class="flex-item2">
                     <i class="icon far fa-check-circle fa-3x"></i>
-                    <h3>Easy to use.</h3>
-                    <p>All components are well explained and known.</p>
+                    <h3>Trusted Reviews</h3>
+                    <p>Get honest reviews from our users about a particular destination.</p>
                 </li>
                 <li class="flex-item2">
                     <i class="icon fas fa-arrow-up fa-3x"></i>
-                    <h3>Grow your buisness</h3>
-                    <p>Reach exponential heights with your buisness.</p>
+                    <h3>Shop</h3>
+                    <p>Buy all your travel needs from one place.</p>
                 </li>
                 <li class="flex-item2">
                     <i class="icon fas fa-dollar-sign fa-3x"></i>
-                    <h3>Get additional support</h3>
-                    <p>Need extra help? Our funds section have you covered</p>
+                    <h3>Bucket List</h3>
+                    <p>Never forget to note down your plans.</p>
                 </li>
             </ul>
             <div class="howitwork">
-            <h3>How it works</h3>
-            <p>Our website users can submit their self-produced articles, product details and videos for promoting their own business on this platform. List of submissions can be reviewed and users will be able to promote their ideas.</p>
+            <h3 style={{color:"black"}}>How it works</h3>
+            <p>Our website allows travelers to browse reviews and opinion of accomodations,restaurants,experiences etc. It also acts as a ecommerce site to allows users to shop for all thier travel needs.  </p>
             <ul  class="feature" >
                 <li >
-                We provide users an option where they will be able to give reviews and rating to the startups.  
+                We provide users an option where they will be able to give reviews and rating to the locations they have been to.  
                 </li>
                 <li>
-                Users are given an option to give their contact details like email and submit queries.   
+                Users are able to browse for accomodation and restaurants at the location they wish to visit.   
                 </li>
                 <li>
-                We embrace people who come up with unique thoughts and insights. We help them to access funding that keeps the initiatives to scale faster. This contribution passionately helps for the betterment that keeps the spirits ahead.  
+                We make it easy for our users to purchase all the necessary items for their travel.  
                 </li>
                 <li>
-                We generate employment by introducing an option for Job opportunities.
+                Tired of forgething things?Here youll be able to note down things you wish to accomplish during your trip.
                 </li>
             </ul> 
             

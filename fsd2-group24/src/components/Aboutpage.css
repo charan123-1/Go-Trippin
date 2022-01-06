@@ -11,9 +11,14 @@ h1{
 
 }
 h3{
+    color: black;
     font-size: 2.5rem;
     font-family: 'Amiri', serif;
 }
+h2{
+  color: black;
+}
+
 p{
     text-align: center;
     font-size:1.5rem ;
@@ -21,9 +26,11 @@ p{
     padding-bottom: 20px;
     
 }
+
 img{
     width:100%
 }
+
 
 .flex-container {
     display: flex;
@@ -33,10 +40,11 @@ img{
     padding: 0;
     margin: 0;
     list-style: none;
+  
   }
 .flex-container2 {
     height: 450px;
-    background-color: #f25287;
+    background-color: black;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -45,6 +53,9 @@ img{
     list-style: none;
   }
   
+  #flex-container2 p,h3{
+    color : white;
+}
   
   .aboutus{
     background-color:#fff;
@@ -58,6 +69,8 @@ img{
 
   }
   .aboutuspic{
+    background: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80") no-repeat ;
+    background-size: cover;
     padding: 0px;
     height: 650px;
     width:50%;
@@ -68,10 +81,10 @@ img{
     
   .flex-item2 {
     width:33.33%;
-    background-color: #f25287;
+    background-color: #242424;
     padding: 150px 10px 0px 10px;
     height: 450px;
-    color:black;
+    color:white;
     text-align: center;
     
   }
@@ -84,12 +97,13 @@ img{
   }
 .howitwork{
   text-align: center;
-  color: #f25287;
+  color: #c0cfd8;
   padding-top:100px;
   padding-left: 200px;
   padding-right: 200px;
   line-height: 1.5;
 }
+
 .feature{
   padding-left: 40px;
   text-align: left;
