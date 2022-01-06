@@ -11,6 +11,8 @@ import Item from './pages/Item';
 import Travel from './pages/Travel';
 import Adventure from './pages/Adventure';
 import  MapContainer  from './components/maps';
+import  MapContainerHyd  from './components/hydmap';
+import  MapContainerTirupati  from './components/tirupatimap';
 import Review from './components/Review';
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
           <Route path="/travelessential" element={<Travel />} />
           <Route path="/adventure" element={<Adventure />} />
           <Route path="/places" element={<MapContainer />} />
+          <Route path="/hyderabad" element={<MapContainerHyd />} />
+          <Route path="/tirupati" element={<MapContainerTirupati/>} />
           <Route path="/review" element={<Review/>} />
         </Routes>
         <Footer />
