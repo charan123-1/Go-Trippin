@@ -21,22 +21,22 @@ function Aboutpage(){
             <ul class="flex-container2" id="flex-container2">
                 <li class="flex-item2">
                     <i class="icon far fa-check-circle fa-3x"></i>
-                    <h3>Trusted Reviews</h3>
-                    <p>Get honest reviews from our users about a particular destination.</p>
+                    <h3 className='h3-1'>Trusted Reviews</h3>
+                    <p className='p1'>Get honest reviews from our users about a particular destination.</p>
                 </li>
                 <li class="flex-item2">
                     <i class="icon fas fa-arrow-up fa-3x"></i>
-                    <h3>Shop</h3>
-                    <p>Buy all your travel needs from one place.</p>
+                    <h3 className='h3-1'>Shop</h3>
+                    <p className='p1'>Buy all your travel needs from one place.</p>
                 </li>
                 <li class="flex-item2">
                     <i class="icon fas fa-dollar-sign fa-3x"></i>
-                    <h3>Bucket List</h3>
-                    <p>Never forget to note down your plans.</p>
+                    <h3 className='h3-1'>Bucket List</h3>
+                    <p className='p1'>Never forget to note down your plans.</p>
                 </li>
             </ul>
             <div class="howitwork">
-            <h3 style={{color:"black"}}>How it works</h3>
+            <h3 style={{color:"black"}} className='h3-2'>How it works</h3>
             <p>Our website allows travelers to browse reviews and opinion of accomodations,restaurants,experiences etc. It also acts as a ecommerce site to allows users to shop for all thier travel needs.  </p>
             <ul  class="feature" >
                 <li >
