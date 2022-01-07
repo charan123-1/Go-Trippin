@@ -9,39 +9,716 @@
       "text": "new bucket list"
     }
   ],
-  "places": [
+  "productItems": [
     {
       "id": 1,
-      "Visakhapatnam": [
-        {
-          "title": "Kailash Giri",
-          "lng":17.748298645238204,
-          "lat": 83.34519670139929
-        },
-        {
-          "title": "Kursura Submarine",
-          "lng" : 17.717481135950656,
-           "lat":  83.33003082944325
-        }
-      ]
+      "name": "Puma Shoes",
+      "price": 3000,
+      "image": "./images/puma.jpg",
+      "rating": 4.5,
+      "numReviews": 12
     },
     {
       "id": 2,
-      "Araku" : [
-        {
-          "title": "Araku Valley",
-          "lng":18.32246705318015,
-          "lat":82.8792522280164
-        },
-        {
-          "title": "Borra Caves",
-          "lng": 18.280804936122628,
-          "lat":83.03970993015982
-        }
-
-      ]
+      "name": "Adidas",
+      "price": 2099,
+      "image": "./images/adidas.jpg",
+      "rating": 4.5,
+      "numReviews": 12
+    },
+    {
+      "id": 3,
+      "name": "Campus",
+      "price": 803,
+      "image": "./images/campus.jpg",
+      "rating": 4.5,
+      "numReviews": 12
+    },
+    {
+      "id": 4,
+      "name": "Bacca Bucci",
+      "price": 1499,
+      "image": "./images/baccabucci.jpg",
+      "rating": 4.5,
+      "numReviews": 12
+    },
+    {
+      "id": 5,
+      "name": "Nike Shoes",
+      "price": 5999,
+      "image": "./images/nike.jpg",
+      "rating": 4.5,
+      "numReviews": 12
+    },
+    {
+      "id": 6,
+      "name": "A.Sharif",
+      "price": 5999,
+      "image": "./images/A.Sharif.jpg",
+      "rating": 4.5,
+      "numReviews": 12
+    }
+  ],
+  "backpackItems": [
+    {
+      "id": 7,
+      "name": "AFN fashion",
+      "price": 999,
+      "image": "./images/afnfashion.jpg",
+      "rating": 4.5,
+      "numReviews": 132
+    },
+    {
+      "id": 8,
+      "name": "trunkit",
+      "price": 699,
+      "image": "./images/trunkit.jpg",
+      "rating": 4.5,
+      "numReviews": 142
+    },
+    {
+      "id": 9,
+      "name": "ADDU BAG",
+      "price": 1009,
+      "image": "./images/ADDU BAG.jpg",
+      "rating": 4.5,
+      "numReviews": 202
+    },
+    {
+      "id": 10,
+      "name": "Hyper Adam",
+      "price": 1179,
+      "image": "./images/Hyper Adam.jpg",
+      "rating": 4.5,
+      "numReviews": 542
+    },
+    {
+      "id": 11,
+      "name": "mount Track",
+      "price": 949,
+      "image": "./images/mount Track.jpg",
+      "rating": 4.5,
+      "numReviews": 700
+    },
+    {
+      "id": 12,
+      "name": "POLESTAR Xplore 55 L",
+      "price": 899,
+      "image": "./images/polestor.jpg",
+      "rating": 4.5,
+      "numReviews": 7
+    }
+  ],
+  "clothingItems": [
+    {
+      "id": 13,
+      "name": "Toodii Mens Coat",
+      "price": 1749,
+      "image": "./images/Toodii Mens Coat.jpg",
+      "rating": 4.5,
+      "numReviews": 132
+    },
+    {
+      "id": 14,
+      "name": "Puma Jacket",
+      "price": 1399,
+      "image": "./images/puma jacket.jpg",
+      "rating": 4.5,
+      "numReviews": 142
+    },
+    {
+      "id": 15,
+      "name": "GOOD FEEL Cap Combo",
+      "price": 299,
+      "image": "./images/GOOD FEEL Cap Combo.jpg",
+      "rating": 4.5,
+      "numReviews": 2100
+    },
+    {
+      "id": 16,
+      "name": "ZUNBELLA Unisex Disposable Portable Raincoat",
+      "price": 299,
+      "image": "./images/ZUNBELLA Unisex Disposable Portable Raincoat.jpg",
+      "rating": 3,
+      "numReviews": 4
+    },
+    {
+      "id": 17,
+      "name": "Mini Disposable Compressed Washcloth",
+      "price": 269,
+      "image": "./images/Mini Disposable Compressed Washcloth.jpg",
+      "rating": 4,
+      "numReviews": 10
+    },
+    {
+      "id": 18,
+      "name": "Fabric Disposable 3 Ply Surgical Mask",
+      "price": 499,
+      "image": "./images/Fabric Disposable 3 Ply Surgical Mask.jpg",
+      "rating": 4,
+      "numReviews": 29239
+    }
+  ],
+  "chargerItems": [
+    {
+      "id": 19,
+      "name": "Mi Pocket Power Bank Pro Black 10000mAh",
+      "price": 1399,
+      "image": "./images/Mi.jpg",
+      "rating": 4.5,
+      "numReviews": 8499
+    },
+    {
+      "id": 20,
+      "name": "Mi Power Bank 3i 20000mAh",
+      "price": 1699,
+      "image": "./images/Mi Power Bank 3i 20000mAh.jpg",
+      "rating": 4,
+      "numReviews": 2032
+    },
+    {
+      "id": 21,
+      "name": "OnePlus 10000 mAh Power Bank",
+      "price": 1009,
+      "image": "./images/OnePlus.jpg",
+      "rating": 4,
+      "numReviews": 22217
+    },
+    {
+      "id": 22,
+      "name": "Croma 10W Fast Charge 10000mAh",
+      "price": 1079,
+      "image": "./images/Croma.jpg",
+      "rating": 4,
+      "numReviews": 2182
+    },
+    {
+      "id": 23,
+      "name": "URBN 20000 mAh 20W Super Fast Charging Power Bank",
+      "price": 1199,
+      "image": "./images/URBN.jpg",
+      "rating": 4.5,
+      "numReviews": 6438
+    },
+    {
+      "id": 24,
+      "name": "Ambrane 10000 mAh Compact Power Bank",
+      "price": 599,
+      "image": "./images/Ambrane.jpg",
+      "rating": 4.5,
+      "numReviews": 7
+    }
+  ],
+  "walletItems": [
+    {
+      "id": 25,
+      "name": "Allen Solly",
+      "price": 599,
+      "image": "./images/Allen Solly.jpg",
+      "rating": 4,
+      "numReviews": 271
+    },
+    {
+      "id": 26,
+      "name": "Fur jaden",
+      "price": 699,
+      "image": "./images/Fur jaden.jpg",
+      "rating": 4,
+      "numReviews": 721
+    },
+    {
+      "id": 27,
+      "name": "ABYS",
+      "price": 473,
+      "image": "./images/ABYS.jpg",
+      "rating": 3.5,
+      "numReviews": 29
+    },
+    {
+      "id": 28,
+      "name": "Bhrakuti",
+      "price": 348,
+      "image": "./images/Bhrakuti.jpg",
+      "rating": 4,
+      "numReviews": 26
+    },
+    {
+      "id": 29,
+      "name": "Elios",
+      "price": 595,
+      "image": "./images/Elios.jpg",
+      "rating": 4,
+      "numReviews": 3726
+    },
+    {
+      "id": 30,
+      "name": "Urban Forest",
+      "price": 798,
+      "image": "./images/Urban Forest.jpg",
+      "rating": 4.5,
+      "numReviews": 3016
+    }
+  ],
+  "flashtorchesItems": [
+    {
+      "id": 31,
+      "name": "pen torch",
+      "price": 399,
+      "image": "./images/pen torch.jpg",
+      "rating": 4,
+      "numReviews": 78
+    },
+    {
+      "id": 32,
+      "name": "care 4",
+      "price": 499,
+      "image": "./images/care 4.jpg",
+      "rating": 4,
+      "numReviews": 10
+    },
+    {
+      "id": 33,
+      "name": "Care 4 LED High Power Searchlight",
+      "price": 679,
+      "image": "./images/Care 4 LED High Power Searchlight.jpg",
+      "rating": 3.5,
+      "numReviews": 1113
+    },
+    {
+      "id": 34,
+      "name": "nexqua",
+      "price": 399,
+      "image": "./images/nexqua.jpg",
+      "rating": 4,
+      "numReviews": 26
+    },
+    {
+      "id": 35,
+      "name": "start durable",
+      "price": 495,
+      "image": "./images/start durable.jpg",
+      "rating": 4,
+      "numReviews": 64
+    },
+    {
+      "id": 36,
+      "name": "Abtrix",
+      "price": 649,
+      "image": "./images/abtrix.jpg",
+      "rating": 4.5,
+      "numReviews": 267
+    }
+  ],
+  "SkincareItems": [
+    {
+      "id": 37,
+      "name": "VLCC De Tan Sunscreen Gel Creme",
+      "price": 279,
+      "image": "./images/VLCC De Tan Sunscreen Gel Creme.jpg",
+      "rating": 4,
+      "numReviews": 3321
+    },
+    {
+      "id": 38,
+      "name": "Neutriderm Moisturising Lotion",
+      "price": 850,
+      "image": "./images/Moisturizer.jpg",
+      "rating": 4.5,
+      "numReviews": 9970
+    },
+    {
+      "id": 39,
+      "name": "Plum Green Tea Face Wash",
+      "price": 293,
+      "image": "./images/Face wash.jpg",
+      "rating": 4.5,
+      "numReviews": 8196
+    },
+    {
+      "id": 40,
+      "name": "Skincare Combo",
+      "price": 467,
+      "image": "./images/Skincare Combo.jpg",
+      "rating": 4,
+      "numReviews": 504
+    },
+    {
+      "id": 41,
+      "name": "Disinfectant wipes",
+      "price": 276,
+      "image": "./images/Disinfectant wipes.jpg",
+      "rating": 4,
+      "numReviews": 111
+    },
+    {
+      "id": 42,
+      "name": "NIVEA Soft Original Care",
+      "price": 351,
+      "image": "./images/NIVEA Soft, Light Moisturizing Cream, 300ml & Nivea Original Care Lip Balm.jpg",
+      "rating": 4,
+      "numReviews": 188
+    }
+  ],
+  "MedicationItems": [
+    {
+      "id": 43,
+      "name": "Dettol Adhesive Band Aid ",
+      "price": 199,
+      "image": "./images/bandaids.jpg",
+      "rating": 4,
+      "numReviews": 99
+    },
+    {
+      "id": 44,
+      "name": "AHM Emergency First Aid Bag",
+      "price": 499,
+      "image": "./images/AHM Emergency First Aid Bag.jpg",
+      "rating": 4.5,
+      "numReviews": 101
+    },
+    {
+      "id": 45,
+      "name": "Saco store",
+      "price": 314,
+      "image": "./images/Saco store.jpg",
+      "rating": 3.5,
+      "numReviews": 6
+    },
+    {
+      "id": 46,
+      "name": "Mosquito Repellent Gel",
+      "price": 84,
+      "image": "./images/Mamaearth Natural Mosquito Repellent Gel.jpg",
+      "rating": 4,
+      "numReviews": 1991
+    },
+    {
+      "id": 47,
+      "name": "Dettol Antiseptic Liquid",
+      "price": 331,
+      "image": "./images/Dettol Antiseptic Liquid.jpg",
+      "rating": 4,
+      "numReviews": 10080
+    },
+    {
+      "id": 48,
+      "name": "ORS",
+      "price": 50,
+      "image": "./images/ORS.jpg",
+      "rating": 4,
+      "numReviews": 29
+    }
+  ],
+  "ToiletriesItems": [
+    {
+      "id": 49,
+      "name": "Dental Cleaning set ",
+      "price": 175,
+      "image": "./images/Dental Cleaning set.jpg",
+      "rating": 4,
+      "numReviews": 696
+    },
+    {
+      "id": 50,
+      "name": "Tissues",
+      "price": 330,
+      "image": "./images/Tissues.jpg",
+      "rating": 4.5,
+      "numReviews": 3011
+    },
+    {
+      "id": 51,
+      "name": "Shampoo",
+      "price": 319,
+      "image": "./images/Shampoo.jpg",
+      "rating": 3.5,
+      "numReviews": 61
+    },
+    {
+      "id": 52,
+      "name": "Grooming kit",
+      "price": 1749,
+      "image": "./images/Grooming kit.jpg",
+      "rating": 4,
+      "numReviews": 80
+    },
+    {
+      "id": 53,
+      "name": "Body Wash",
+      "price": 349,
+      "image": "./images/Body Wash.jpg",
+      "rating": 4,
+      "numReviews": 5362
+    },
+    {
+      "id": 54,
+      "name": "Hand Wash",
+      "price": 29,
+      "image": "./images/Hand Wash.jpg",
+      "rating": 3.5,
+      "numReviews": 7
+    },
+    {
+      "id": 55,
+      "name": "Gypsy Disposable Toilet Seat Covers",
+      "price": 235,
+      "image": "./images/Gypsy Disposable Toilet Seat Covers -30 Sheets (2 x 15).jpg",
+      "rating": 3.5,
+      "numReviews": 7
+    }
+  ],
+  "TrekkingItems": [
+    {
+      "id": 56,
+      "name": "tents",
+      "price": 1999,
+      "image": "./images/tents.jpg",
+      "rating": 4,
+      "numReviews": 1631
+    },
+    {
+      "id": 57,
+      "name": "bags",
+      "price": 499,
+      "image": "./images/bags.jpg",
+      "rating": 4.6,
+      "numReviews": 3609
+    },
+    {
+      "id": 58,
+      "name": "caps",
+      "price": 449,
+      "image": "./images/caps.jpg",
+      "rating": 4.5,
+      "numReviews": 1450
+    },
+    {
+      "id": 59,
+      "name": "trekking ropes",
+      "price": 399,
+      "image": "./images/trekking ropes.jpg",
+      "rating": 4.1,
+      "numReviews": 20
+    }
+  ],
+  "SkydivingItems": [
+    {
+      "id": 61,
+      "name": "Motorcycle Ski Skydiving Goggles with Blue Mirror",
+      "price": 6411,
+      "image": "./images/goggles.jpg",
+      "rating": 5,
+      "numReviews": 4
+    },
+    {
+      "id": 62,
+      "name": "Action Pro Kit Chest Belt J Mount",
+      "price": 499,
+      "image": "./images/Action Pro Kit Chest Belt J Mount.jpg",
+      "rating": 4,
+      "numReviews": 128
+    },
+    {
+      "id": 63,
+      "name": "ZX FULL FACE HELMET",
+      "price": 465,
+      "image": "./images/ZX FULL FACE HELMET.jpg",
+      "rating": 4,
+      "numReviews": 14
+    },
+    {
+      "id": 64,
+      "name": "GoPro Hero 8 Black CHDHX-801 12 MP Action Camera",
+      "price": 29600,
+      "image": "./images/GoPro Hero 8 Black CHDHX-801 12 MP Action Camera.jpg",
+      "rating": 4.5,
+      "numReviews": 3120
+    }
+  ],
+  "SurfingItems": [
+    {
+      "id": 65,
+      "name": "Women's Surfing Neoprene Wetsuit",
+      "price": 1499,
+      "image": "./images/Women's Surfing Neoprene Wetsuit.jpg",
+      "rating": 4.4,
+      "numReviews": 649
+    },
+    {
+      "id": 66,
+      "name": "Men's surfing Neoprene wetsuit",
+      "price": 1499,
+      "image": "./images/Men's surfing Neoprene wetsuit.jpg",
+      "rating": 4.4,
+      "numReviews": 788
+    },
+    {
+      "id": 67,
+      "name": "Foam Surfboard 8ft 500",
+      "price": 17999,
+      "image": "./images/foam board.jpg",
+      "rating": 4,
+      "numReviews": 86
+    }
+  ],
+  "CyclingItems": [
+    {
+      "id": 68,
+      "name": "100 Winter Cycling Fleece Gloves",
+      "price": 399,
+      "image": "./images/100 Winter Cycling Fleece Gloves.jpg",
+      "rating": 4.4,
+      "numReviews": 2788
+    },
+    {
+      "id": 69,
+      "name": "Mountain Bike Helmet ST 50",
+      "price": 999,
+      "image": "./images/Mountain Bike Helmet ST 50.jpg",
+      "rating": 4.3,
+      "numReviews": 1593
+    },
+    {
+      "id": 70,
+      "name": "Jaspo Bolster Knee Pad",
+      "price": 399,
+      "image": "./images/Jaspo Bolster Professional Knee Pad.jpg",
+      "rating": 4.5,
+      "numReviews": 55
+    }
+  ],
+  "ScubadivingItems": [
+    {
+      "id": 71,
+      "name": "ADULT SCUBA DIVING MASK 100",
+      "price": 799,
+      "image": "./images/ADULT SCUBA DIVING MASK 100.jpg",
+      "rating": 4.4,
+      "numReviews": 288
+    },
+    {
+      "id": 72,
+      "name": "Scuba diving fins SCD 500 ",
+      "price": 1999,
+      "image": "./images/Scuba diving fins SCD 500.jpg",
+      "rating": 4,
+      "numReviews": 193
+    },
+    {
+      "id": 73,
+      "name": "Scuba-diving bag 65 litres",
+      "price": 2499,
+      "image": "./images/Scuba-diving bag 65 litres.jpg",
+      "rating": 4.5,
+      "numReviews": 505
+    }
+  ],
+  "SwimmingItems": [
+    {
+      "id": 74,
+      "name": "SWIMMING GOGGLES BFIT CLEAR LENSES",
+      "price": 899,
+      "image": "./images/SWIMMING GOGGLES BFIT CLEAR LENSES.jpg",
+      "rating": 4.2,
+      "numReviews": 788
+    },
+    {
+      "id": 75,
+      "name": "Swim cap mesh",
+      "price": 99,
+      "image": "./images/Swim cap mesh.jpg",
+      "rating": 4.3,
+      "numReviews": 593
+    },
+    {
+      "id": 76,
+      "name": "Women's Una Ryma swimming top",
+      "price": 1499,
+      "image": "./images/Women's Una Ryma swimming top.jpg",
+      "rating": 4.5,
+      "numReviews": 44
+    },
+    {
+      "id": 77,
+      "name": "BOYS' SWIMMING FULL BOBY SUIT - COMBI 100",
+      "price": 1199,
+      "image": "./images/BOYS' SWIMMING FULL BOBY SUIT - COMBI 100.jpg",
+      "rating": 4.1,
+      "numReviews": 35
+    }
+  ],
+  "cart": [
+    {
+      "id": 5,
+      "quantity": 2,
+      "name": "Adidas",
+      "price": 2099,
+      "image": "./images/adidas.jpg",
+      "productId": 2
+    },
+    {
+      "id": 6,
+      "quantity": 2,
+      "name": "Puma Shoes",
+      "price": 3000,
+      "image": "./images/puma.jpg",
+      "productId": 1
+    },
+    {
+      "productId": 20,
+      "quantity": 1,
+      "name": "Mi Power Bank 3i 20000mAh",
+      "price": 1699,
+      "image": "./images/Mi Power Bank 3i 20000mAh.jpg",
+      "id": 11
+    },
+    {
+      "productId": 25,
+      "quantity": 1,
+      "name": "Allen Solly",
+      "price": 599,
+      "image": "./images/Allen Solly.jpg",
+      "id": 12
+    },
+    {
+      "productId": 37,
+      "quantity": 1,
+      "name": "VLCC De Tan Sunscreen Gel Creme",
+      "price": 279,
+      "image": "./images/VLCC De Tan Sunscreen Gel Creme.jpg",
+      "id": 14
+    },
+    {
+      "productId": 43,
+      "quantity": 1,
+      "name": "Dettol Adhesive Band Aid ",
+      "price": 199,
+      "image": "./images/bandaids.jpg",
+      "id": 15
+    },
+    {
+      "productId": 14,
+      "quantity": 1,
+      "name": "Puma Jacket",
+      "price": 1399,
+      "image": "./images/puma jacket.jpg",
+      "id": 17
+    },
+    {
+      "productId": 74,
+      "quantity": 1,
+      "name": "SWIMMING GOGGLES BFIT CLEAR LENSES",
+      "price": 899,
+      "image": "./images/SWIMMING GOGGLES BFIT CLEAR LENSES.jpg",
+      "id": 18
+    },
+    {
+      "productId": 47,
+      "quantity": 1,
+      "name": "Dettol Antiseptic Liquid",
+      "price": 331,
+      "image": "./images/Dettol Antiseptic Liquid.jpg",
+      "id": 20
     }
   ]
 }
-
-
