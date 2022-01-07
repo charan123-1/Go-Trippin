@@ -719,6 +719,22 @@
       "price": 331,
       "image": "./images/Dettol Antiseptic Liquid.jpg",
       "id": 20
+    },
+    {
+      "productId": 8,
+      "quantity": 1,
+      "name": "trunkit",
+      "price": 699,
+      "image": "./images/trunkit.jpg",
+      "id": 21
+    },
+    {
+      "productId": 35,
+      "quantity": 1,
+      "name": "start durable",
+      "price": 495,
+      "image": "./images/start durable.jpg",
+      "id": 22
     }
   ]
 }

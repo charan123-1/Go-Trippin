@@ -16,6 +16,7 @@ function TodoList() {
     // console.log(todos);
 
   };
+
  // update data
   const updateTodo = (todoId, newValue) => {
     if (!newValue.text || /^\s*$/.test(newValue.text)) {
@@ -57,6 +58,7 @@ function TodoList() {
     });
     setTodos(updatedTodos);
   };
+  
   // read json data
   useEffect(() => {
     fetch('http://localhost:5000/todos').then(res => {

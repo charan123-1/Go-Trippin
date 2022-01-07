@@ -145,7 +145,7 @@ function Navbar() {
           </li>
           </Link>
           <li className='nav-item'>
-            <Link className='cart-img' to='/todo'> <img src={'images/cart-icon-28356-Windows.ico'} className="logo-img" /></Link>
+            <Link className='cart-img' to='/cart'> <img src={'images/cart-icon-28356-Windows.ico'} className="logo-img" /></Link>
           </li>
           <li className='nav-item'>
             <Link className='cart-img' to='/todo'> <img src={'images/9068936.png'} className="logo-img2" /></Link>

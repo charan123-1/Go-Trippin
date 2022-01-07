@@ -7,17 +7,53 @@ const mapStyles = {
 };
 
 export class MapContainer extends Component {
-  render() {
+  state ={places:[
+    {
+      "id": 1,
+      "name":"Visakhapatnam",
+      "loc": [
+        {
+          "title": "Kailash Giri",
+          "lat":17.748298645238204,
+          "lng": 83.34519670139929
+        },
+        {
+          "title": "Kursura Submarine",
+          "lat" : 17.717481135950656,
+           "lng":  83.33003082944325
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name":"Araku",
+      "loc" : [
+        {
+          "title": "Araku Valley",
+          "lat":18.32246705318015,
+          "lng":82.8792522280164
+        },
+        {
+          "title": "Borra Caves",
+          "lat": 18.280804936122628,
+          "lng":83.03970993015982
+        }
 
-
+      ]
+    }
+  ]};
+  
+    render() {
+    const {places}=this.state;
+    console.log(places[0].name)
     return (
       <Map
         google={this.props.google}
         zoom={12}
         style={mapStyles}
         initialCenter={{
-            lng: 83.323685,
-            lat: 17.714294
+            lng: places[0].loc[0].lng,
+            lat: places[0].loc[0].lat
           }}>
         <Marker key="marker_1"
           position={{
