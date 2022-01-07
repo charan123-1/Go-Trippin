@@ -5,12 +5,12 @@ padding-bottom:10% ;
 }
 h1{
     font-size: 3.5rem;
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
     line-height: 1.5;
 
 
 }
-h3{
+.h3-2{
     color: black;
     font-size: 2.5rem;
     font-family: 'Amiri', serif;
@@ -53,10 +53,14 @@ img{
     list-style: none;
   }
   
-  #flex-container2 p,h3{
+  .h3-1{
     color : white;
+    font-size: 2.5rem;
+    font-family: 'Amiri', serif;
 }
-  
+  .p1{
+    color : white;
+  }
   .aboutus{
     background-color:#fff;
     padding: 200px 15px 200px 15px;
