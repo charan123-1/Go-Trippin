@@ -39,6 +39,7 @@ import Surfing from './pages/Surfing';
 import Scubadiving from './pages/Scubadiving';
 import Cycling from './pages/Cycling';
 import Swimming from './pages/Swimming';
+import Post from './pages/Post';
 
 function App() {
   const initialState = { output: 10 };
@@ -67,7 +68,7 @@ function App() {
             <Route path="/sign-up" element={<SignUp />} />
             <Route path="/login" element={<Login />} />
             <Route path="/about" element={<About />} />
-
+            <Route path="/post" element={<Post/>}/>
             <Route path="/item" element={<Item />} />
             <Route path="/backpack" element={<Backpack />} />
             <Route path="/clothing" element={<Clothing />} />

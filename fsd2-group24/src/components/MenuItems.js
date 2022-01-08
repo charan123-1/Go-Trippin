@@ -13,7 +13,7 @@ export const MenuItems = [
     ,
     {
         title: "Things to do",
-        path: "/thingstodo",
+        path: "/todo",
         cName: 'dropdown-link'
     },
 ]

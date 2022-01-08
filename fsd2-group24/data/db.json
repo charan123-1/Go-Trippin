@@ -9,6 +9,32 @@
       "text": "new bucket list"
     }
   ],
+  "signupUsers": [
+    {
+      "id": 1,
+      "email": "abc@gamil.com",
+      "username": "test1",
+      "password": "test1"
+    },
+    {
+      "id": 2,
+      "email": "test@gamil.com",
+      "username": "test2",
+      "password": "test2"
+    },
+    {
+      "email": "test3@gmail.com",
+      "username": "test3",
+      "password": "testing3",
+      "id": 3
+    },
+    {
+      "email": "test4@gmail.com",
+      "username": "test4",
+      "password": "test4@123",
+      "id": 4
+    }
+  ],
   "productItems": [
     {
       "id": 1,
@@ -647,6 +673,21 @@
       "numReviews": 35
     }
   ],
+  "upload": [
+    {
+      "id": 1,
+      "image": "./images/Hyderabad.jpg"
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    }
+  ],
   "cart": [
     {
       "id": 5,
@@ -721,12 +762,12 @@
       "id": 20
     },
     {
-      "productId": 8,
-      "quantity": 1,
+      "id": 21,
+      "quantity": 2,
       "name": "trunkit",
       "price": 699,
       "image": "./images/trunkit.jpg",
-      "id": 21
+      "productId": 8
     },
     {
       "productId": 35,
@@ -735,6 +776,29 @@
       "price": 495,
       "image": "./images/start durable.jpg",
       "id": 22
+    }
+  ],
+  "Review": [
+    {
+      "id": 1,
+      "rate": 4,
+      "value": 3,
+      "message": "sample"
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 4700,
+      "rate": "4",
+      "value": 3,
+      "message": "New review"
+    },
+    {
+      "id": 2927,
+      "rate": "4",
+      "value": 3,
+      "message": "New Review Added!!"
     }
   ]
 }

@@ -1,10 +1,10 @@
 import React from 'react';
 import validate from './validateInfo';
-import useForm from './useForm';
+import useForm2 from './useForm2';
 import './Form.css';
 
 const FormLogin = ({ submitForm }) => {
-  const { handleChange, handleSubmit, values, errors } = useForm(
+  const { handleChange, handleSubmit, values2, errors } = useForm2(
     submitForm,
     validate
   );
@@ -22,7 +22,7 @@ const FormLogin = ({ submitForm }) => {
             type='text'
             name='username'
             placeholder='Enter your username'
-            value={values.username}
+            value={values2.username}
             onChange={handleChange}
           />
           {errors.username && <p>{errors.username}</p>}
@@ -35,7 +35,7 @@ const FormLogin = ({ submitForm }) => {
             type='password'
             name='password'
             placeholder='Enter your password'
-            value={values.password}
+            value={values2.password}
             onChange={handleChange}
           />
           {errors.password && <p>{errors.password}</p>}

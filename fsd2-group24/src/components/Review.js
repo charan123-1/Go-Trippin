@@ -1,53 +1,84 @@
 import React, { useState } from 'react'
 import "./Review.css"
 import { FaRegGrinHearts,FaRegTired,FaRegFrownOpen,FaRegMeh,FaRegSmile } from 'react-icons/fa';
-
+import axios from 'axios';
 import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
 
 function Review() {
-  const [firstname, setFirstname] = useState("");
-  const [lastname, setLastname] = useState("");
+  // const [firstname, setFirstname] = useState("");
+  // const [lastname, setLastname] = useState("");
   const [message, setMessage] = useState("")
-  const [comment, setComment] = useState(false);
-  const [suggestions, setSuggestions] = useState(false);
-  const [questions, setQuestions] = useState(false);
+  // const [comment, setComment] = useState(false);
+  // const [suggestions, setSuggestions] = useState(false);
+  // const [questions, setQuestions] = useState(false);
   const [rate, setRate] = useState(1);
   const [value, setValue] = useState(2);
-  const [rate1, setRate1] = useState("6");
-  const [remarks, setRemarks] = useState("");
-  const newExperience = () => {
-    const ExperienceData = new FormData()
-    ExperienceData.append('comment', comment);
-    ExperienceData.append('suggestions', suggestions);
-    ExperienceData.append('questions', questions);
-    ExperienceData.append('rate', rate);
-    ExperienceData.append('rate1', rate1);
-    ExperienceData.append('remarks', remarks);
-    fetch("http://127.0.0.1:8000/Frontend/experiences/", {
-      method: 'POST',
-      body: ExperienceData
-    })
-      .then(res => console.log(res))
-      .catch(error => console.log(error))
-  }
-  function SuBmiT() {
-    alert("We have received your request");
-  }
-  const newReview = () => {
-    const ReviewData = new FormData()
-    ReviewData.append('firstname', firstname);
-    ReviewData.append('lastname', lastname);
-    ReviewData.append('message', message);
-    fetch("http://127.0.0.1:8000/Frontend/Review/", {
-      method: 'POST',
-      body: ReviewData
-    })
-      .then(res => console.log(res))
-      .catch(error => console.log(error))
-  }
-
+  // const [rate1, setRate1] = useState("6");
+  // const [remarks, setRemarks] = useState("");
+  // const newExperience = () => {
+  //   const ExperienceData = new FormData()
+  //   ExperienceData.append('comment', comment);
+  //   ExperienceData.append('suggestions', suggestions);
+  //   ExperienceData.append('questions', questions);
+  //   ExperienceData.append('rate', rate);
+  //   ExperienceData.append('rate1', rate1);
+  //   ExperienceData.append('remarks', remarks);
+  //   fetch("http://127.0.0.1:8000/Frontend/experiences/", {
+  //     method: 'POST',
+  //     body: ExperienceData
+  //   })
+  //     .then(res => console.log(res))
+  //     .catch(error => console.log(error))
+  // }
+  // function SuBmiT() {
+  //   alert("We have received your request");
+  // }
+  // const newReview = () => {
+  //   const ReviewData = new FormData()
+  //   ReviewData.append('firstname', firstname);
+  //   ReviewData.append('lastname', lastname);
+  //   ReviewData.append('message', message);
+  //   fetch("http://127.0.0.1:8000/Frontend/Review/", {
+  //     method: 'POST',
+  //     body: ReviewData
+  //   })
+  //     .then(res => console.log(res))
+  //     .catch(error => console.log(error))
+  // }
+  // const newReview =(rate,value, message)=> {
+  //   try {
+  //     const response = fetch("http://localhost:5000/Review", {
+  //       method: "POST",
+  //       body: JSON.stringify({
+  //         rate: rate,
+  //         value: value,
+  //         message:message
+  //       }),
+  //       headers: {
+  //         "Content-type": "application/json; charset=UTF-8",
+  //       },
+  //     });
+  //     let data = response.json();
+  //     alert("Review Added!!");
+  //     console.log(data);
+  //   } catch (err) {
+  //     alert("Something Went Wrong");
+  //     console.log(err);
+  //   }
+  // }
+  const newReview = e => {
+    e.preventDefault();
+    var review = {
+      'id': Math.floor(Math.random() * 100),
+      'rate': rate,
+      'value': value,
+      'message':message
+    };
+    axios.post('http://localhost:5000/Review', review).then(res => alert("Review Added!!"))
+    setMessage('');
+  };
   return (
     <div class="container">
       <div >
@@ -86,12 +117,11 @@ function Review() {
         onChange={(event, newValue) => {
           setValue(newValue);
         }}
-      />
+              />
       </Box>
-
             <label for="subject">Review</label>
             <textarea id="csubject" name="subject" placeholder="Write something.." value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
-            <input type="submit" id="csubmit" onClick={() => newReview()} />
+            <input type="submit" id="csubmit" onClick={newReview} />
           </form>
         </div>
       </div>
