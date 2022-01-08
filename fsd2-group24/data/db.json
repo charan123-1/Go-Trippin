@@ -33,56 +33,221 @@
       "username": "test4",
       "password": "test4@123",
       "id": 4
-    },
-    {
-      "email": "charansaidasari@gmail.com",
-      "username": "charan",
-      "password": "iam",
-      "id": 5
-    },
-    {
-      "email": "charansaidasari@gmail.com",
-      "username": "charan",
-      "password": "iamcharan",
-      "id": 6
-    },
-    {
-      "email": "charansaidasari",
-      "username": "",
-      "password": "",
-      "id": 7
-    },
-    {
-      "email": "charansaidasari@gmail.com",
-      "username": "charan",
-      "password": "fsd123456",
-      "id": 8
-    },
-    {
-      "email": "charansaidasari@gmail.com",
-      "username": "charan",
-      "password": "asdfghjkl",
-      "id": 9
-    },
-    {
-      "email": "charansaidasari@gmail.com",
-      "username": "charan",
-      "password": "iamcharan",
-      "id": 10
-    },
-    {
-      "email": "charansaidasari@gmail.com",
-      "username": "asdsd",
-      "password": "iamcharan",
-      "id": 11
-    },
-    {
-      "email": "charansaidasari@gmail.com",
-      "username": "charan",
-      "password": "iamcharan",
-      "id": 12
     }
   ],
+  "Vizagmaps":[
+    {
+      "id":1,
+      "name":"RK Beach",
+      "lng": "83.323685",
+       "lat": "17.714294",
+       "image":"./images/RKbeach.jpg"
+    },
+      {
+        "id": 2,
+        "name": "VMRDA-Kailasagiri",
+        "lng": "83.34519670139929",
+        "lat": "17.748298645238204",
+        "image": "./images/kailasa giri.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Tenneti Park",
+        "lng": "83.34854542564264",
+        "lat": "17.74734806039722",
+        "image": "./images/TENNETI PARK.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Kursura Submarine",
+        "lng": "83.33003082944325",
+        "lat": "17.717481135950656",
+        "image": "./images/Kursura Submarine.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Indira Gandhi Zoological Park",
+        "lng": "83.34425427531079",
+        "lat": "17.768985164595804",
+        "image": "./images/Indira Gandhi Zoological Park.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Simhachalam",
+        "lng": "83.2505",
+        "lat": "17.7664",
+        "image": "./images/SIMHACHALAM.jpg"
+      }
+  ],
+"Hydmaps": [
+  {
+    "id": 1,
+    "name": "Charminar",
+    "lng": "78.47470741698163",
+    "lat": "17.361696696371606",
+    "image": "./images/Charminar.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Golconda Fort",
+    "lng": "78.40097769978033",
+    "lat": "17.38348303713472",
+    "image": "./images/Golkonda Fort.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Birla Mandir",
+    "lng": "78.46919661439043",
+    "lat": "17.40698410490425",
+    "image": "./images/Birla Mandir.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Tank Bund",
+    "lng": "78.4738",
+    "lat": "17.4239",
+    "image": "./images/TANK BUND.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Chilkur Balaji Temple",
+    "lng": "78.29880667209032",
+    "lat": "17.35874343821867",
+    "image": "./images/Chilkoor Balaji Temple.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Salar Jung Museum",
+    "lng": "78.48030567126071",
+    "lat": "17.37136674284697",
+    "image": "./images/Salar Jung Museum.png"
+  }
+],
+"Tirupathimaps": [
+  {
+    "id": 1,
+    "name": "Tirumala Tirupathi Devasthanam",
+    "lng": "79.34776812108626",
+    "lat": "13.684474045692369",
+    "image": "./images/Tirupati.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Talakona Waterfalls",
+    "lng": "79.21586717294993",
+    "lat": "13.811760853444207",
+    "image": "./images/Talakona Waterfalls.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Silathoranam",
+    "lng": "79.34055841745388",
+    "lat": "13.687600087832763",
+    "image": "./images/SILATHORANAM.png"
+  },
+  {
+    "id": 4,
+    "name": "Kapila Theertam",
+    "lng": "79.33914483438585",
+    "lat": "13.702003589703654",
+    "image": "./images/KapilaTheertam.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Tiruchanur Temple",
+    "lng": "79.44973555395666",
+    "lat": "13.607910099973934",
+    "image": "./images/TIRUCHANUR TEMPLE.jpg"
+  }
+],
+"Arakumaps": [
+  {
+    "id": 1,
+    "name": "Araku Valley",
+    "lng": "82.8792522280164",
+    "lat": "18.32246705318015",
+    "image": "./images/ARAKU-VALLEY.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Galikonda view point",
+    "lng": "82.98332616247572",
+    "lat": "18.2692471520723",
+    "image": "./images/Galikonda view point.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Borra Caves",
+    "lng": "83.03970993015982",
+    "lat": "18.280804936122628",
+    "image": "./images/Borra Caves.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Chaparai",
+    "lng": "81.8798",
+    "lat": "17.8463",
+    "image": "./images/CHAPARAI.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Katiki Falls",
+    "lng": "82.9988",
+    "lat": "18.2792",
+    "image": "./images/katiki waterfalls.jpg"
+  },
+    {
+      "id": 6,
+      "name": "Coffee Museum",
+      "lng": "82.87786874603066",
+      "lat": "18.323772104890352",
+      "image": "./images/COFFEE MUSUEM.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Padmapuram Gardens",
+      "lng": "82.88004856109649",
+      "lat": "18.336367745870383",
+      "image": "./images/padmapuram gardens.jpg"
+    }
+],
+"Wglmaps":[
+{
+  "id": 1,
+  "name": "Thousand Pillar Temple",
+  "lng": "79.57472384375572",
+  "lat": "18.003847621501116",
+  "image": "./images/THOUDSAND PILLAR TEMPLE.jpg"
+},
+{
+  "id": 2,
+  "name": "Ramappa temple",
+  "lng": "79.9433178021949",
+  "lat": "18.259459370530504",
+  "image": "./images/Ramappa temple.jpg"
+},
+{
+  "id": 3,
+  "name": "Laknavaram Lake",
+  "lng": "80.06180762864109",
+  "lat": "18.149572795886055",
+  "image": "./images/Laknavaram Cheruvu.jpg"
+},
+{
+  "id": 4,
+  "name": "Kila Warangal Fort",
+  "lng": "79.61624955236776",
+  "lat": "17.957264898012184",
+  "image": "./images/KILA WARANGAL FORT.jfif"
+},
+{
+  "id": 5,
+  "name": "Bhadrakali Temple",
+  "lng": "79.58279605812966",
+  "lat": "17.99505926083997",
+  "image": "./images/BHADRAKALI TEMPLE.jpg"
+}
+],
   "productItems": [
     {
       "id": 1,
@@ -144,7 +309,7 @@
     },
     {
       "id": 8,
-      "name": "Trunkit",
+      "name": "trunkit",
       "price": 699,
       "image": "./images/trunkit.jpg",
       "rating": 4.5,
@@ -168,7 +333,7 @@
     },
     {
       "id": 11,
-      "name": "Mount Track",
+      "name": "mount Track",
       "price": 949,
       "image": "./images/mount Track.jpg",
       "rating": 4.5,
@@ -294,7 +459,7 @@
     },
     {
       "id": 26,
-      "name": "Fur Jaden",
+      "name": "Fur jaden",
       "price": 699,
       "image": "./images/Fur jaden.jpg",
       "rating": 4,
@@ -336,7 +501,7 @@
   "flashtorchesItems": [
     {
       "id": 31,
-      "name": "Magicwand Pen Torch",
+      "name": "pen torch",
       "price": 399,
       "image": "./images/pen torch.jpg",
       "rating": 4,
@@ -344,7 +509,7 @@
     },
     {
       "id": 32,
-      "name": "Care 4",
+      "name": "care 4",
       "price": 499,
       "image": "./images/care 4.jpg",
       "rating": 4,
@@ -360,7 +525,7 @@
     },
     {
       "id": 34,
-      "name": "Nexqua",
+      "name": "nexqua",
       "price": 399,
       "image": "./images/nexqua.jpg",
       "rating": 4,
@@ -368,7 +533,7 @@
     },
     {
       "id": 35,
-      "name": "Start Durable",
+      "name": "start durable",
       "price": 495,
       "image": "./images/start durable.jpg",
       "rating": 4,
@@ -410,7 +575,7 @@
     },
     {
       "id": 40,
-      "name": "VLCC Skincare Combo",
+      "name": "Skincare Combo",
       "price": 467,
       "image": "./images/Skincare Combo.jpg",
       "rating": 4,
@@ -418,7 +583,7 @@
     },
     {
       "id": 41,
-      "name": "SteriAll Sanitizing Wipes",
+      "name": "Disinfectant wipes",
       "price": 276,
       "image": "./images/Disinfectant wipes.jpg",
       "rating": 4,
@@ -452,7 +617,7 @@
     },
     {
       "id": 45,
-      "name": "Saco Sanitisation Storage kit",
+      "name": "Saco store",
       "price": 314,
       "image": "./images/Saco store.jpg",
       "rating": 3.5,
@@ -460,7 +625,7 @@
     },
     {
       "id": 46,
-      "name": "Mamaearth Mosquito Repellent Gel",
+      "name": "Mosquito Repellent Gel",
       "price": 84,
       "image": "./images/Mamaearth Natural Mosquito Repellent Gel.jpg",
       "rating": 4,
@@ -476,7 +641,7 @@
     },
     {
       "id": 48,
-      "name": "Electral FDC Electral ORS",
+      "name": "ORS",
       "price": 50,
       "image": "./images/ORS.jpg",
       "rating": 4,
@@ -486,7 +651,7 @@
   "ToiletriesItems": [
     {
       "id": 49,
-      "name": "Portable Dental Cleaning set ",
+      "name": "Dental Cleaning set ",
       "price": 175,
       "image": "./images/Dental Cleaning set.jpg",
       "rating": 4,
@@ -494,7 +659,7 @@
     },
     {
       "id": 50,
-      "name": "Presto Tissues",
+      "name": "Tissues",
       "price": 330,
       "image": "./images/Tissues.jpg",
       "rating": 4.5,
@@ -502,15 +667,15 @@
     },
     {
       "id": 51,
-      "name": "Fix My Curls Wash Day Bundle",
-      "price": 582,
-      "image": "./images/FixMyCurls.jpg",
-      "rating": 4,
-      "numReviews": 98
+      "name": "Shampoo",
+      "price": 319,
+      "image": "./images/Shampoo.jpg",
+      "rating": 3.5,
+      "numReviews": 61
     },
     {
       "id": 52,
-      "name": "PHILIPS Grooming kit",
+      "name": "Grooming kit",
       "price": 1749,
       "image": "./images/Grooming kit.jpg",
       "rating": 4,
@@ -518,7 +683,7 @@
     },
     {
       "id": 53,
-      "name": "Palmolive Aroma Body Wash",
+      "name": "Body Wash",
       "price": 349,
       "image": "./images/Body Wash.jpg",
       "rating": 4,
@@ -526,7 +691,7 @@
     },
     {
       "id": 54,
-      "name": "Dettol Squeezy Hand Wash",
+      "name": "Hand Wash",
       "price": 29,
       "image": "./images/Hand Wash.jpg",
       "rating": 3.5,
@@ -544,7 +709,7 @@
   "TrekkingItems": [
     {
       "id": 56,
-      "name": "Quechua Camping Tent MH100",
+      "name": "tents",
       "price": 1999,
       "image": "./images/tents.jpg",
       "rating": 4,
@@ -552,7 +717,7 @@
     },
     {
       "id": 57,
-      "name": "Quechua Hiking Bag 30 Litre NH100",
+      "name": "bags",
       "price": 499,
       "image": "./images/bags.jpg",
       "rating": 4.6,
@@ -560,7 +725,7 @@
     },
     {
       "id": 58,
-      "name": "Kalenji Running Rain Cap Adjustable",
+      "name": "caps",
       "price": 449,
       "image": "./images/caps.jpg",
       "rating": 4.5,
@@ -568,7 +733,7 @@
     },
     {
       "id": 59,
-      "name": "Forclaz Ultra-light reflective trekking ropes",
+      "name": "trekking ropes",
       "price": 399,
       "image": "./images/trekking ropes.jpg",
       "rating": 4.1,
@@ -721,6 +886,7 @@
       "numReviews": 35
     }
   ],
+
   "upload": [
     {
       "id": 1,
@@ -763,10 +929,6 @@
     {
       "id": 5965,
       "image": "./images/C:\\fakepath\\Visakhapatnam.jpg"
-    },
-    {
-      "id": 1983,
-      "image": "./images/C:\\fakepath\\spider-man.jpg"
     }
   ],
   "cart": [
@@ -843,28 +1005,12 @@
       "productId": 35
     },
     {
-      "id": 23,
-      "quantity": 5,
+      "productId": 61,
+      "quantity": 1,
       "name": "Motorcycle Ski Skydiving Goggles with Blue Mirror",
       "price": 6411,
       "image": "./images/goggles.jpg",
-      "productId": 61
-    },
-    {
-      "id": 24,
-      "quantity": 4,
-      "name": "trunkit",
-      "price": 699,
-      "image": "./images/trunkit.jpg",
-      "productId": 8
-    },
-    {
-      "productId": 69,
-      "quantity": 1,
-      "name": "Mountain Bike Helmet ST 50",
-      "price": 999,
-      "image": "./images/Mountain Bike Helmet ST 50.jpg",
-      "id": 25
+      "id": 23
     }
   ],
   "accommodation": [
@@ -932,84 +1078,6 @@
       "rate": "4",
       "value": 3,
       "message": "New Review Added!!"
-    },
-    {
-      "id": 67,
-      "rate": "5",
-      "value": 5,
-      "message": "useful"
-    }
-  ],
-  "food": [
-    {
-      "id": 1,
-      "name": "Kamat Restaurant",
-      "description": "Beach Road, Lawsons Bay Colony, Visakhapatnam",
-      "image": "./images/kamat.jpg",
-      "rating": 5
-    },
-    {
-      "id": 2,
-      "name": "R&G - Hotel Green Park",
-      "description": "The Green Park Hotel, Waltair Main Road, Visakhapatnam",
-      "image": "./images/R&G.jpg",
-      "rating": 4
-    },
-    {
-      "id": 3,
-      "name": "Deccan Pavilion",
-      "description": "Begumpet, Hyderabad",
-      "image": "./images/deccanpavilion.jpg",
-      "rating": 4
-    },
-    {
-      "id": 4,
-      "name": "Bawarchi",
-      "description": "RTC X Road, Hyderabad",
-      "image": "./images/Bawarchi.jpg",
-      "rating": 5
-    },
-    {
-      "id": 5,
-      "name": "Nine Flavours",
-      "description": "Hotel Vihas - Renest Tirupati, Tirupati",
-      "image": "./images/9flavours.jpg",
-      "rating": 3
-    },
-    {
-      "id": 6,
-      "name": "Zodiac Multicuisine Restaurant",
-      "description": "Tiruchanoor Road, Shilparamam, Tirupati",
-      "image": "./images/zodiac.jpg",
-      "rating": 4
-    },
-    {
-      "id": 7,
-      "name": "Star Annapurna Restaurant",
-      "description": "Main Road, Araku",
-      "image": "./images/starannapurna.jpg",
-      "rating": 5
-    },
-    {
-      "id": 8,
-      "name": "Royal Darbar Restaurant",
-      "description": "Main Road, Araku",
-      "image": "./images/royal_darbar.jpg",
-      "rating": 4
-    },
-    {
-      "id": 9,
-      "name": "President Dhaba",
-      "description": "Naim Nagar, Hanamkonda, Warangal",
-      "image": "./images/president_dhaba.jpeg",
-      "rating": 4
-    },
-    {
-      "id": 10,
-      "name": "Paprikas",
-      "description": "Nakkalagutta, Warangal",
-      "image": "./images/paprikas.jpeg",
-      "rating": 4
     }
   ]
 }
