@@ -8,7 +8,6 @@ const FormSignup = ({ submitForm }) => {
     submitForm,
     validate
   );
-
   return (
     <div className='form-content-right'>
       <form onSubmit={handleSubmit} className='form' noValidate>
@@ -28,7 +27,7 @@ const FormSignup = ({ submitForm }) => {
           />
           {errors.email && <p>{errors.email}</p>}
         </div>
-        <div className='form-inputs'>
+        {/* <div className='form-inputs'>
           <label className='form-label'>Your Name</label>
           <input
             className='form-input'
@@ -39,7 +38,7 @@ const FormSignup = ({ submitForm }) => {
             onChange={handleChange}
           />
           {errors.username && <p>{errors.username}</p>}
-        </div>
+        </div> */}
         <div className='form-inputs'>
           <label className='form-label'>Username</label>
           <input
