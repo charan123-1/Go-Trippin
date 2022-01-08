@@ -17,6 +17,7 @@ function Toiletries() {
 
     return (
         <div className='toiletrie'>
+        <h1 className='backpack-h1'>Toiletries</h1>
             <div className="toiletrie__wrapper">
                 {toiletrie.map((item) => (
                     <ProductCard key={item.id} product={item} />

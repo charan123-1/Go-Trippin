@@ -62,7 +62,7 @@ function Accommodation() {
         );
     }, []);
     return (
-        <div className='acc'>
+        <div className='accc'>
             <div className='form-group'>
                 <input className="form-control" id="search_input" ref={autoCompleteRef}
                     onChange={event => setQuery(event.target.value)} placeholder="Where to?" value={query}/>

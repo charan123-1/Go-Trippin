@@ -90,7 +90,7 @@ function App() {
             <Route path="/adventure" element={<Adventure />} />
             <Route path="/places" element={<MapContainer />} />
             <Route path="/accommodation" element={<Accommodation />} />
-            <Route path="/food" element={<Food />} />
+            <Route path="/restaurants" element={<Food />} />
           </Routes>
           <Footer />
         </div>

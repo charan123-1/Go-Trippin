@@ -17,6 +17,7 @@ function Surfings() {
 
     return (
         <div className='surfing'>
+        <h1 className='backpack-h1'>Surfing</h1>
             <div className="surfing__wrapper">
                 {surfing.map((item) => (
                     <ProductCard key={item.id} product={item} />

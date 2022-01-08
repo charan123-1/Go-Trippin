@@ -4,8 +4,7 @@ import "./Cart.css";
 import axios from "axios";
 export const Cart = (props) => {
     const [carts, setCarts] = useState([]);
-    const [payload, setPayloader] = useState({});
-    const [hasError, setError] = useState(false);
+
     useEffect(() => {
         fetch('http://localhost:5000/cart').then(res => {
             return res.json();
@@ -175,7 +174,7 @@ export const Cart = (props) => {
                         {/* <p>Taxes and shipping calculated at checkout</p>
                         <button>Check out</button> */}
                         <div className="continue-shopping">
-                            <Link to="/">
+                            <Link to="/shop">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="20"

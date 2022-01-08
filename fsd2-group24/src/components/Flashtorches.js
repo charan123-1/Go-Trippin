@@ -17,6 +17,7 @@ function Flashtorches() {
 
     return (
         <div className='flashtorch'>
+        <h1 className='backpack-h1'>Flash Torches</h1>
             <div className="flashtorch__wrapper">
                 {flashtorch.map((item) => (
                     <ProductCard key={item.id} product={item} />

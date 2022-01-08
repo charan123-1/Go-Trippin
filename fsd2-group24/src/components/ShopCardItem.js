@@ -9,7 +9,7 @@ function ShopCardItem(props) {
           <figure className='shop_cards__item__pic-wrap' data-category={props.label}>
             <img
               className='shop_cards__item__img'
-              alt='Travel Image'
+              alt='Travel'
               src={props.src}
             />
           </figure>

@@ -1,16 +1,14 @@
 import "./FoodCard.css";
-import formatCurrency from "format-currency";
-import {useState} from 'react';
 
 
 import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
-import Typography from '@mui/material/Typography';
+
 
 
 const FoodCard = ({ Food }) => {
 
-    const [value, setValue] = useState(1);
+
     return (
 
     <div className="cont">

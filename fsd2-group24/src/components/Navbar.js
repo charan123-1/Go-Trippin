@@ -1,14 +1,13 @@
-
 import React, { useState,useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Dropdown from './Dropdown';
 import Dropdown2 from './Dropdown2';
-import { BiSearchAlt, BiShoppingBag } from 'react-icons/bi';
-import { BsFillBagCheckFill, BsFillCartFill } from 'react-icons/bs';
+import { BiSearchAlt } from 'react-icons/bi';
+import { BsFillBagCheckFill } from 'react-icons/bs';
 import { GiTireIronCross, GiHamburgerMenu } from 'react-icons/gi';
-import { AiFillInfoCircle, AiFillHome, AiOutlineShoppingCart } from 'react-icons/ai';
+import { AiFillInfoCircle, AiFillHome} from 'react-icons/ai';
 import { FaUserEdit } from 'react-icons/fa';
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -145,10 +144,10 @@ function Navbar() {
           </li>
           </Link>
           <li className='nav-item'>
-            <Link className='cart-img' to='/cart'> <img src={'images/cart-icon-28356-Windows.ico'} className="logo-img" /></Link>
+            <Link className='cart-img' to='/cart'> <img src={'images/cart-icon-28356-Windows.ico' } alt="cart" className="logo-img" /></Link>
           </li>
           <li className='nav-item'>
-            <Link className='cart-img' to='/todo'> <img src={'images/9068936.png'} className="logo-img2" /></Link>
+            <Link className='cart-img' to='/todo'> <img src={'images/9068936.png'} alt="cart" className="logo-img2" /></Link>
           </li>
         </ul>
       </nav>

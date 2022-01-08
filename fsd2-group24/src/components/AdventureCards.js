@@ -34,7 +34,7 @@ function AdventureCards() {
                         />
                         <AdventureCardItem
                             src='https://www.tripsavvy.com/thmb/NBpuFKFoPCHX9Ktu_C3YDPAPFGQ=/2880x2160/smart/filters:no_upscale()/GettyImages-597572085-584819855f9b5851e593fd0b-5c336fd646e0fb0001d39014.jpg'
-                            text='Scuba Diving'
+                            text='Scuba diving'
                             path='/scubadiving'
                         />
                         <AdventureCardItem

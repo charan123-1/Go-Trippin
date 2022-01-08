@@ -17,6 +17,7 @@ function Medications() {
 
     return (
         <div className='medication'>
+        <h1 className='backpack-h1'>Medication</h1>
             <div className="medication__wrapper">
                 {medication.map((item) => (
                     <ProductCard key={item.id} product={item} />

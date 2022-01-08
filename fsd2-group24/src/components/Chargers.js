@@ -17,6 +17,7 @@ function Chargers() {
 
     return (
         <div className='charger'>
+        <h1 className='backpack-h1'>Portable Chargers</h1>
             <div className="charger__wrapper">
                 {charger.map((item) => (
                     <ProductCard key={item.id} product={item} />

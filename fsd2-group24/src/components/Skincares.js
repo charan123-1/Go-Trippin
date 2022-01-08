@@ -17,6 +17,7 @@ function Skincares() {
 
     return (
         <div className='skincare'>
+        <h1 className='backpack-h1'>Skincare</h1>
             <div className="skincare__wrapper">
                 {skincare.map((item) => (
                     <ProductCard key={item.id} product={item} />

@@ -17,6 +17,7 @@ function Wallets() {
 
     return (
         <div className='wallet'>
+        <h1 className='backpack-h1'>Wallets</h1>
             <div className="wallet__wrapper">
                 {wallet.map((item) => (
                     <ProductCard key={item.id} product={item} />

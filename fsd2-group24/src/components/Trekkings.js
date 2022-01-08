@@ -17,6 +17,7 @@ function Trekkings() {
 
     return (
         <div className='trekking'>
+        <h1 className='backpack-h1'>Trekking</h1>
             <div className="trekking__wrapper">
                 {trekking.map((item) => (
                     <ProductCard key={item.id} product={item} />

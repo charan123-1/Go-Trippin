@@ -62,7 +62,7 @@ export class MapContainer extends Component {
           marker={this.state.activeMarker}
           visible={this.state.showingInfoWindow}>
             <div style={map_img} >
-              <img src="images/RKbeach.jpg" width="300px" height="300px;"/>
+              <img src="images/RKbeach.jpg" alt="Rk beach" width="300px" height="300px;"/>
               <h3>{this.state.selectedPlace.name}</h3>
             </div>
         </InfoWindow>
@@ -81,7 +81,7 @@ export class MapContainer extends Component {
           marker={this.state.activeMarker}
           visible={this.state.showingInfoWindow}>
           <div style={map_img} >
-            <img src="images/RKbeach.jpg" width="300px" height="300px;" />
+            <img src="images/RKbeach.jpg"  alt="rk beach" width="300px" height="300px;" />
             <h3>{this.state.selectedPlace.name}</h3>
           </div>
         </InfoWindow>
@@ -100,7 +100,7 @@ export class MapContainer extends Component {
           marker={this.state.activeMarker}
           visible={this.state.showingInfoWindow}>
           <div style={map_img} >
-            <img src="images/RKbeach.jpg" width="300px" height="300px;" />
+            <img src="images/RKbeach.jpg"  alt="tenneti park" width="300px" height="300px;" />
             <h3>{this.state.selectedPlace.name}</h3>
           </div>
         </InfoWindow>
@@ -118,7 +118,7 @@ export class MapContainer extends Component {
           marker={this.state.activeMarker}
           visible={this.state.showingInfoWindow}>
           <div style={map_img} >
-            <img src="images/RKbeach.jpg" width="300px" height="300px;" />
+            <img src="images/RKbeach.jpg" alt="kursura" width="300px" height="300px;" />
             <h3>{this.state.selectedPlace.name}</h3>
           </div>
         </InfoWindow>
@@ -136,7 +136,7 @@ export class MapContainer extends Component {
           marker={this.state.activeMarker}
           visible={this.state.showingInfoWindow}>
           <div style={map_img} >
-            <img src="images/RKbeach.jpg" width="300px" height="300px;" />
+            <img src="images/RKbeach.jpg" alt="zoo" width="300px" height="300px;" />
             <h3>{this.state.selectedPlace.name}</h3>
           </div>
         </InfoWindow>
@@ -154,7 +154,7 @@ export class MapContainer extends Component {
           marker={this.state.activeMarker}
           visible={this.state.showingInfoWindow}>
           <div style={map_img} >
-            <img src="images/RKbeach.jpg" width="300px" height="300px;" />
+            <img src="images/RKbeach.jpg"  alt="temple" width="300px" height="300px;" />
             <h3>{this.state.selectedPlace.name}</h3>
           </div>
         </InfoWindow>

@@ -17,6 +17,7 @@ function Skydivings() {
 
     return (
         <div className='skydiving'>
+        <h1 className='backpack-h1'>Skydiving</h1>
             <div className="skydiving__wrapper">
                 {skydiving.map((item) => (
                     <ProductCard key={item.id} product={item} />

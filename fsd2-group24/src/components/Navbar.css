@@ -3,7 +3,7 @@
   background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%) transparent;
   height: 80px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   font-size: 1.2rem;
   position: sticky;
@@ -44,7 +44,7 @@
   list-style: none;
   text-align: center;
   width: 70vw;
-  justify-content: end;
+  justify-content: flex-end;
   margin-right: 1.5rem;
 }
 

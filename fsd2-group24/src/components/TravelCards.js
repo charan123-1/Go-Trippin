@@ -21,7 +21,7 @@ function TravelCards() {
                         />
                         <TravelCardItem
                             src='https://www.findingtheuniverse.com/wp-content/uploads/2019/04/Travel-shoes_by_Laurence-Norah.jpg'
-                            text='Shoes'
+                            text='Footwear'
                             path='/item'
                         />
                     </ul>

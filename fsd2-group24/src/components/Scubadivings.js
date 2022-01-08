@@ -17,6 +17,7 @@ function Scubadivings() {
 
     return (
         <div className='scubadiving'>
+        <h1 className='backpack-h1'>Scuba diving</h1>
             <div className="scubadiving__wrapper">
                 {scubadiving.map((item) => (
                     <ProductCard key={item.id} product={item} />

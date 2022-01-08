@@ -2,8 +2,10 @@ import React from 'react';
 import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css';
-import Navbar from './Navbar'
 import {BsSearch} from 'react-icons/bs'
+
+
+
 function HeroSection() {
   return (
     <div className='hero-container'>
@@ -23,14 +25,7 @@ function HeroSection() {
         >
           GET STARTED
         </Button>
-        <Button
-          className='btns'
-          buttonStyle='btn--primary'
-          buttonSize='btn--large'
-          onClick={console.log('hey')}
-        >
-          WATCH TRAILER <i className='far fa-play-circle' />
-        </Button>
+
       </div>
     </div>
   );

@@ -33,6 +33,54 @@
       "username": "test4",
       "password": "test4@123",
       "id": 4
+    },
+    {
+      "email": "charansaidasari@gmail.com",
+      "username": "charan",
+      "password": "iam",
+      "id": 5
+    },
+    {
+      "email": "charansaidasari@gmail.com",
+      "username": "charan",
+      "password": "iamcharan",
+      "id": 6
+    },
+    {
+      "email": "charansaidasari",
+      "username": "",
+      "password": "",
+      "id": 7
+    },
+    {
+      "email": "charansaidasari@gmail.com",
+      "username": "charan",
+      "password": "fsd123456",
+      "id": 8
+    },
+    {
+      "email": "charansaidasari@gmail.com",
+      "username": "charan",
+      "password": "asdfghjkl",
+      "id": 9
+    },
+    {
+      "email": "charansaidasari@gmail.com",
+      "username": "charan",
+      "password": "iamcharan",
+      "id": 10
+    },
+    {
+      "email": "charansaidasari@gmail.com",
+      "username": "asdsd",
+      "password": "iamcharan",
+      "id": 11
+    },
+    {
+      "email": "charansaidasari@gmail.com",
+      "username": "charan",
+      "password": "iamcharan",
+      "id": 12
     }
   ],
   "productItems": [
@@ -96,7 +144,7 @@
     },
     {
       "id": 8,
-      "name": "trunkit",
+      "name": "Trunkit",
       "price": 699,
       "image": "./images/trunkit.jpg",
       "rating": 4.5,
@@ -120,7 +168,7 @@
     },
     {
       "id": 11,
-      "name": "mount Track",
+      "name": "Mount Track",
       "price": 949,
       "image": "./images/mount Track.jpg",
       "rating": 4.5,
@@ -246,7 +294,7 @@
     },
     {
       "id": 26,
-      "name": "Fur jaden",
+      "name": "Fur Jaden",
       "price": 699,
       "image": "./images/Fur jaden.jpg",
       "rating": 4,
@@ -288,7 +336,7 @@
   "flashtorchesItems": [
     {
       "id": 31,
-      "name": "pen torch",
+      "name": "Magicwand Pen Torch",
       "price": 399,
       "image": "./images/pen torch.jpg",
       "rating": 4,
@@ -296,7 +344,7 @@
     },
     {
       "id": 32,
-      "name": "care 4",
+      "name": "Care 4",
       "price": 499,
       "image": "./images/care 4.jpg",
       "rating": 4,
@@ -312,7 +360,7 @@
     },
     {
       "id": 34,
-      "name": "nexqua",
+      "name": "Nexqua",
       "price": 399,
       "image": "./images/nexqua.jpg",
       "rating": 4,
@@ -320,7 +368,7 @@
     },
     {
       "id": 35,
-      "name": "start durable",
+      "name": "Start Durable",
       "price": 495,
       "image": "./images/start durable.jpg",
       "rating": 4,
@@ -362,7 +410,7 @@
     },
     {
       "id": 40,
-      "name": "Skincare Combo",
+      "name": "VLCC Skincare Combo",
       "price": 467,
       "image": "./images/Skincare Combo.jpg",
       "rating": 4,
@@ -370,7 +418,7 @@
     },
     {
       "id": 41,
-      "name": "Disinfectant wipes",
+      "name": "SteriAll Sanitizing Wipes",
       "price": 276,
       "image": "./images/Disinfectant wipes.jpg",
       "rating": 4,
@@ -404,7 +452,7 @@
     },
     {
       "id": 45,
-      "name": "Saco store",
+      "name": "Saco Sanitisation Storage kit",
       "price": 314,
       "image": "./images/Saco store.jpg",
       "rating": 3.5,
@@ -412,7 +460,7 @@
     },
     {
       "id": 46,
-      "name": "Mosquito Repellent Gel",
+      "name": "Mamaearth Mosquito Repellent Gel",
       "price": 84,
       "image": "./images/Mamaearth Natural Mosquito Repellent Gel.jpg",
       "rating": 4,
@@ -428,7 +476,7 @@
     },
     {
       "id": 48,
-      "name": "ORS",
+      "name": "Electral FDC Electral ORS",
       "price": 50,
       "image": "./images/ORS.jpg",
       "rating": 4,
@@ -438,7 +486,7 @@
   "ToiletriesItems": [
     {
       "id": 49,
-      "name": "Dental Cleaning set ",
+      "name": "Portable Dental Cleaning set ",
       "price": 175,
       "image": "./images/Dental Cleaning set.jpg",
       "rating": 4,
@@ -446,7 +494,7 @@
     },
     {
       "id": 50,
-      "name": "Tissues",
+      "name": "Presto Tissues",
       "price": 330,
       "image": "./images/Tissues.jpg",
       "rating": 4.5,
@@ -454,15 +502,15 @@
     },
     {
       "id": 51,
-      "name": "Shampoo",
-      "price": 319,
-      "image": "./images/Shampoo.jpg",
-      "rating": 3.5,
-      "numReviews": 61
+      "name": "Fix My Curls Wash Day Bundle",
+      "price": 582,
+      "image": "./images/FixMyCurls.jpg",
+      "rating": 4,
+      "numReviews": 98
     },
     {
       "id": 52,
-      "name": "Grooming kit",
+      "name": "PHILIPS Grooming kit",
       "price": 1749,
       "image": "./images/Grooming kit.jpg",
       "rating": 4,
@@ -470,7 +518,7 @@
     },
     {
       "id": 53,
-      "name": "Body Wash",
+      "name": "Palmolive Aroma Body Wash",
       "price": 349,
       "image": "./images/Body Wash.jpg",
       "rating": 4,
@@ -478,7 +526,7 @@
     },
     {
       "id": 54,
-      "name": "Hand Wash",
+      "name": "Dettol Squeezy Hand Wash",
       "price": 29,
       "image": "./images/Hand Wash.jpg",
       "rating": 3.5,
@@ -496,7 +544,7 @@
   "TrekkingItems": [
     {
       "id": 56,
-      "name": "tents",
+      "name": "Quechua Camping Tent MH100",
       "price": 1999,
       "image": "./images/tents.jpg",
       "rating": 4,
@@ -504,7 +552,7 @@
     },
     {
       "id": 57,
-      "name": "bags",
+      "name": "Quechua Hiking Bag 30 Litre NH100",
       "price": 499,
       "image": "./images/bags.jpg",
       "rating": 4.6,
@@ -512,7 +560,7 @@
     },
     {
       "id": 58,
-      "name": "caps",
+      "name": "Kalenji Running Rain Cap Adjustable",
       "price": 449,
       "image": "./images/caps.jpg",
       "rating": 4.5,
@@ -520,7 +568,7 @@
     },
     {
       "id": 59,
-      "name": "trekking ropes",
+      "name": "Forclaz Ultra-light reflective trekking ropes",
       "price": 399,
       "image": "./images/trekking ropes.jpg",
       "rating": 4.1,
@@ -673,7 +721,6 @@
       "numReviews": 35
     }
   ],
-  
   "upload": [
     {
       "id": 1,
@@ -716,6 +763,10 @@
     {
       "id": 5965,
       "image": "./images/C:\\fakepath\\Visakhapatnam.jpg"
+    },
+    {
+      "id": 1983,
+      "image": "./images/C:\\fakepath\\spider-man.jpg"
     }
   ],
   "cart": [
@@ -792,12 +843,28 @@
       "productId": 35
     },
     {
-      "productId": 61,
-      "quantity": 1,
+      "id": 23,
+      "quantity": 5,
       "name": "Motorcycle Ski Skydiving Goggles with Blue Mirror",
       "price": 6411,
       "image": "./images/goggles.jpg",
-      "id": 23
+      "productId": 61
+    },
+    {
+      "id": 24,
+      "quantity": 4,
+      "name": "trunkit",
+      "price": 699,
+      "image": "./images/trunkit.jpg",
+      "productId": 8
+    },
+    {
+      "productId": 69,
+      "quantity": 1,
+      "name": "Mountain Bike Helmet ST 50",
+      "price": 999,
+      "image": "./images/Mountain Bike Helmet ST 50.jpg",
+      "id": 25
     }
   ],
   "accommodation": [
@@ -865,69 +932,82 @@
       "rate": "4",
       "value": 3,
       "message": "New Review Added!!"
+    },
+    {
+      "id": 67,
+      "rate": "5",
+      "value": 5,
+      "message": "useful"
     }
   ],
   "food": [
     {
       "id": 1,
-      "name": "Kamat",
-      "description": "Visakhapatnam",
+      "name": "Kamat Restaurant",
+      "description": "Beach Road, Lawsons Bay Colony, Visakhapatnam",
       "image": "./images/kamat.jpg",
-      "rating": 4
+      "rating": 5
     },
     {
       "id": 2,
-      "name": "Deccan Pavilion",
-      "description": "Hyderabad",
-      "image": "./images/deccanpavilion.jpg",
+      "name": "R&G - Hotel Green Park",
+      "description": "The Green Park Hotel, Waltair Main Road, Visakhapatnam",
+      "image": "./images/R&G.jpg",
       "rating": 4
     },
     {
       "id": 3,
-      "name": "Bawarchi",
-      "description": "Hyderabad",
-      "image": "./images/Bawarchi.jpg",
+      "name": "Deccan Pavilion",
+      "description": "Begumpet, Hyderabad",
+      "image": "./images/deccanpavilion.jpg",
       "rating": 4
     },
     {
       "id": 4,
-      "name": "Nine Flavours",
-      "description": "Tirupati",
-      "image": "./images/9flavours.jpg",
-      "rating": 4
+      "name": "Bawarchi",
+      "description": "RTC X Road, Hyderabad",
+      "image": "./images/Bawarchi.jpg",
+      "rating": 5
     },
     {
       "id": 5,
-      "name": "Zodiac",
-      "description": "Tirupati",
+      "name": "Nine Flavours",
+      "description": "Hotel Vihas - Renest Tirupati, Tirupati",
+      "image": "./images/9flavours.jpg",
+      "rating": 3
+    },
+    {
+      "id": 6,
+      "name": "Zodiac Multicuisine Restaurant",
+      "description": "Tiruchanoor Road, Shilparamam, Tirupati",
       "image": "./images/zodiac.jpg",
       "rating": 4
     },
     {
-      "id": 6,
-      "name": "Star Annapurna",
-      "description": "Araku",
-      "image": "./images/starannapurna.jpg",
-      "rating": 4
-    },
-    {
       "id": 7,
-      "name": "Hungry Birds",
-      "description": "Warangal",
-      "image": "./images/hungrybirds.png",
-      "rating": 4
+      "name": "Star Annapurna Restaurant",
+      "description": "Main Road, Araku",
+      "image": "./images/starannapurna.jpg",
+      "rating": 5
     },
     {
       "id": 8,
-      "name": "Siddi Restaurant",
-      "description": "Araku",
-      "image": "./images/siddi.jpg",
+      "name": "Royal Darbar Restaurant",
+      "description": "Main Road, Araku",
+      "image": "./images/royal_darbar.jpg",
       "rating": 4
     },
     {
       "id": 9,
+      "name": "President Dhaba",
+      "description": "Naim Nagar, Hanamkonda, Warangal",
+      "image": "./images/president_dhaba.jpeg",
+      "rating": 4
+    },
+    {
+      "id": 10,
       "name": "Paprikas",
-      "description": "Warangal",
+      "description": "Nakkalagutta, Warangal",
       "image": "./images/paprikas.jpeg",
       "rating": 4
     }

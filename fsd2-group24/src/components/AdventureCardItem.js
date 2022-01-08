@@ -9,7 +9,7 @@ function AdventureCardItem(props) {
                     <figure className='Adventure_cards__item__pic-wrap' data-category={props.label}>
                         <img
                             className='Adventure_cards__item__img'
-                            alt='Adventure Image'
+                            alt='Adventure'
                             src={props.src}
                         />
                     </figure>

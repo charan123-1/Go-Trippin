@@ -17,6 +17,7 @@ function Cyclings() {
 
     return (
         <div className='cycling'>
+        <h1 className='backpack-h1'>Cycling</h1>
             <div className="cycling__wrapper">
                 {cycling.map((item) => (
                     <ProductCard key={item.id} product={item} />
