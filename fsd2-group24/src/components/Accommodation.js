@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import "./Accommodation.css"
+import  AccommodationCard  from './AccommodationCard';
 
 let autoComplete;
 
@@ -40,6 +41,17 @@ async function handlePlaceSelect(updateQuery) {
     console.log(addressObject);
 }
 function Accommodation() {
+    const[items, setItems] =useState([])
+  // read json data
+  useEffect(() => {
+    fetch('http://localhost:5000/accommodation').then(res => {
+      return res.json();
+    })
+      .then(data => {
+        console.log(data);
+        setItems(data);
+      })
+  }, [])
     const [query, setQuery] = useState("");
     const autoCompleteRef = useRef(null);
     const APIKey ="AIzaSyD1hrUHm5CzRtbuAkoBvCgAGjhEv - Xt4Vc"
@@ -55,6 +67,12 @@ function Accommodation() {
                 <input className="form-control" id="search_input" ref={autoCompleteRef}
                     onChange={event => setQuery(event.target.value)} placeholder="Where to?" value={query}/>
             </div>
+            <div className="accommodation__wrapper">
+        {items.map((item) => (
+          <AccommodationCard key={item.id} Accommodation={item} />
+        ))}
+        </div>
+
         
         </div>
     )

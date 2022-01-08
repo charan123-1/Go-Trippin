@@ -1,7 +1,8 @@
 .acc{
     /* background : url('tent.jpg') no-repeat ; */
     background-size : 100% 110vh;
-    height : 90vh;
+    height : 270vh;
+
 }
 .form-group{
     padding-top: 20px;
