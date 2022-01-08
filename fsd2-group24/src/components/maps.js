@@ -1,114 +1,70 @@
 import React, { Component } from 'react';
-import { Map, Marker, GoogleApiWrapper} from 'google-maps-react';
+import { Map, Marker, GoogleApiWrapper,InfoWindow} from 'google-maps-react';
 
 const mapStyles = {
   width: '100%',
   height: '100%'
 };
 
-export class MapContainer extends Component {
+const map_img ={
+    width : '400px',
+    height : '350px',
+    textAlign: 'center',
 
+}
+
+export class MapContainer extends Component {
+    state = {
+    showingInfoWindow: false,
+    activeMarker: {},
+    selectedPlace: {},
+  };
+   onMarkerClick = (props, marker, e) =>
+    this.setState({
+      selectedPlace: props,
+      activeMarker: marker,
+      showingInfoWindow: true
+    });
+
+  onMapClicked = (props) => {
+    if (this.state.showingInfoWindow) {
+      this.setState({
+        showingInfoWindow: false,
+        activeMarker: null
+      })
+    }
+  };
 
     render() {
 
     return (
-      <Map
-        google={this.props.google}
-        zoom={12}
-        style={mapStyles}
-        initialCenter={{
-            lng: 83.323685,
-            lat: 17.714294
-          }}>
-        <Marker key="marker_1"
-          position={{
-
-            lng: 83.323685,
-            lat: 17.714294
+      <Map google={this.props.google}
+          onClick={this.onMapClicked}
+          initialCenter={{
+            lng: 78.47470741698163,
+            lat: 17.361696696371606
 
           }}
-          label={{
-            text: "RK BEACH",
-            fontFamily: "Arial",
-            fontSize: "20px",
-            color: "black"
-          }}
-        />
-        <Marker key="marker_1"
-          position={{
+          >
 
-            lng: 83.34519670139929 ,
-            lat: 17.748298645238204
+        <Marker onMouseover={this.onMarkerClick}
+        position={{
+
+            lng: 78.47470741698163,
+            lat: 17.361696696371606
 
           }}
-          label={{
-            text: "KAILASH GIRI",
-            fontFamily: "Arial",
-            fontSize: "20px",
-            color: "black"
-          }}
-        />
-        <Marker key="marker_1"
-          position={{
+                name={'Hyderabad'}
+                />
 
-            lng: 83.34854542564264 ,
-            lat: 17.74734806039722
-
-          }}
-          label={{
-            text: "TENNETI PARK",
-            fontFamily: "Arial",
-            fontSize: "20px",
-            color: "black"
-          }}
-        />
-        <Marker key="marker_1"
-          position={{
-
-            lng: 83.33003082944325 ,
-            lat: 17.717481135950656
-
-          }}
-          label={{
-            text: "Kursura Submarine",
-            fontFamily: "Arial",
-            fontSize: "20px",
-            color: "black"
-          }}
-        />
-        <Marker key="marker_1"
-          position={{
-
-            lng: 83.34425427531079 ,
-            lat: 17.768985164595804
-
-          }}
-          label={{
-            text: "Indira Gandhi Zoological Park",
-            fontFamily: "Arial",
-            fontSize: "20px",
-            color: "black"
-          }}
-        />
-        <Marker key="marker_1"
-          position={{
-
-            lng: 83.29508559851892 ,
-            lat: 17.698508099513553
-
-          }}
-          label={{
-            text: " Sri Kanaka Maha Lakshmi Temple",
-            fontFamily: "Arial",
-            fontSize: "20px",
-            color: "black"
-          }}
-        />
-        
-      
-        
-      
-        
+        <InfoWindow
+          marker={this.state.activeMarker}
+          visible={this.state.showingInfoWindow}>
+            <div style={map_img} >
+              <img src="images/ABYS.jpg" width="300px" height="300px;"/>
+              <h3>{this.state.selectedPlace.name}</h3>
+            </div>
+        </InfoWindow>
       </Map>
     );
   }
