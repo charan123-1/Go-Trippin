@@ -7,12 +7,6 @@
     {
       "id": 5331,
       "text": "new bucket list"
-    },
-    {
-      "id": 6738,
-      "image": {
-        "0": {}
-      }
     }
   ],
   "signupUsers": [
@@ -679,19 +673,11 @@
       "numReviews": 35
     }
   ],
+  
   "upload": [
     {
       "id": 1,
       "image": "./images/Hyderabad.jpg"
-    },
-    {
-      "id": 2
-    },
-    {
-      "id": 3
-    },
-    {
-      "id": 4
     },
     {
       "id": 87,
@@ -748,14 +734,6 @@
       "price": 3000,
       "image": "./images/puma.jpg",
       "productId": 1
-    },
-    {
-      "productId": 20,
-      "quantity": 1,
-      "name": "Mi Power Bank 3i 20000mAh",
-      "price": 1699,
-      "image": "./images/Mi Power Bank 3i 20000mAh.jpg",
-      "id": 11
     },
     {
       "productId": 25,
