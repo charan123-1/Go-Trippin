@@ -650,7 +650,7 @@
   "cart": [
     {
       "id": 5,
-      "quantity": 2,
+      "quantity": 1,
       "name": "Adidas",
       "price": 2099,
       "image": "./images/adidas.jpg",
@@ -681,12 +681,12 @@
       "id": 12
     },
     {
-      "productId": 37,
-      "quantity": 1,
+      "id": 14,
+      "quantity": 3,
       "name": "VLCC De Tan Sunscreen Gel Creme",
       "price": 279,
       "image": "./images/VLCC De Tan Sunscreen Gel Creme.jpg",
-      "id": 14
+      "productId": 37
     },
     {
       "productId": 43,
@@ -729,12 +729,66 @@
       "id": 21
     },
     {
-      "productId": 35,
+      "id": 22,
       "quantity": 1,
       "name": "start durable",
       "price": 495,
       "image": "./images/start durable.jpg",
-      "id": 22
+      "productId": 35
+    },
+    {
+      "productId": 61,
+      "quantity": 1,
+      "name": "Motorcycle Ski Skydiving Goggles with Blue Mirror",
+      "price": 6411,
+      "image": "./images/goggles.jpg",
+      "id": 23
     }
-  ]
+  ],
+  "accommodation": [
+    {
+      "id": 1,
+      "name": "ITC Kohenur",
+      "description" : "Gachibowli, Hyderabad",
+      "image": "./images/itc_kohenur.jpg",
+      "rating": 4
+    },
+    {
+      "id": 2,
+      "name": "Novotel Visakhapatnam Varun Beach",
+      "description" : "Beach Road, Visakhapatnam",
+      "image": "./images/novotel.jpg",
+      "rating": 5
+    },
+
+      {
+        "id": 3,
+        "name": "Four Points by Sheraton Visakhapatnam",
+        "description" : "Uplands, Waltair Main Road, Visakhapatnam",
+        "image": "./images/fourpoints.jpg",
+        "rating": 4
+      },
+    {
+      "id": 4,
+      "name": "Fortune Select Grand Ridge, Tirupati",
+      "description" : "Shilparamam, Tiruchanoor Road, Tirupati",
+      "image": "./images/fortunegrand.jpg",
+      "rating": 3
+    },
+    {
+      "id": 5,
+      "name": "Casa Holiday Resorts",
+      "description" : "Ravilaguda Village, Araku",
+      "image": "./images/casa.jpg",
+      "rating": 4
+    },
+    {
+      "id": 6,
+      "name": "City Grand",
+      "description" : "SVP Road, Rangampet Road, Warangal",
+      "image": "./images/citygrand.jpg",
+      "rating": 4
+    }
+]
+
 }

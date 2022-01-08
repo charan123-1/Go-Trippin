@@ -1,0 +1,85 @@
+.AccommodationCard__wrapper {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 12px;
+  margin: auto;
+  word-wrap: break-word;
+  display: flex;
+
+}
+.accommodation_name{
+    font-size : 25px;
+    padding-right : 23px;
+    padding : 10px;
+
+}
+.rating-stars{
+    padding-left: 5px;
+    padding-top : 10px;
+
+
+}
+.accommodation_desc{
+    font-size : 22px;
+    padding-right : 23px;
+    font-weight : normal;
+    width : 100%;
+    padding : 10px;
+
+}
+.AccommodationCard__img {
+  object-fit: cover;
+  flex-shrink: 1;
+  width: 400px;;
+  height: 281px;
+  margin-bottom: 10px;
+
+}
+
+.AccommodationCard__Rateing {
+  margin: 20px 0;
+}
+
+
+.AccommodationCard__button {
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 25px;
+  background-color: #ffa430;
+  border: none;
+  transition: all 0.2s ease-in;
+}
+
+.AccommodationCard__button:hover {
+  color: white;
+  background-color: #f1b668;
+  transform: translate(2px, -2px);
+}
+
+.AccommodationCard__button:focus,
+.AccommodationCard__button:active {
+  outline: none;
+}
+.box2{
+    width : 60%;
+    padding-left : 160px;
+}
+.cont{
+    padding : 7.5px;
+}
+
+
+
+
+@media screen and (max-width: 1147px) {
+  .AccommodationCard__wrapper {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .AccommodationCard__wrapper {
+    width: 90%;
+  }
+}
