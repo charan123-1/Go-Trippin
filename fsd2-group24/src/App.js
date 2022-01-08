@@ -22,6 +22,7 @@ import About from './pages/About';
 
 //import Form from './components/Form';
 import Accommodation from './components/Accommodation';
+import Food from './components/Food';
 import { Cart } from './components/Cart';
 import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store';
@@ -89,6 +90,7 @@ function App() {
             <Route path="/adventure" element={<Adventure />} />
             <Route path="/places" element={<MapContainer />} />
             <Route path="/accommodation" element={<Accommodation />} />
+            <Route path="/food" element={<Food />} />
           </Routes>
           <Footer />
         </div>

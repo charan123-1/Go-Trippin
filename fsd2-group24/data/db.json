@@ -866,5 +866,70 @@
       "value": 3,
       "message": "New Review Added!!"
     }
+  ],
+  "food": [
+    {
+      "id": 1,
+      "name": "Kamat",
+      "description": "Visakhapatnam",
+      "image": "./images/kamat.jpg",
+      "rating": 4
+    },
+    {
+      "id": 2,
+      "name": "Deccan Pavilion",
+      "description": "Hyderabad",
+      "image": "./images/deccanpavilion.jpg",
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "name": "Bawarchi",
+      "description": "Hyderabad",
+      "image": "./images/Bawarchi.jpg",
+      "rating": 4
+    },
+    {
+      "id": 4,
+      "name": "Nine Flavours",
+      "description": "Tirupati",
+      "image": "./images/9flavours.jpg",
+      "rating": 4
+    },
+    {
+      "id": 5,
+      "name": "Zodiac",
+      "description": "Tirupati",
+      "image": "./images/zodiac.jpg",
+      "rating": 4
+    },
+    {
+      "id": 6,
+      "name": "Star Annapurna",
+      "description": "Araku",
+      "image": "./images/starannapurna.jpg",
+      "rating": 4
+    },
+    {
+      "id": 7,
+      "name": "Hungry Birds",
+      "description": "Warangal",
+      "image": "./images/hungrybirds.png",
+      "rating": 4
+    },
+    {
+      "id": 8,
+      "name": "Siddi Restaurant",
+      "description": "Araku",
+      "image": "./images/siddi.jpg",
+      "rating": 4
+    },
+    {
+      "id": 9,
+      "name": "Paprikas",
+      "description": "Warangal",
+      "image": "./images/paprikas.jpeg",
+      "rating": 4
+    }
   ]
 }
