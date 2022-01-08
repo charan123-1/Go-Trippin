@@ -77,6 +77,20 @@
         "lng": "83.2505",
         "lat": "17.7664",
         "image": "./images/SIMHACHALAM.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Sri Kanaka Maha Lakshmi Temple",
+        "lng": "83.331474",
+        "lat": "17.72649",
+        "image": "./images/Sri Kanaka Maha Lakshmi Temple.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Sree Sampath Vinayagar Temple",
+        "lng": "83.31233927043",
+        "lat": "17.72464263061804",
+        "image": "./images/Sree Sampath Vinayagar Temple.jpg"
       }
   ],
 "Hydmaps": [
