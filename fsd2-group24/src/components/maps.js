@@ -9,8 +9,7 @@ const mapStyles = {
 const map_img ={
     width : '400px',
     height : '350px',
-    textAlign: 'center',
-
+    textAlign: 'center'
 }
 
 
@@ -56,13 +55,14 @@ export class MapContainer extends Component {
 
           }}
                 name={'RK beach'}
+                content={"images/Bawarchi.jpg"}
                 />
 
         <InfoWindow
           marker={this.state.activeMarker}
           visible={this.state.showingInfoWindow}>
             <div style={map_img} >
-              <img src="images/RKbeach.jpg" alt="Rk beach" width="300px" height="300px;"/>
+              <img src={this.state.selectedPlace.content}  alt="temple" width="300px" height="300px;" />
               <h3>{this.state.selectedPlace.name}</h3>
             </div>
         </InfoWindow>
@@ -76,12 +76,13 @@ export class MapContainer extends Component {
 
           }}
           name={'KAILASH GIRI'}
+          content={"images/bandaids.jpg"}
         />
         <InfoWindow
           marker={this.state.activeMarker}
           visible={this.state.showingInfoWindow}>
           <div style={map_img} >
-            <img src="images/RKbeach.jpg"  alt="rk beach" width="300px" height="300px;" />
+            <img src={this.state.selectedPlace.content}  alt="temple" width="300px" height="300px;" />
             <h3>{this.state.selectedPlace.name}</h3>
           </div>
         </InfoWindow>
@@ -95,12 +96,13 @@ export class MapContainer extends Component {
 
           }}
           name={"TENNETI PARK"}
+          content={"images/Allen Solly.jpg"}
         />
         <InfoWindow
           marker={this.state.activeMarker}
           visible={this.state.showingInfoWindow}>
           <div style={map_img} >
-            <img src="images/RKbeach.jpg"  alt="tenneti park" width="300px" height="300px;" />
+            <img src={this.state.selectedPlace.content}  alt="temple" width="300px" height="300px;" />
             <h3>{this.state.selectedPlace.name}</h3>
           </div>
         </InfoWindow>
@@ -113,12 +115,13 @@ export class MapContainer extends Component {
 
           }}
           name={"Kursura Submarine"}
+          content={"images/Araku.jpg"}
         />
         <InfoWindow
           marker={this.state.activeMarker}
           visible={this.state.showingInfoWindow}>
           <div style={map_img} >
-            <img src="images/RKbeach.jpg" alt="kursura" width="300px" height="300px;" />
+            <img src={this.state.selectedPlace.content}  alt="temple" width="300px" height="300px;" />
             <h3>{this.state.selectedPlace.name}</h3>
           </div>
         </InfoWindow>
@@ -130,13 +133,14 @@ export class MapContainer extends Component {
             lat: 17.768985164595804
 
           }}
+          content={"images/bags.jpg"}
           name={"Indira Gandhi Zoological Park"}
         />
         <InfoWindow
           marker={this.state.activeMarker}
           visible={this.state.showingInfoWindow}>
           <div style={map_img} >
-            <img src="images/RKbeach.jpg" alt="zoo" width="300px" height="300px;" />
+            <img src={this.state.selectedPlace.content}  alt="temple" width="300px" height="300px;" />
             <h3>{this.state.selectedPlace.name}</h3>
           </div>
         </InfoWindow>
@@ -149,12 +153,13 @@ export class MapContainer extends Component {
 
           }}
           name={"Sri Kanaka Maha Lakshmi Temple"}
+          content={"images/adidas.jpg"}
         />
         <InfoWindow
           marker={this.state.activeMarker}
           visible={this.state.showingInfoWindow}>
           <div style={map_img} >
-            <img src="images/RKbeach.jpg"  alt="temple" width="300px" height="300px;" />
+            <img src={this.state.selectedPlace.content}  alt="temple" width="300px" height="300px;" />
             <h3>{this.state.selectedPlace.name}</h3>
           </div>
         </InfoWindow>
