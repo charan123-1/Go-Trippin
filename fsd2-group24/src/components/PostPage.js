@@ -6,13 +6,13 @@ import { Preview } from './Preview';
 
 import "./PostPage.css"
 function PostPage() {
-    const [files, setFiles] = useState([]);
+    const [files, setFiles] = useState("");
     const onSuccess = (savedFiles) => {
         setFiles(savedFiles)
     };
 
     return (
-        <div className="App">
+        <div className="drop">
             <DragAndDrop onSuccess={onSuccess} />
             <Preview files={files} />
             <ToastContainer />

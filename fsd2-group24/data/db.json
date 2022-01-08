@@ -7,6 +7,12 @@
     {
       "id": 5331,
       "text": "new bucket list"
+    },
+    {
+      "id": 6738,
+      "image": {
+        "0": {}
+      }
     }
   ],
   "signupUsers": [
@@ -686,6 +692,44 @@
     },
     {
       "id": 4
+    },
+    {
+      "id": 87,
+      "image": {
+        "0": {}
+      }
+    },
+    {
+      "id": 8809,
+      "image": "C:\\fakepath\\img-1.jpg"
+    },
+    {
+      "id": 5705,
+      "image": "C:\\fakepath\\Visakhapatnam.jpg"
+    },
+    {
+      "id": 2817,
+      "image": "./images/undefined"
+    },
+    {
+      "id": 7485,
+      "image": "./images/C"
+    },
+    {
+      "id": 5665,
+      "image": "./images/C"
+    },
+    {
+      "id": 2100,
+      "image": "./images/C:\\fakepath\\Visakhapatnam.jpg"
+    },
+    {
+      "id": 2780,
+      "image": "./images/C:\\fakepath\\100 Winter Cycling Fleece Gloves.jpg"
+    },
+    {
+      "id": 5965,
+      "image": "./images/C:\\fakepath\\Visakhapatnam.jpg"
     }
   ],
   "cart": [
@@ -720,14 +764,6 @@
       "price": 599,
       "image": "./images/Allen Solly.jpg",
       "id": 12
-    },
-    {
-      "id": 14,
-      "quantity": 3,
-      "name": "VLCC De Tan Sunscreen Gel Creme",
-      "price": 279,
-      "image": "./images/VLCC De Tan Sunscreen Gel Creme.jpg",
-      "productId": 37
     },
     {
       "productId": 43,
@@ -790,43 +826,42 @@
     {
       "id": 1,
       "name": "ITC Kohenur",
-      "description" : "Gachibowli, Hyderabad",
+      "description": "Gachibowli, Hyderabad",
       "image": "./images/itc_kohenur.jpg",
       "rating": 4
     },
     {
       "id": 2,
       "name": "Novotel Visakhapatnam Varun Beach",
-      "description" : "Beach Road, Visakhapatnam",
+      "description": "Beach Road, Visakhapatnam",
       "image": "./images/novotel.jpg",
       "rating": 5
     },
-
-      {
-        "id": 3,
-        "name": "Four Points by Sheraton Visakhapatnam",
-        "description" : "Uplands, Waltair Main Road, Visakhapatnam",
-        "image": "./images/fourpoints.jpg",
-        "rating": 4
-      },
+    {
+      "id": 3,
+      "name": "Four Points by Sheraton Visakhapatnam",
+      "description": "Uplands, Waltair Main Road, Visakhapatnam",
+      "image": "./images/fourpoints.jpg",
+      "rating": 4
+    },
     {
       "id": 4,
       "name": "Fortune Select Grand Ridge, Tirupati",
-      "description" : "Shilparamam, Tiruchanoor Road, Tirupati",
+      "description": "Shilparamam, Tiruchanoor Road, Tirupati",
       "image": "./images/fortunegrand.jpg",
       "rating": 3
     },
     {
       "id": 5,
       "name": "Casa Holiday Resorts",
-      "description" : "Ravilaguda Village, Araku",
+      "description": "Ravilaguda Village, Araku",
       "image": "./images/casa.jpg",
       "rating": 4
     },
     {
       "id": 6,
       "name": "City Grand",
-      "description" : "SVP Road, Rangampet Road, Warangal",
+      "description": "SVP Road, Rangampet Road, Warangal",
       "image": "./images/citygrand.jpg",
       "rating": 4
     }

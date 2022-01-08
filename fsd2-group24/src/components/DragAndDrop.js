@@ -50,43 +50,54 @@ import { toast } from 'react-toastify';
 import './DragAndDropCSS.css';
 
 export const DragAndDrop = ({ onSuccess }) => {
-    const [files, setFiles] = useState([    ]);
+    const [files, setFiles] = useState([]);
 
     const onInputChange = (e) => {
-        setFiles(e.target.files)
+        setFiles(e.target.value)
     };
 
     const onSubmit = (e) => {
-        e.preventDefault();
+        // e.preventDefault();
 
-        const data = new FormData();
+        // const data = new FormData();
 
-        for (let i = 0; i < files.length; i++) {
-            data.append
-            data.append('image', files[i]);
-        }
+        // for (let i = 0; i < files.length; i++) {
+        //     data.append('file', files[i]);
+        // }
 
-        axios.post('http://localhost:5000/upload', data)
-            .then((response) => {
+        // axios.post('http://localhost:5000/upload', data)
+        //     .then((response) => {
+        //         toast.success('Upload Success');
+        //         onSuccess(response.data)
+        //     })
+        //     .catch((e) => {
+        //         toast.error('Upload Error')
+        //     })
+        // to add bucketlist into json api
+            e.preventDefault();
+            var data = {
+                'id': Math.floor(Math.random() * 10000),
+                'image': "./images/"+files
+            };
+        axios.post('http://localhost:5000/upload', data).then((response) => {
                 toast.success('Upload Success');
                 onSuccess(response.data)
             })
-            .catch((e) => {
-                toast.error('Upload Error')
-            })
+            setFiles([]);
     };
 
     return (
         <form method="post" action="#" id="#" onSubmit={onSubmit}>
             <div className="form-group files">
-                <label>Upload Your File </label>
+                <h2 className='drop-h2'>Post Photos </h2>
                 <input type="file"
+                    value={files}
                     onChange={onInputChange}
                     className="form-control"
                     multiple />
             </div>
 
-            <button>Submit</button>
+            <button className='drop-button'>Submit</button>
         </form>
     )
 };

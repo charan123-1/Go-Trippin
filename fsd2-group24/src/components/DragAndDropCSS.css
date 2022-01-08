@@ -50,7 +50,7 @@
 .files{ position:relative}
 .files:after {  pointer-events: none;
     position: absolute;
-    top: 60px;
+    top: 100px;
     left: 0;
     width: 50px;
     right: 0;
@@ -59,6 +59,7 @@
     background-image: url(https://image.flaticon.com/icons/png/128/109/109612.png);
     display: block;
     margin: 0 auto;
+    padding-top: 20px;
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -76,5 +77,21 @@
     color: #2ea591;
     font-weight: 600;
     text-transform: capitalize;
+    text-align: center;
+}
+.drop-button{
+     background-color:  #555555; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 6px 2px;
+  cursor: pointer;
+  margin-left: 45%;
+}
+.drop-h2{
     text-align: center;
 }
