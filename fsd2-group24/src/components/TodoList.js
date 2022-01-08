@@ -37,12 +37,11 @@ function TodoList() {
   };
 
   //to delete data from json file
-
   const removeTodo = id => {
     const removedArr = [...todos].filter(todo => todo.id !== id);
     setTodos(removedArr);
     axios.delete("http://localhost:5000/todos/" + id).then(res => {
-      console.log("Bucketlist deleted!!");
+      console.log("Bucket list deleted!!");
       alert("Bucket list Deleted!!")
     }).catch(error => {
       console.log(error);
