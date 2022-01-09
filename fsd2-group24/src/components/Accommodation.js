@@ -72,7 +72,7 @@ function Accommodation() {
                 {items.filter((item) => {
                     if (searchTerm == "") {
                         return item
-                    } else if (item.name.toLowerCase().includes(searchTerm.toLowerCase())){
+                    } else if (item.name.toLowerCase().includes(searchTerm.toLowerCase()) || item.description.toLowerCase().includes(searchTerm.toLowerCase())){
                         return item
                     }
                 }).map((item) => { return(
