@@ -40,6 +40,7 @@ async function handlePlaceSelect(updateQuery) {
     updateQuery(query);
     console.log(addressObject);
 }
+
 function Accommodation() {
     const[items, setItems] =useState([])
   // read json data
@@ -53,6 +54,7 @@ function Accommodation() {
       })
   }, [])
     const [query, setQuery] = useState("");
+    const [searchTerm, setSearchTerm] = useState("");
     const autoCompleteRef = useRef(null);
     const APIKey ="AIzaSyD1hrUHm5CzRtbuAkoBvCgAGjhEv - Xt4Vc"
     useEffect(() => {
@@ -64,13 +66,17 @@ function Accommodation() {
     return (
         <div className='accc'>
             <div className='form-group'>
-                <input className="form-control" id="search_input" ref={autoCompleteRef}
-                    onChange={event => setQuery(event.target.value)} placeholder="Where to?" value={query}/>
+                <input type="search" className="form-control" id="search_input" onChange={event => { setSearchTerm(event.target.value) }} placeholder="Where to?"/>
             </div>
             <div className="accommodation__wrapper">
-        {items.map((item) => (
-          <AccommodationCard key={item.id} Accommodation={item} />
-        ))}
+                {items.filter((item) => {
+                    if (searchTerm == "") {
+                        return item
+                    } else if (item.name.toLowerCase().includes(searchTerm.toLowerCase())){
+                        return item
+                    }
+                }).map((item) => { return(
+                    <AccommodationCard key={item.id} Accommodation={item} />); })}
         </div>
 
         

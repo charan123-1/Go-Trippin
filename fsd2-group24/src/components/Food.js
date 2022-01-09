@@ -41,7 +41,8 @@ async function handlePlaceSelect(updateQuery) {
     console.log(addressObject);
 }
 function Food() {
-    const[items, setItems] =useState([])
+    const [items, setItems] = useState([])
+    const [searchTerm, setSearchTerm]=useState("")
   // read json data
   useEffect(() => {
     fetch('http://localhost:5000/food').then(res => {
@@ -64,13 +65,20 @@ function Food() {
     return (
         <div className='acc'>
             <div className='form-group'>
-                <input className="form-control" id="search_input" ref={autoCompleteRef}
-                    onChange={event => setQuery(event.target.value)} placeholder="Search for Delicious Food?" value={query}/>
+                <input type="search" className="form-control" id="search_input" onChange={event => { setSearchTerm(event.target.value) }} placeholder="Search for Delicious Food?"/>
             </div>
             <div className="Food__wrapper">
-        {items.map((item) => (
-          <FoodCard key={item.id} Food={item} />
-        ))}
+                {items.filter((item) => {
+                    if (searchTerm == "") {
+                        return item
+                    } else if (item.name.toLowerCase().includes(searchTerm.toLowerCase())) {
+                        return item
+                    }
+                }).map((item) => {
+                    return (
+                        <FoodCard key={item.id} Food={item} />
+                    );
+                })}
         </div>
 
 
