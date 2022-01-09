@@ -3,7 +3,7 @@ import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css';
 import {BsSearch} from 'react-icons/bs'
-
+import {Link} from 'react-router-dom';
 
 
 function HeroSection() {
@@ -18,13 +18,10 @@ function HeroSection() {
             <button className='search-btn' type='submit'><BsSearch/></button>
         </div>
       <div className='hero-btns'>
-        <Button
-          className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
-        >
-          GET STARTED
-        </Button>
+        <Link to='/sign-up'>
+
+            {<Button buttonSize='btn--large' buttonStyle='btn--outline'>GET STARTED</Button>}
+          </Link>
 
       </div>
     </div>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Form.css';
 import FormLogin from './FormLogin';
 import FormSuccess from './FormSuccess';
+import {Link} from 'react-router-dom';
 
 const Form2 = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -12,7 +13,7 @@ const Form2 = () => {
   return (
     <>
       <div className='form-container'>
-        <span className='close-btn'>×</span>
+        <span className='close-btn'><Link to="/">×</Link></span>
         <div className='form-content-left'>
           <img className='form-img' src='../images/rocket.svg' alt='spaceship' />
         </div>
