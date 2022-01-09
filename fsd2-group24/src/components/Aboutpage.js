@@ -2,6 +2,9 @@ import React from 'react';
 import './Aboutpage.css';
 //import A from './images/aboutusimg.jpg'
 //import A from '../img/A.jpg'
+import {AiOutlineForm} from 'react-icons/ai';
+import {FiShoppingCart} from 'react-icons/fi';
+import {GoTasklist} from 'react-icons/go';
 function Aboutpage(){
     
     return(
@@ -19,18 +22,19 @@ function Aboutpage(){
 
             </ul>
             <ul class="flex-container2" id="flex-container2">
+
                 <li class="flex-item2">
-                    <i class="icon far fa-check-circle fa-3x"></i>
+                    <AiOutlineForm size="60px"/>
                     <h3 className='h3-1'>Trusted Reviews</h3>
                     <p className='p1'>Get honest reviews from our users about a particular destination.</p>
                 </li>
                 <li class="flex-item2">
-                    <i class="icon fas fa-arrow-up fa-3x"></i>
+                    <FiShoppingCart size="60px"/>
                     <h3 className='h3-1'>Shop</h3>
                     <p className='p1'>Buy all your travel needs from one place.</p>
                 </li>
                 <li class="flex-item2">
-                    <i class="icon fas fa-dollar-sign fa-3x"></i>
+                    <GoTasklist size="60px"/>
                     <h3 className='h3-1'>Bucket List</h3>
                     <p className='p1'>Never forget to note down your plans.</p>
                 </li>
