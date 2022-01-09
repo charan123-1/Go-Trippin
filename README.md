@@ -2,7 +2,7 @@
 
 ## Project Title: GoTrippin - A Travel Planning Platform
 
-# Group Members:
+## Group Members:
 
 Shanjana Pulagala 	- 	S20190010160
 
