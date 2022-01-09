@@ -23,11 +23,19 @@ const useForm = (callback, validate) => {
 
     setErrors(validate(values));
     setIsSubmitting(true);
+    if (errors) {
+      console.log("Invalid Details")
+    }
+    else if(errors == null){
+    console.log("Invalid!!")
+  }
+  };
 
-    if (errors == {}) {
-      alert("Successfly Signed In")
-      try {
-        const response = fetch("http://localhost:5000/signupUsers", {
+  useEffect(
+    () => {
+      if (Object.keys(errors).length === 0 && isSubmitting) {
+        callback();
+        fetch("http://localhost:5000/signupUsers", {
           method: "POST",
           body: JSON.stringify({
             email: values.email,
@@ -38,16 +46,6 @@ const useForm = (callback, validate) => {
             "Content-type": "application/json; charset=UTF-8",
           },
         });
-      } catch (err) {
-        console.log(err);
-      }
-    }
-  };
-
-  useEffect(
-    () => {
-      if (Object.keys(errors).length === 0 && isSubmitting) {
-        callback();
       }
     },
     [errors]
