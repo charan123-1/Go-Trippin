@@ -5,23 +5,27 @@
 # Group Members:
 
 Shanjana Pulagala 	- 	S20190010160
+
 Virri Anusha 		- 	S20190010190
+
 Riya Rajesh 		- 	S20190010152
+
 Palam Bindu Bhargavi 	- 	S20190010131
+
 Charan Sai Dasari 	- 	S20190010038
 
 ## Instructions to Run the Code:
 
-- Install node.js and then add it to the path.
-  "https://nodejs.org/en/"
+- Install node.js and then add it to the path: "https://nodejs.org/en/"
 - To check if it is installed, run ```npm -v``` in the command prompt 
 - Download the code file
 - Change current working directory to project directory 
 ```cd fsd2-group24```
 - To install all the node modules run ```npm install``` in terminal
+- Then run the command ```npm run build```
 - Then run the following in the terminal: 
 
-```sh
+```
 npm install axios
 npm install react-simple-image-slider –save
 npm i --save json-server
