@@ -35,6 +35,6 @@ npm install @mui/material @emotion/react @emotion/styled
 ```
 
 - To run the website, give ```npm start``` in terminal
-- The website will be opened in the following link:"http://localhost:3000/"
+- The website will be opened in the following link: "http://localhost:3000/"
 - Then, to run the json server, give ```npm run json:server```
-- The server will be opened in the port 5000 with the following link: "http://localhost:5000/"
+- The server will be opened in the port 5000 with the following link:  "http://localhost:5000/"
