@@ -109,7 +109,7 @@ export const Cart = (props) => {
             <div className="cart-empty">
                 <p>Your cart is currently empty</p>
                 <div className="start-shopping">
-                    <Link to="/">
+                    <Link to="/shop">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="20"
