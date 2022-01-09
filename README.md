@@ -12,7 +12,7 @@ Riya Rajesh 		- 	S20190010152
 
 Palam Bindu Bhargavi 	- 	S20190010131
 
-Charan Sai Dasari 	- 	S20190010038
+Dasari Charan Sai  	- 	S20190010038
 
 ## Instructions to Run the Code:
 
