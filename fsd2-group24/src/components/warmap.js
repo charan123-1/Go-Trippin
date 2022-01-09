@@ -19,12 +19,15 @@ export function MapContainerWarangal(props) {
   const [selectedPlace, setSelectedPlace] = useState({});
   const [maps, setMaps] = useState([])
   const [item, setItem] = useState(null);
+    //on clicking the marker infowindow will be shown
+
   const onMarkerClick = (props, marker, item, e) => {
     setSelectedPlace(props);
     setActiveMarker(marker);
     setShowingInfoWindow(true);
     setItem(item);
   }
+//on clicking the map setting up the markers
 
   const onMapClicked = (props) => {
     if (showingInfoWindow) {
@@ -33,6 +36,8 @@ export function MapContainerWarangal(props) {
       setItem(item)
     }
   };
+    //fetching maps from the json server
+
   useEffect(() => {
     fetch('http://localhost:5000/Wglmaps').then(res => {
       return res.json();
@@ -44,6 +49,7 @@ export function MapContainerWarangal(props) {
       })
   }, []);
   return (
+        //Map imported from google given initialCenter and onClick all the markers will be appeared
     <Map google={props.google}
       onClick={onMapClicked}
       defaultZoom={12}
@@ -51,6 +57,7 @@ export function MapContainerWarangal(props) {
         lng: 79.57472384375572,
         lat: 18.003847621501116
       }}>
+      {/* all the items in the json list is iterated and returned to display using map function */}
       {maps.map(item => (
         <Marker
           onMouseover={onMarkerClick}
@@ -64,6 +71,7 @@ export function MapContainerWarangal(props) {
 
         />
       ))}
+      {/* InfoWindow is imported to show the image and name of the location */}
       <InfoWindow
         marker={activeMarker}
         visible={showingInfoWindow}>

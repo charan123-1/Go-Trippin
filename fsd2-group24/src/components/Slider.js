@@ -9,6 +9,7 @@ const images = [
 const Slider = () => {
   return (
     <div>
+      {/* Importing simple image slider and using the above images */}
       <SimpleImageSlider
         width={1520}
         height={600}

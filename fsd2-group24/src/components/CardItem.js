@@ -5,6 +5,8 @@ function CardItem(props) {
   return (
     <>
       <li className='cards__item'>
+        {/* According to the attributes given from Cards.js file we are giving it here for Link to the page and the image as well as the text respectively*/}
+
         <Link className='cards__item__link' to={props.path}>
           <figure className='cards__item__pic-wrap' data-category={props.label}>
             <img

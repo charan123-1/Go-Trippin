@@ -15,7 +15,7 @@ function TodoForm(props) {
     setInput(e.target.value);
   };
 
-  // to add bucketlist into json api
+  // To add bucketlist into json api
   const handleSubmit = e => {
     e.preventDefault();
     var todolist = {
@@ -26,6 +26,7 @@ function TodoForm(props) {
     props.onSubmit(todolist);
     setInput('');
   };
+  //After adding the item setting the input value as empty 
   const handleSubmitUpdate = e => {
     e.preventDefault();
     props.onSubmit({ 'text': input });

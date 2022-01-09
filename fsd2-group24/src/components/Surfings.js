@@ -4,7 +4,7 @@ import ProductCard from './ProductCard';
 
 function Surfings() {
     const [surfing, setSurfing] = useState([])
-    // read json data
+    // reading json data
     useEffect(() => {
         fetch('http://localhost:5000/SurfingItems').then(res => {
             return res.json();
@@ -19,6 +19,7 @@ function Surfings() {
         <div className='surfing'>
         <h1 className='backpack-h1'>Surfing</h1>
             <div className="surfing__wrapper">
+                {/* Iterating through json using map function and returning it */}
                 {surfing.map((item) => (
                     <ProductCard key={item.id} product={item} />
                 ))}

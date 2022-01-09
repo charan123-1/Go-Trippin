@@ -5,7 +5,7 @@ import './Todo.css';
 import axios from 'axios';
 function TodoList() {
   const [todos, setTodos] = useState([]);
-  // const [msg, setMsg] = useState("");
+
   const addTodo = todo => {
     if (!todo.text || /^\s*$/.test(todo.text)) {
       return;
@@ -13,11 +13,10 @@ function TodoList() {
     const newTodos = [todo, ...todos];
     setTodos(newTodos);
     console.log(...todos);
-    // console.log(todos);
 
   };
 
- // update data
+ // updating data in json and displaying
   const updateTodo = (todoId, newValue) => {
     if (!newValue.text || /^\s*$/.test(newValue.text)) {
       return;
@@ -36,7 +35,7 @@ function TodoList() {
     setTodos(prev => prev.map(item => (item.id === todoId ? newValue : item)));
   };
 
-  //to delete data from json file
+  //To delete data from json file
   const removeTodo = id => {
     const removedArr = [...todos].filter(todo => todo.id !== id);
     setTodos(removedArr);
@@ -58,7 +57,7 @@ function TodoList() {
     setTodos(updatedTodos);
   };
   
-  // read json data
+  //Reading json data
   useEffect(() => {
     fetch('http://localhost:5000/todos').then(res => {
       return res.json();
@@ -72,7 +71,6 @@ function TodoList() {
   return (
       <div className ="todolist">
       <h1 className='h1-todo'>What's the Plan for Today?</h1>
-      {/* <p>{msg}</p> */}
       <TodoForm onSubmit={addTodo} />
       <Todo todos={todos}
         completeTodo={completeTodo}

@@ -27,14 +27,17 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
       className={todo.isComplete ? 'todo-row complete' : 'todo-row'}
       key={index}
     >
+      {/* Onclick it will strike off the bucketlist item */}
       <div key={todo.id} onClick={() => completeTodo(todo.id)}>
         {todo.text}
       </div>
       <div className='icons'>
+        {/* Onclick it will remove the bucketlist item */}
         <RiCloseCircleLine
           onClick={() => removeTodo(todo.id)}
           className='delete-icon'
         />
+        {/* Onclick it will read the bucketlist item from json*/}
         <TiEdit
           onClick={() => setEdit({ id: todo.id, value: todo.text })}
           className='edit-icon'

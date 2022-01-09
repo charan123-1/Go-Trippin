@@ -11,8 +11,8 @@ import { AiFillInfoCircle, AiFillHome} from 'react-icons/ai';
 import { FaUserEdit } from 'react-icons/fa';
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
-  const [dropdown2, setDropdown2] = useState(false);
+  const [dropdown, setDropdown] = useState(false); //to set the dropdown for browse, first setting it as false
+  const [dropdown2, setDropdown2] = useState(false);// to set the dropdown for experience, first setting it as false
   const [button, setButton] = useState(true);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -23,6 +23,7 @@ function Navbar() {
       setButton(true);
     }
   };
+  //on mouse enter setting the dropdown to true
   const onMouseEnter = () => {
     if (window.innerWidth < 960) {
       setDropdown(false);
@@ -30,7 +31,7 @@ function Navbar() {
       setDropdown(true);
     }
   };
-
+  //on mouse leave setting the dropdown to false
   const onMouseLeave = () => {
     if (window.innerWidth < 960) {
       setDropdown(false);
@@ -38,6 +39,7 @@ function Navbar() {
       setDropdown(false);
     }
   };
+  //on mouse enter setting the dropdown2 to true
   const onMouseEnter1 = () => {
     if (window.innerWidth < 960) {
       setDropdown2(false);
@@ -45,7 +47,7 @@ function Navbar() {
       setDropdown2(true);
     }
   };
-
+  //on mouse leave setting the dropdown2 to false
   const onMouseLeave1 = () => {
     if (window.innerWidth < 960) {
       setDropdown2(false);
@@ -53,13 +55,16 @@ function Navbar() {
       setDropdown2(false);
     }
   };
+
   useEffect(() => {
     showButton();
   }, []);
+
   window.addEventListener('resize', showButton);
   return (
     <>
       <nav className='navbar'>
+        {/* Logo */}
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
           GoTrippin
         </Link>

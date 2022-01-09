@@ -4,7 +4,6 @@ import "./Cart.css";
 import axios from "axios";
 export const Cart = (props) => {
     const [carts, setCarts] = useState([]);
-
     useEffect(() => {
         fetch('http://localhost:5000/cart').then(res => {
             return res.json();
@@ -14,6 +13,7 @@ export const Cart = (props) => {
                 setCarts(data);
             })
     }, []);
+    
     //Remove Cart Item
     const removeItem = id => {
         const removedArr = [...carts].filter(cart => cart.id !== id);

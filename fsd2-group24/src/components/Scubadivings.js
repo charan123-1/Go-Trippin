@@ -4,7 +4,7 @@ import ProductCard from './ProductCard';
 
 function Scubadivings() {
     const [scubadiving, setScubadiving] = useState([])
-    // read json data
+    // reading json data
     useEffect(() => {
         fetch('http://localhost:5000/ScubadivingItems').then(res => {
             return res.json();
@@ -19,6 +19,7 @@ function Scubadivings() {
         <div className='scubadiving'>
         <h1 className='backpack-h1'>Scuba diving</h1>
             <div className="scubadiving__wrapper">
+                {/* Iterating through the json data using map function and returning it */}
                 {scubadiving.map((item) => (
                     <ProductCard key={item.id} product={item} />
                 ))}

@@ -8,7 +8,8 @@ import Rating from '@mui/material/Rating';
 const AccommodationCard = ({ Accommodation }) => {
 
 
-    return (
+  return (
+      //Taking the parameters and addding it to the image src and h2 tag respectively along with the css
 
     <div className="cont">
         <div className='AccommodationCard__wrapper box-row'>
@@ -18,7 +19,8 @@ const AccommodationCard = ({ Accommodation }) => {
             </div>
            <div className='AccommodationCard__price box-cell box2'>
                   <h2 className="accommodation_name">{Accommodation.name}</h2>
-                  <h4 className="accommodation_desc">{Accommodation.description}</h4>
+          <h4 className="accommodation_desc">{Accommodation.description}</h4>
+          {/* Ratings */}
                   <Box
                   sx={{
                     '& > legend': { mt: 2 },

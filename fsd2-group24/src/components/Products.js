@@ -4,7 +4,7 @@ import  ProductCard  from './ProductCard';
 
 function Products() {
   const[items, setItems] =useState([])
-  // read json data
+  // reading json data
   useEffect(() => {
     fetch('http://localhost:5000/productItems').then(res => {
       return res.json();
@@ -19,6 +19,7 @@ function Products() {
     <div className='shoes'>
       <h1>Footwear</h1>
       <div className="products__wrapper">
+        {/* Iterating through the items using map function and returning it */}
         {items.map((item) => (
           <ProductCard key={item.id} product={item} />
         ))}

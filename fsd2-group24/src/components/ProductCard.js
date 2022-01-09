@@ -5,6 +5,7 @@ import Rating from "./Rating";
 const ProductCard = ({ product }) => {
     async function addToCart(id, quantity,name,price,image) {
         try {
+            //posting the cart data into json server
             const response = await fetch("http://localhost:5000/cart", {
                 method: "POST",
                 body: JSON.stringify({
@@ -30,6 +31,7 @@ const ProductCard = ({ product }) => {
     return (
         <div className='productCard__wrapper'>
             <div>
+                {/* Dispalying all the shop product images with price and no.of reviews */}
                 <img className='productCard__img' src={product.image} alt='' />
                 <h4>{product.name}</h4>
                 <div className='ProductCard__price'>
@@ -41,6 +43,7 @@ const ProductCard = ({ product }) => {
                         text={`${product.numReviews} reviews`}
                     />
                 </div>
+                {/* Onclicking we are aading the product to the cart */}
                 <button
                     className='ProductCard__button'
                     onClick={() => addToCart(product.id,1,product.name,product.price,product.image)}>

@@ -5,6 +5,7 @@ function AdventureCardItem(props) {
     return (
         <>
             <li className='Adventure_cards__item'>
+                {/* According to the attributes given from AdventureCards.js file we are giving it here for Link to the page and the image as well as the text respectively*/}
                 <Link className='Adventure_cards__item__link' to={props.path}>
                     <figure className='Adventure_cards__item__pic-wrap' data-category={props.label}>
                         <img

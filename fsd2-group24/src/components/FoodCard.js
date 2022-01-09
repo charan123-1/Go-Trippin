@@ -10,9 +10,10 @@ const FoodCard = ({ Food }) => {
 
 
     return (
-
+      //Taking the parameters and addding it to the image src and h2 tag respectively along with the css
     <div className="cont">
         <div className='FoodCard__wrapper box-row'>
+
             <div className="box-cell box1">
                 <img className='FoodCard__img' src={Food.image} alt='' />
 
@@ -25,7 +26,7 @@ const FoodCard = ({ Food }) => {
                     '& > legend': { mt: 2 },
                   }}
                 >
-
+              {/* Ratings */}
                   <Rating
                     className="rating-stars"
                     name="readOnly"

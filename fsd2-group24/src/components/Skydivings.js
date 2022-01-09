@@ -4,7 +4,7 @@ import ProductCard from './ProductCard';
 
 function Skydivings() {
     const [skydiving, setSkydiving] = useState([])
-    // read json data
+    // reading json data
     useEffect(() => {
         fetch('http://localhost:5000/SkydivingItems').then(res => {
             return res.json();
@@ -19,6 +19,7 @@ function Skydivings() {
         <div className='skydiving'>
         <h1 className='backpack-h1'>Skydiving</h1>
             <div className="skydiving__wrapper">
+                {/* Iterating through the json data using map function and returning it */}
                 {skydiving.map((item) => (
                     <ProductCard key={item.id} product={item} />
                 ))}

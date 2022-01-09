@@ -1,3 +1,4 @@
+//Assigning menuItems for Drop down list of Browse having title, path cName as attributes
 export const MenuItems = [
     {
         title: "Accommodation",

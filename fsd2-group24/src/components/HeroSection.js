@@ -19,6 +19,7 @@ function HeroSection() {
         </div>
       <div className='hero-btns'>
         <Link to='/sign-up'>
+          {/* Linking the getstarted button to signup page */}
 
             {<Button buttonSize='btn--large' buttonStyle='btn--outline'>GET STARTED</Button>}
           </Link>

@@ -9,6 +9,7 @@ function TravelCards() {
             <div className='travel_cards__container'>
                 <div className='travel_cards__wrapper'>
                     <ul className='travel_cards__items'>
+                        {/* Calling the Travel Card Items by giving src image, text and path to link as attributes */}
                         <TravelCardItem
                             src='https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/alaska-2488-reduced-1574273862.jpg?crop=0.657xw:0.657xh;0.0240xw,0.178xh&resize=640:*'
                             text='Backpacks'

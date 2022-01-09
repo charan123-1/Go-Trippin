@@ -19,6 +19,7 @@ function Clothings() {
         <div className='clothing'>
             <h1>Clothing</h1>
             <div className="clothing__wrapper">
+                {/* iterating through json data named as clothing using map function and returing the list */}
                 {clothing.map((item) => (
                     <ProductCard key={item.id} product={item} />
                 ))}

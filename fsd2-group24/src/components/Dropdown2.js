@@ -9,6 +9,7 @@ function Dropdown2() {
     return (
         <>
             <ul onClick={handleClick} className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}>
+                {/* Iterating through meuItems which has dropdown list for Experience using map function and returning them on Hover*/}
                 {MenuItems.map((item, index) => {
                     return (
                         <li key={index}>

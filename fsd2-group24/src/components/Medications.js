@@ -3,8 +3,8 @@ import './Medications.css'
 import ProductCard from './ProductCard';
 
 function Medications() {
-    const [medication, setMedication] = useState([])
-    // read json data
+    const [medication, setMedication] = useState([]) //initially setting the medication as empty list
+    // reading json data
     useEffect(() => {
         fetch('http://localhost:5000/MedicationItems').then(res => {
             return res.json();
@@ -19,6 +19,7 @@ function Medications() {
         <div className='medication'>
         <h1 className='backpack-h1'>Medication</h1>
             <div className="medication__wrapper">
+                {/* Iterating through the  medication list using map function and returning it*/}
                 {medication.map((item) => (
                     <ProductCard key={item.id} product={item} />
                 ))}

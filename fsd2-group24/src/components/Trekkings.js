@@ -4,7 +4,7 @@ import ProductCard from './ProductCard';
 
 function Trekkings() {
     const [trekking, setTrekking] = useState([])
-    // read json data
+    //Reading json data
     useEffect(() => {
         fetch('http://localhost:5000/TrekkingItems').then(res => {
             return res.json();
@@ -19,6 +19,7 @@ function Trekkings() {
         <div className='trekking'>
         <h1 className='backpack-h1'>Trekking</h1>
             <div className="trekking__wrapper">
+                {/* Iterating through the json data using map function and returning it */}
                 {trekking.map((item) => (
                     <ProductCard key={item.id} product={item} />
                 ))}

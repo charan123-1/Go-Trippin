@@ -2,7 +2,6 @@ import React from 'react';
 import '../App.css';
 import { Button } from './Button';
 import './ShopHeroSection.css';
-import Navbar from './Navbar'
 import {BsSearch} from 'react-icons/bs'
 function ShopHeroSection() {
   return (

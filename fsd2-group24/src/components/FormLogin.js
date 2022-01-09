@@ -25,6 +25,7 @@ const FormLogin = ({ submitForm }) => {
             value={values2.username}
             onChange={handleChange}
           />
+          {/* If their is error in username it will appeared after clicking Log In button */}
           {errors.username && <p>{errors.username}</p>}
         </div>
         
@@ -38,6 +39,7 @@ const FormLogin = ({ submitForm }) => {
             value={values2.password}
             onChange={handleChange}
           />
+          {/* If their is error in password it will appeared after clicking Log In button */}
           {errors.password && <p>{errors.password}</p>}
         </div>
         <button className='form-input-btn' type='submit'>

@@ -19,6 +19,7 @@ function Cyclings() {
         <div className='cycling'>
         <h1 className='backpack-h1'>Cycling</h1>
             <div className="cycling__wrapper">
+                {/* iterating through json data named as cycling using map function and returing the list */}
                 {cycling.map((item) => (
                     <ProductCard key={item.id} product={item} />
                 ))}

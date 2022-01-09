@@ -9,6 +9,7 @@ function Cards() {
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
+            {/* Calling the Card Items by giving src image, text and path to link as attributes */}
             <CardItem
               src='images/Visakhapatnam.jpg'
               text='Visakhapatnam - the city of Destiny'

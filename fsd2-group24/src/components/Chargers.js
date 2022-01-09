@@ -19,6 +19,7 @@ function Chargers() {
         <div className='charger'>
         <h1 className='backpack-h1'>Portable Chargers</h1>
             <div className="charger__wrapper">
+                {/* Iterating through json data named charger using map function and returning it */}
                 {charger.map((item) => (
                     <ProductCard key={item.id} product={item} />
                 ))}

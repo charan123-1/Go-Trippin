@@ -9,6 +9,7 @@ function AdventureCards() {
             <h1>The ultimate money-saving tools for your journey.. </h1>
             <div className='Adventure_cards__container'>
                 <div className='Adventure_cards__wrapper'>
+                    {/* Calling the Adventure Card Items by giving src image, text and path to link as attributes */}
                     <ul className='Adventure_cards__items'>
                         <AdventureCardItem
                             src='https://images.unsplash.com/photo-1467139701929-18c0d27a7516?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
