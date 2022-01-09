@@ -18,14 +18,15 @@ export function MapContainerHyd(props){
   const[activeMarker, setActiveMarker] = useState({ });
   const[selectedPlace, setSelectedPlace] = useState({ });
   const[maps, setMaps] = useState([])
-  const[item, setItem] = useState(null);
+  const [item, setItem] = useState(null);
+    //on clicking the marker infowindow will be shown
   const onMarkerClick = (props, marker, item, e) => {
     setSelectedPlace(props);
     setActiveMarker(marker);
     setShowingInfoWindow(true);
     setItem(item);
   }
-
+//on clicking the map setting up the markers
   const onMapClicked = (props) => {
     if (showingInfoWindow) {
       setActiveMarker();
@@ -33,6 +34,7 @@ export function MapContainerHyd(props){
       setItem(item)
     }
   };
+    //fetching maps from the json server
   useEffect(() => {
     fetch('http://localhost:5000/Hydmaps').then(res => {
       return res.json();
@@ -43,14 +45,16 @@ export function MapContainerHyd(props){
         console.log(maps);
       })
   }, []);
-    return (
+  return (
+          //Map imported from google given initialCenter and onClick all the markers will be appeared
       <Map google={props.google}
         onClick={onMapClicked}
         defaultZoom={12}
         initialCenter={{
           lng: 78.47470741698163,
           lat: 17.361696696371606
-        }}>
+      }}>
+      {/* all the items in the json list is iterated and returned to display using map function */}
         {maps.map(item => (
           <Marker
             onMouseover={onMarkerClick}
@@ -64,6 +68,7 @@ export function MapContainerHyd(props){
 
           />
         ))}
+      {/* InfoWindow is imported to show the image and name of the location */}
         <InfoWindow
           marker={activeMarker}
           visible={showingInfoWindow}>
@@ -75,7 +80,7 @@ export function MapContainerHyd(props){
       </Map>
     );
 }
-
+//using the google maps api
 export default GoogleApiWrapper({
   apiKey: 'AIzaSyD1hrUHm5CzRtbuAkoBvCgAGjhEv-Xt4Vc'
 })(MapContainerHyd);
