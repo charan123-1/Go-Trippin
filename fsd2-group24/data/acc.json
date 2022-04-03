@@ -1,0 +1,44 @@
+    [
+    {
+        "id": 1,
+        "name": "ITC Kohenur",
+        "description": "Gachibowli, Hyderabad",
+        "image": "./images/itc_kohenur.jpg",
+        "rating": 4
+    },
+    {
+        "id": 2,
+        "name": "Novotel Visakhapatnam Varun Beach",
+        "description": "Beach Road, Visakhapatnam",
+        "image": "./images/novotel.jpg",
+        "rating": 5
+    },
+    {
+        "id": 3,
+        "name": "Four Points by Sheraton Visakhapatnam",
+        "description": "Uplands, Waltair Main Road, Visakhapatnam",
+        "image": "./images/fourpoints.jpg",
+        "rating": 4
+    },
+    {
+        "id": 4,
+        "name": "Fortune Select Grand Ridge, Tirupati",
+        "description": "Shilparamam, Tiruchanoor Road, Tirupati",
+        "image": "./images/fortunegrand.jpg",
+        "rating": 3
+    },
+    {
+        "id": 5,
+        "name": "Casa Holiday Resorts",
+        "description": "Ravilaguda Village, Araku",
+        "image": "./images/casa.jpg",
+        "rating": 4
+    },
+    {
+        "id": 6,
+        "name": "City Grand",
+        "description": "SVP Road, Rangampet Road, Warangal",
+        "image": "./images/citygrand.jpg",
+        "rating": 4
+    }
+    ]

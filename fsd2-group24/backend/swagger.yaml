@@ -1,8 +1,8 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: Simple Todo API
-  description: A simple API to do CRUD on 'todo' resource
+  title: GoTrippin Backend API
+  description: 
 
 servers:
   - url: http://localhost:4000/

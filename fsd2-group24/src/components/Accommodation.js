@@ -6,7 +6,7 @@ function Accommodation() {
     const[items, setItems] =useState([])
   // read json data
   useEffect(() => {
-    fetch('http://localhost:5000/accommodation').then(res => {
+    fetch('http://localhost:4000/accommodation').then(res => {
       return res.json();
     })
       .then(data => {
