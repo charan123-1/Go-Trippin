@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router()
 const Todo = require('../models/todoModels')
 
+
 //To get the todo collection
 router.get("/", async (req, res) => {
     Todo.find({}, (err, result) => {
