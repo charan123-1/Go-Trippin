@@ -2,7 +2,7 @@ openapi: 3.0.0
 info:
   version: 1.0.0
   title: GoTrippin Backend API
-  description: 
+  description: Open API
 
 servers:
   - url: http://localhost:4000/
@@ -10,6 +10,8 @@ servers:
 tags:
   - name: Todos
     description: API to manage the todos.
+  - name: Accommodations
+    description: API to manage the accommodations.
 
 paths:
   /todos:
@@ -95,6 +97,29 @@ paths:
               schema:
                 $ref: '#/components/schemas/Todo'
 
+  /accommodation:
+    get:
+      summary: Lists all the accommodations
+      tags: [Accommodations]
+      responses:
+        "200":
+          description: The list of accommodations.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Accommodation'
+    post:
+      summary: Creates an accommodation.
+      tags: [Accommodations]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Accommodation'
+      responses: 
+        '201':
+          description: Created
 components:
   schemas:
     Todo:
@@ -104,7 +129,35 @@ components:
       properties:
         text:
           type: string
-          description: The todo item.  
-        
+          description: The todo item. 
       example:
         text: Trial
+    Accommodation:
+      type: object
+      required:
+        - name
+        - description
+        - image
+        - rating
+      properties:
+        id:
+          type: integer
+          description: The id of each hotel
+        name:
+          type: string
+          description: The name of the hotel.
+        description:
+          type: string
+          description: The description of the hotel.
+        image:
+          type: string
+          description: The image of the hotel.
+        rating:
+          type: integer
+          description: The rating of the hotel.
+      example:
+        id: 1
+        name: "ITC Kohenur"
+        description: "Gachibowli, Hyderabad"
+        image: "./images/itc_kohenur.jpg"
+        rating: 4
