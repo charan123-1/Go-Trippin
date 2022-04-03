@@ -22,6 +22,8 @@ app.use(express.json())
 app.use(cors())
 const todoRouter = require('./routes/todoroutes')
 const accRouter = require('./routes/accroutes')
+const foodRouter = require('./routes/foodroutes')
 app.use('/todos', todoRouter)
 app.use('/accommodation', accRouter)
+app.use('/food', foodRouter)
 app.listen(4000, () => console.log("server is up and running"));

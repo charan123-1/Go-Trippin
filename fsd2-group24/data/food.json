@@ -1,0 +1,72 @@
+[
+    {
+      "id": 1,
+      "name": "Kamat Restaurant",
+      "description": "Beach Road, Lawsons Bay Colony, Visakhapatnam",
+      "image": "./images/kamat.jpg",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "R&G - Hotel Green Park",
+      "description": "The Green Park Hotel, Waltair Main Road, Visakhapatnam",
+      "image": "./images/R&G.jpg",
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "name": "Deccan Pavilion",
+      "description": "Begumpet, Hyderabad",
+      "image": "./images/deccanpavilion.jpg",
+      "rating": 4
+    },
+    {
+      "id": 4,
+      "name": "Bawarchi",
+      "description": "RTC X Road, Hyderabad",
+      "image": "./images/Bawarchi.jpg",
+      "rating": 5
+    },
+    {
+      "id": 5,
+      "name": "Nine Flavours",
+      "description": "Hotel Vihas - Renest Tirupati, Tirupati",
+      "image": "./images/9flavours.jpg",
+      "rating": 3
+    },
+    {
+      "id": 6,
+      "name": "Zodiac Multicuisine Restaurant",
+      "description": "Tiruchanoor Road, Shilparamam, Tirupati",
+      "image": "./images/zodiac.jpg",
+      "rating": 4
+    },
+    {
+      "id": 7,
+      "name": "Star Annapurna Restaurant",
+      "description": "Main Road, Araku",
+      "image": "./images/starannapurna.jpg",
+      "rating": 5
+    },
+    {
+      "id": 8,
+      "name": "Royal Darbar Restaurant",
+      "description": "Main Road, Araku",
+      "image": "./images/royal_darbar.jpg",
+      "rating": 4
+    },
+    {
+      "id": 9,
+      "name": "President Dhaba",
+      "description": "Naim Nagar, Hanamkonda, Warangal",
+      "image": "./images/president_dhaba.jpeg",
+      "rating": 4
+    },
+    {
+      "id": 10,
+      "name": "Paprikas",
+      "description": "Nakkalagutta, Warangal",
+      "image": "./images/paprikas.jpeg",
+      "rating": 4
+    }
+  ]
