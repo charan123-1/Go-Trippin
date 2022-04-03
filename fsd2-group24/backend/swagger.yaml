@@ -1,0 +1,110 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Simple Todo API
+  description: A simple API to do CRUD on 'todo' resource
+
+servers:
+  - url: http://localhost:4000/
+
+tags:
+  - name: Todos
+    description: API to manage the todos.
+
+paths:
+  /todos:
+    get:
+      summary: Lists all the todos
+      tags: [Todos]
+      responses:
+        "200":
+          description: The list of todos.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Todo'
+    post:
+      summary: Creates a Todo.
+      tags: [Todos]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Todo'
+      responses: 
+        '201':
+          description: Created
+  /todos/{todoID}:
+    get:
+      summary: Returns a Todo by ID.
+      tags: [Todos]
+      parameters:
+        - name: todoID
+          in: path
+          required: true
+          description: Todo ID by MongoDB
+          schema:
+            type : string
+      responses: 
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Todo'
+    put:
+      summary: Updates a Todo by ID.
+      tags: [Todos]
+      parameters:
+      - name: todoID
+        in: path
+        required: true
+        description: Todo id to update
+        schema:
+            type : string
+      - name: newText
+        in: path
+        description: "todolist that needs to be updated"
+        required: true
+        schema:
+          type: string
+      
+      responses: 
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Todo'
+    delete:
+      summary: Deletes a Todo by ID.
+      tags: [Todos]
+      parameters:
+        - name: todoID
+          in: path
+          required: true
+          description: Todo id to delete
+          schema:
+            type : string
+      responses: 
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Todo'
+
+components:
+  schemas:
+    Todo:
+      type: object
+      required:
+        - text
+      properties:
+        text:
+          type: string
+          description: The todo item.  
+        
+      example:
+        text: Trial
