@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "name": "Thousand Pillar Temple",
+      "lng": "79.57472384375572",
+      "lat": "18.003847621501116",
+      "image": "./images/THOUDSAND PILLAR TEMPLE.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Ramappa temple",
+      "lng": "79.9433178021949",
+      "lat": "18.259459370530504",
+      "image": "./images/Ramappa temple.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Laknavaram Lake",
+      "lng": "80.06180762864109",
+      "lat": "18.149572795886055",
+      "image": "./images/Laknavaram Cheruvu.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Kila Warangal Fort",
+      "lng": "79.61624955236776",
+      "lat": "17.957264898012184",
+      "image": "./images/KILA WARANGAL FORT.jfif"
+    },
+    {
+      "id": 5,
+      "name": "Bhadrakali Temple",
+      "lng": "79.58279605812966",
+      "lat": "17.99505926083997",
+      "image": "./images/BHADRAKALI TEMPLE.jpg"
+    }
+  ]

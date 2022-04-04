@@ -36,7 +36,7 @@ export function MapContainerHyd(props){
   };
     //fetching maps from the json server
   useEffect(() => {
-    fetch('http://localhost:5000/Hydmaps').then(res => {
+    fetch('http://localhost:4000/Hydmaps').then(res => {
       return res.json();
     })
       .then(data => {

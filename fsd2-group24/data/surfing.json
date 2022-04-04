@@ -1,0 +1,26 @@
+[
+    {
+      "id": 65,
+      "name": "Women's Surfing Neoprene Wetsuit",
+      "price": 1499,
+      "image": "./images/Women's Surfing Neoprene Wetsuit.jpg",
+      "rating": 4.4,
+      "numReviews": 649
+    },
+    {
+      "id": 66,
+      "name": "Men's surfing Neoprene wetsuit",
+      "price": 1499,
+      "image": "./images/Men's surfing Neoprene wetsuit.jpg",
+      "rating": 4.4,
+      "numReviews": 788
+    },
+    {
+      "id": 67,
+      "name": "Foam Surfboard 8ft 500",
+      "price": 17999,
+      "image": "./images/foam board.jpg",
+      "rating": 4,
+      "numReviews": 86
+    }
+  ]

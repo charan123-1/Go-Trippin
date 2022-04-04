@@ -6,7 +6,7 @@ function Skydivings() {
     const [skydiving, setSkydiving] = useState([])
     // reading json data
     useEffect(() => {
-        fetch('http://localhost:5000/SkydivingItems').then(res => {
+        fetch('http://localhost:4000/skydivingitems').then(res => {
             return res.json();
         })
             .then(data => {

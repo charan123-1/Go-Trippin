@@ -7,7 +7,7 @@ function Wallets() {
     const [wallet, setWallet] = useState([])
     //Reading json data
     useEffect(() => {
-        fetch('http://localhost:5000/walletItems').then(res => {
+        fetch('http://localhost:4000/walletitems').then(res => {
             return res.json();
         })
             .then(data => {

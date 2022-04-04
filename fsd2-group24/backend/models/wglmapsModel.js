@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const foodTemplate = new mongoose.Schema({
+const wglmapsTemplate = new mongoose.Schema({
     id: {
         type: Number,
         required: true,
@@ -9,18 +9,18 @@ const foodTemplate = new mongoose.Schema({
         type: String,
         required: true,
     },
-    description: {
+    lng: {
+        type: String,
+        required: true,
+    },
+    lat: {
         type: String,
         required: true,
     },
     image: {
         type: String,
         required: true,
-    },
-    rating: {
-        type: Number,
-        required: true,
     }
 })
 
-module.exports = mongoose.model('Food', foodTemplate)
+module.exports = mongoose.model('WglMaps', wglmapsTemplate)

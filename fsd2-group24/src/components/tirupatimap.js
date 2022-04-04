@@ -39,7 +39,7 @@ export function MapContainerTirupati(props){
     //fetching maps from the json server
 
   useEffect(() => {
-    fetch('http://localhost:5000/Tirupathimaps').then(res => {
+    fetch('http://localhost:4000/Tirupathimaps').then(res => {
       return res.json();
     })
       .then(data => {

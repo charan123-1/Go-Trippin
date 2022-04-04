@@ -22,7 +22,7 @@ function Review() {
       'value': value,
       'message':message
     };
-    axios.post('http://localhost:5000/Review', review).then(res => alert("Review Added!!"))
+    axios.post('http://localhost:4000/review', review).then(res => alert("Review Added!!"))
     setMessage('');
   };
   return (

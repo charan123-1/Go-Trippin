@@ -6,7 +6,7 @@ function Trekkings() {
     const [trekking, setTrekking] = useState([])
     //Reading json data
     useEffect(() => {
-        fetch('http://localhost:5000/TrekkingItems').then(res => {
+        fetch('http://localhost:4000/trekkingitems').then(res => {
             return res.json();
         })
             .then(data => {

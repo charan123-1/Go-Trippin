@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router()
-const Food = require('../models/foodModel')
+const VizagMaps = require('../models/vizagmapsModel')
 
 
-//To get the food collection
+//To get the Vizag maps collection
 router.get("/", async (req, res) => {
-    Food.find({}, (err, result) => {
+    VizagMaps.find({}, (err, result) => {
         if (err) {
             res.send(err)
         }

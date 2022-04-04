@@ -1,0 +1,50 @@
+[
+    {
+      "id": 31,
+      "name": "Magicwand Pen Torch",
+      "price": 399,
+      "image": "./images/pen torch.jpg",
+      "rating": 4,
+      "numReviews": 78
+    },
+    {
+      "id": 32,
+      "name": "Care 4",
+      "price": 499,
+      "image": "./images/care 4.jpg",
+      "rating": 4,
+      "numReviews": 10
+    },
+    {
+      "id": 33,
+      "name": "Care 4 LED High Power Searchlight",
+      "price": 679,
+      "image": "./images/Care 4 LED High Power Searchlight.jpg",
+      "rating": 3.5,
+      "numReviews": 1113
+    },
+    {
+      "id": 34,
+      "name": "Nexqua",
+      "price": 399,
+      "image": "./images/nexqua.jpg",
+      "rating": 4,
+      "numReviews": 26
+    },
+    {
+      "id": 35,
+      "name": "Start Durable",
+      "price": 495,
+      "image": "./images/start durable.jpg",
+      "rating": 4,
+      "numReviews": 64
+    },
+    {
+      "id": 36,
+      "name": "Abtrix",
+      "price": 649,
+      "image": "./images/abtrix.jpg",
+      "rating": 4.5,
+      "numReviews": 267
+    }
+  ]

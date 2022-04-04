@@ -959,12 +959,9 @@
   "Review": [
     {
       "id": 1,
-      "rate": 4,
+      "rate": "4",
       "value": 3,
       "message": "sample"
-    },
-    {
-      "id": 2
     },
     {
       "id": 4700,

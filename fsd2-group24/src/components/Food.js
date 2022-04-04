@@ -8,7 +8,7 @@ function Food() {
     const [searchTerm, setSearchTerm]=useState("")
   // reading Restaurants json data
   useEffect(() => {
-    fetch('http://localhost:4000/food').then(res => {
+    fetch('http://localhost:4000/restaurent').then(res => {
       return res.json();
     })
       .then(data => {

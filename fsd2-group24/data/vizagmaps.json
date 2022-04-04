@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "name": "RK Beach",
+      "lng": "83.323685",
+      "lat": "17.714294",
+      "image": "./images/RKbeach.jpg"
+    },
+    {
+      "id": 2,
+      "name": "VMRDA-Kailasagiri",
+      "lng": "83.34519670139929",
+      "lat": "17.748298645238204",
+      "image": "./images/kailasa giri.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Tenneti Park",
+      "lng": "83.34854542564264",
+      "lat": "17.74734806039722",
+      "image": "./images/TENNETI PARK.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Kursura Submarine",
+      "lng": "83.33003082944325",
+      "lat": "17.717481135950656",
+      "image": "./images/Kursura Submarine.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Indira Gandhi Zoological Park",
+      "lng": "83.34425427531079",
+      "lat": "17.768985164595804",
+      "image": "./images/Indira Gandhi Zoological Park.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Simhachalam",
+      "lng": "83.2505",
+      "lat": "17.7664",
+      "image": "./images/SIMHACHALAM.jpg"
+    }
+  ]

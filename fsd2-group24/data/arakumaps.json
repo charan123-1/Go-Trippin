@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "name": "Araku Valley",
+      "lng": "82.8792522280164",
+      "lat": "18.32246705318015",
+      "image": "./images/ARAKU-VALLEY.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Galikonda view point",
+      "lng": "82.98332616247572",
+      "lat": "18.2692471520723",
+      "image": "./images/Galikonda view point.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Borra Caves",
+      "lng": "83.03970993015982",
+      "lat": "18.280804936122628",
+      "image": "./images/Borra Caves.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Chaparai",
+      "lng": "81.8798",
+      "lat": "17.8463",
+      "image": "./images/CHAPARAI.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Katiki Falls",
+      "lng": "82.9988",
+      "lat": "18.2792",
+      "image": "./images/katiki waterfalls.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Coffee Museum",
+      "lng": "82.87786874603066",
+      "lat": "18.323772104890352",
+      "image": "./images/COFFEE MUSUEM.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Padmapuram Gardens",
+      "lng": "82.88004856109649",
+      "lat": "18.336367745870383",
+      "image": "./images/padmapuram gardens.jpg"
+    }
+  ]

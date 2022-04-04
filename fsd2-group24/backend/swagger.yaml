@@ -12,6 +12,38 @@ tags:
     description: API to manage the todos.
   - name: Accommodations
     description: API to manage the accommodations.
+  - name: Restaurents
+    description: API to manage the restaurents.  
+  - name: Vizagmaps
+    description: API to manage the Vizag Maps. 
+  - name: Hydmaps
+    description: API to manage the Hyderabad Maps. 
+  - name: Tirupatimaps
+    description: API to manage the Tirupati Maps. 
+  - name: Arakumaps
+    description: API to manage the Araku Maps. 
+  - name: Wglmaps
+    description: API to manage the Warangal Maps.
+  - name: Trekkingitems
+    description: API to manage the Trekking items. 
+  - name: Skydivingitems
+    description: API to manage the Skydiving items. 
+  - name: Surfingitems
+    description: API to manage the Surfing items. 
+  - name: Cyclingitems
+    description: API to manage the Cycling items. 
+  - name: Scubadivingitems
+    description: API to manage the Scubadiving items. 
+  - name: Swimmingitems
+    description: API to manage the Swimming items.  
+  - name: Reviews
+    description: API to manage the reviews.
+  - name: Walletitems
+    description: API to manage the Wallet items. 
+  - name: Flashtorchitems
+    description: API to manage the Swimming items.  
+  - name: Chargeritems
+    description: API to manage the Charger items.  
 
 paths:
   /todos:
@@ -120,6 +152,382 @@ paths:
       responses: 
         '201':
           description: Created
+  
+  /restaurent:
+    get:
+      summary: Lists all the restaurents
+      tags: [Restaurents]
+      responses:
+        "200":
+          description: The list of restaurents.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Restaurent'
+    post:
+      summary: Creates an restaurent.
+      tags: [Restaurents]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Restaurent'
+      responses: 
+        '201':
+          description: Created
+  /vizagmaps:
+    get:
+      summary: Lists all the Vizag maps.
+      tags: [Vizagmaps]
+      responses:
+        "200":
+          description: The list of Vizag maps.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Vizagmaps'
+    post:
+      summary: Creates a Vizagmap.
+      tags: [Vizagmaps]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Vizagmaps'
+      responses: 
+        '201':
+          description: Created
+  
+  /hydmaps:
+    get:
+      summary: Lists all the Hyderabad maps.
+      tags: [Hydmaps]
+      responses:
+        "200":
+          description: The list of Hyderabad maps.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Hydmaps'
+    post:
+      summary: Creates a Hyderabad map.
+      tags: [Hydmaps]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Hydmaps'
+      responses: 
+        '201':
+          description: Created
+  
+  /tirupatimaps:
+    get:
+      summary: Lists all the Tirupati maps.
+      tags: [Tirupatimaps]
+      responses:
+        "200":
+          description: The list of Tirupati maps.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Tirupatimaps'
+    post:
+      summary: Creates a Tirupati map.
+      tags: [Tirupatimaps]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tirupatimaps'
+      responses: 
+        '201':
+          description: Created
+ 
+  /arakumaps:
+    get:
+      summary: Lists all the Araku maps.
+      tags: [Arakumaps]
+      responses:
+        "200":
+          description: The list of Araku maps.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Arakumaps'
+    post:
+      summary: Creates a Araku map.
+      tags: [Arakumaps]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Arakumaps'
+      responses: 
+        '201':
+          description: Created
+  
+  /wglmaps:
+    get:
+      summary: Lists all the Warangal maps.
+      tags: [Wglmaps]
+      responses:
+        "200":
+          description: The list of Warangal maps.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Wglmaps'
+    post:
+      summary: Creates a Warangal map.
+      tags: [Wglmaps]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Wglmaps'
+      responses: 
+        '201':
+          description: Created
+  
+  /trekkingitems:
+    get:
+      summary: Lists all the trekking items
+      tags: [Trekkingitems]
+      responses:
+        "200":
+          description: The list of trekking items.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Trekkingitems'
+    post:
+      summary: Creates a trekking item.
+      tags: [Trekkingitems]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Trekkingitems'
+      responses: 
+        '201':
+          description: Created
+  
+  /skydivingitems:
+    get:
+      summary: Lists all the skydiving items
+      tags: [Skydivingitems]
+      responses:
+        "200":
+          description: The list of skydiving items.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Skydivingitems'
+    post:
+      summary: Creates a skydiving item.
+      tags: [Skydivingitems]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Skydivingitems'
+      responses: 
+        '201':
+          description: Created
+  
+  /surfingitems:
+    get:
+      summary: Lists all the surfing items
+      tags: [Surfingitems]
+      responses:
+        "200":
+          description: The list of surfing items.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Surfingitems'
+    post:
+      summary: Creates a surfing item.
+      tags: [Surfingitems]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Surfingitems'
+      responses: 
+        '201':
+          description: Created
+
+  /cyclingitems:
+    get:
+      summary: Lists all the cycling items
+      tags: [Cyclingitems]
+      responses:
+        "200":
+          description: The list of cycling items.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Cyclingitems'
+    post:
+      summary: Creates a cycling item.
+      tags: [Cyclingitems]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Cyclingitems'
+      responses: 
+        '201':
+          description: Created
+    
+  /scubadivingitems:
+    get:
+      summary: Lists all the scubadiving items
+      tags: [Scubadivingitems]
+      responses:
+        "200":
+          description: The list of scubadiving items.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Scubadivingitems'
+    post:
+      summary: Creates a scubadiving item.
+      tags: [Scubadivingitems]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Scubadivingitems'
+      responses: 
+        '201':
+          description: Created
+  
+  /swimmingitems:
+    get:
+      summary: Lists all the swimming items
+      tags: [Swimmingitems]
+      responses:
+        "200":
+          description: The list of swimming items.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Swimmingitems'
+    post:
+      summary: Creates a swimming item.
+      tags: [Swimmingitems]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Swimmingitems'
+      responses: 
+        '201':
+          description: Created
+  
+  /review:
+    post:
+      summary: Creates a Review.
+      tags: [Reviews]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Review'
+      responses: 
+        '201':
+          description: Created
+  
+  /walletitems:
+    get:
+      summary: Lists all the wallet items
+      tags: [Walletitems]
+      responses:
+        "200":
+          description: The list of wallet items.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Walletitems'
+    post:
+      summary: Creates a wallet item.
+      tags: [Walletitems]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Walletitems'
+      responses: 
+        '201':
+          description: Created
+  
+  /flashtorchitems:
+    get:
+      summary: Lists all the flash torch items
+      tags: [Flashtorchitems]
+      responses:
+        "200":
+          description: The list of flash torch items.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Flashtorchitems'
+    post:
+      summary: Creates a flash torch item.
+      tags: [Flashtorchitems]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Flashtorchitems'
+      responses: 
+        '201':
+          description: Created
+  
+  /chargeritems:
+    get:
+      summary: Lists all the charger items
+      tags: [Chargeritems]
+      responses:
+        "200":
+          description: The list of charger items.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Chargeritems'
+    post:
+      summary: Creates a charger item.
+      tags: [Chargeritems]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Chargeritems'
+      responses: 
+        '201':
+          description: Created
+  
+
+
 components:
   schemas:
     Todo:
@@ -161,3 +569,532 @@ components:
         description: "Gachibowli, Hyderabad"
         image: "./images/itc_kohenur.jpg"
         rating: 4
+    
+    Restaurent:
+      type: object
+      required:
+        - name
+        - description
+        - image
+        - rating
+      properties:
+        id:
+          type: integer
+          description: The id of each restaurent.
+        name:
+          type: string
+          description: The name of the restaurent.
+        description:
+          type: string
+          description: The description of the restaurent.
+        image:
+          type: string
+          description: The image of the restaurent.
+        rating:
+          type: integer
+          description: The rating of the restaurent.
+      example:
+        id: 1
+        name: "Kamat Restaurant"
+        description: "Beach Road, Lawsons Bay Colony, Visakhapatnam"
+        image: "./images/kamat.jpg"
+        rating: 5
+    
+    Vizagmaps:
+      type: object
+      required:
+        - name
+        - lng
+        - lat
+        - image
+      properties:
+        id:
+          type: integer
+          description: The id of each place.
+        name:
+          type: string
+          description: The name of the place.
+        lng:
+          type: string
+          description: The longitude of the place.
+        lat:
+          type: string
+          description: The latitude of the place.
+        image:
+          type: string
+          description: The image of the place.
+      example:
+        id: 1
+        name: "RK Beach"
+        lng: "83.323685"
+        lat: "17.714294"
+        image: "./images/RKbeach.jpg"
+    
+    Hydmaps:
+      type: object
+      required:
+        - name
+        - lng
+        - lat
+        - image
+      properties:
+        id:
+          type: integer
+          description: The id of each place.
+        name:
+          type: string
+          description: The name of the place.
+        lng:
+          type: string
+          description: The longitude of the place.
+        lat:
+          type: string
+          description: The latitude of the place.
+        image:
+          type: string
+          description: The image of the place.
+      example:
+        id: 1
+        name: "Charminar"
+        lng: "78.47470741698163"
+        lat: "17.361696696371606"
+        image: "./images/Charminar.jpg"
+    
+    Tirupatimaps:
+      type: object
+      required:
+        - name
+        - lng
+        - lat
+        - image
+      properties:
+        id:
+          type: integer
+          description: The id of each place.
+        name:
+          type: string
+          description: The name of the place.
+        lng:
+          type: string
+          description: The longitude of the place.
+        lat:
+          type: string
+          description: The latitude of the place.
+        image:
+          type: string
+          description: The image of the place.
+      example:
+        id: 1
+        name: "Tirumala Tirupathi Devasthanam"
+        lng: "79.34776812108626"
+        lat: "13.684474045692369"
+        image: "./images/Tirupati.jpg"
+    
+    Arakumaps:
+      type: object
+      required:
+        - name
+        - lng
+        - lat
+        - image
+      properties:
+        id:
+          type: integer
+          description: The id of each place.
+        name:
+          type: string
+          description: The name of the place.
+        lng:
+          type: string
+          description: The longitude of the place.
+        lat:
+          type: string
+          description: The latitude of the place.
+        image:
+          type: string
+          description: The image of the place.
+      example:
+        id: 1
+        name: "Araku Valley"
+        lng: "82.8792522280164"
+        lat: "18.32246705318015"
+        image: "./images/ARAKU-VALLEY.jpg"
+    
+    Wglmaps:
+      type: object
+      required:
+        - name
+        - lng
+        - lat
+        - image
+      properties:
+        id:
+          type: integer
+          description: The id of each place.
+        name:
+          type: string
+          description: The name of the place.
+        lng:
+          type: string
+          description: The longitude of the place.
+        lat:
+          type: string
+          description: The latitude of the place.
+        image:
+          type: string
+          description: The image of the place.
+      example:
+        id: 1
+        name: "Thousand Pillar Temple"
+        lng: "79.57472384375572"
+        lat: "18.003847621501116"
+        image: "./images/THOUDSAND PILLAR TEMPLE.jpg"
+    
+    Trekkingitems:
+      type: object
+      required:
+        - name
+        - price
+        - image
+        - rating
+        - numReviews
+      properties:
+        id:
+          type: integer
+          description: The id of each item.
+        name:
+          type: string
+          description: The name of the item.
+        price:
+          type: integer 
+          description: The price of the item.
+        image:
+          type: string
+          description: The image of the item.
+        rating:
+          type: string
+          description: The rating of the item.
+        numReviews:
+          type: integer
+          description: The number of reviews of the item.
+      example:
+        id: 56
+        name: "Quechua Camping Tent MH100"
+        price: 1999
+        image: "./images/tents.jpg"
+        rating: 4
+        numReviews: 1631
+    
+    Skydivingitems:
+      type: object
+      required:
+        - name
+        - price
+        - image
+        - rating
+        - numReviews
+      properties:
+        id:
+          type: integer
+          description: The id of each item.
+        name:
+          type: string
+          description: The name of the item.
+        price:
+          type: integer 
+          description: The price of the item.
+        image:
+          type: string
+          description: The image of the item.
+        rating:
+          type: string
+          description: The rating of the item.
+        numReviews:
+          type: integer
+          description: The number of reviews of the item.
+      example:
+        id: 61
+        name: "Motorcycle Ski Skydiving Goggles with Blue Mirror"
+        price: 6411
+        image: "./images/goggles.jpg"
+        rating: 5
+        numReviews: 4
+    
+    Surfingitems:
+      type: object
+      required:
+        - name
+        - price
+        - image
+        - rating
+        - numReviews
+      properties:
+        id:
+          type: integer
+          description: The id of each item.
+        name:
+          type: string
+          description: The name of the item.
+        price:
+          type: integer 
+          description: The price of the item.
+        image:
+          type: string
+          description: The image of the item.
+        rating:
+          type: string
+          description: The rating of the item.
+        numReviews:
+          type: integer
+          description: The number of reviews of the item.
+      example:
+        id: 65
+        name: "Women's Surfing Neoprene Wetsuit"
+        price: 1499
+        image: "./images/Women's Surfing Neoprene Wetsuit.jpg"
+        rating: 4.4
+        numReviews: 649
+    
+    Cyclingitems:
+      type: object
+      required:
+        - name
+        - price
+        - image
+        - rating
+        - numReviews
+      properties:
+        id:
+          type: integer
+          description: The id of each item.
+        name:
+          type: string
+          description: The name of the item.
+        price:
+          type: integer 
+          description: The price of the item.
+        image:
+          type: string
+          description: The image of the item.
+        rating:
+          type: string
+          description: The rating of the item.
+        numReviews:
+          type: integer
+          description: The number of reviews of the item.
+      example:
+        id: 68
+        name: "100 Winter Cycling Fleece Gloves"
+        price: 399
+        image: "./images/100 Winter Cycling Fleece Gloves.jpg"
+        rating: 4.4
+        numReviews: 2788
+    
+    Scubadivingitems:
+      type: object
+      required:
+        - name
+        - price
+        - image
+        - rating
+        - numReviews
+      properties:
+        id:
+          type: integer
+          description: The id of each item.
+        name:
+          type: string
+          description: The name of the item.
+        price:
+          type: integer 
+          description: The price of the item.
+        image:
+          type: string
+          description: The image of the item.
+        rating:
+          type: string
+          description: The rating of the item.
+        numReviews:
+          type: integer
+          description: The number of reviews of the item.
+      example:
+        id: 71
+        name: "ADULT SCUBA DIVING MASK 100"
+        price: 799
+        image: "./images/ADULT SCUBA DIVING MASK 100.jpg"
+        rating: 4.4
+        numReviews: 288
+    
+    Swimmingitems:
+      type: object
+      required:
+        - name
+        - price
+        - image
+        - rating
+        - numReviews
+      properties:
+        id:
+          type: integer
+          description: The id of each item.
+        name:
+          type: string
+          description: The name of the item.
+        price:
+          type: integer 
+          description: The price of the item.
+        image:
+          type: string
+          description: The image of the item.
+        rating:
+          type: string
+          description: The rating of the item.
+        numReviews:
+          type: integer
+          description: The number of reviews of the item.
+      example:
+        id: 74
+        name: "SWIMMING GOGGLES BFIT CLEAR LENSES"
+        price: 899
+        image: "./images/SWIMMING GOGGLES BFIT CLEAR LENSES.jpg"
+        rating: 4.2
+        numReviews: 788
+        
+    Review:
+      type: object
+      required:
+        - id
+        - rate
+        - value
+        - message
+      properties:
+        id:
+          type: integer
+          description: The id of each review. 
+        rate:
+          type: string
+          description: Rating
+        value:
+          type: integer
+          description: Value 
+        message:
+          type: string
+          description: The review.
+      example:
+        id: 4700
+        rate: "4"
+        value: 3
+        message: "New review"
+    
+    Walletitems:
+      type: object
+      required:
+        - name
+        - price
+        - image
+        - rating
+        - numReviews
+      properties:
+        id:
+          type: integer
+          description: The id of each item.
+        name:
+          type: string
+          description: The name of the item.
+        price:
+          type: integer
+          description: The price of the item.
+        image:
+          type: string
+          description: The image of the item.
+        rating:
+          type: string
+          description: The rating of the item.
+        numReviews:
+          type: integer
+          description: The number of reviews of the item.
+      example:
+        id: 25
+        name: "Allen Solly"
+        price: 599
+        image: "./images/Allen Solly.jpg"
+        rating: 4
+        numReviews: 271
+    
+    Flashtorchitems:
+      type: object
+      required:
+        - name
+        - price
+        - image
+        - rating
+        - numReviews
+      properties:
+        id:
+          type: integer
+          description: The id of each item.
+        name:
+          type: string
+          description: The name of the item.
+        price:
+          type: integer
+          description: The price of the item.
+        image:
+          type: string
+          description: The image of the item.
+        rating:
+          type: string
+          description: The rating of the item.
+        numReviews:
+          type: integer
+          description: The number of reviews of the item.
+      example:
+        id: 31
+        name: "Magicwand Pen Torch"
+        price: 399
+        image: "./images/pen torch.jpg"
+        rating: 4
+        numReviews: 78
+    
+    Chargeritems:
+      type: object
+      required:
+        - name
+        - price
+        - image
+        - rating
+        - numReviews
+      properties:
+        id:
+          type: integer
+          description: The id of each item.
+        name:
+          type: string
+          description: The name of the item.
+        price:
+          type: integer
+          description: The price of the item.
+        image:
+          type: string
+          description: The image of the item.
+        rating:
+          type: string
+          description: The rating of the item.
+        numReviews:
+          type: integer
+          description: The number of reviews of the item.
+      example:
+        id: 19
+        name: "Mi Pocket Power Bank Pro Black 10000mAh"
+        price: 1399
+        image": "./images/Mi.jpg"
+        rating: 4.5
+        numReviews: 8499
+    
+    
+    
+    
+    
+    
+    
+    

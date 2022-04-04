@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "name": "Charminar",
+      "lng": "78.47470741698163",
+      "lat": "17.361696696371606",
+      "image": "./images/Charminar.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Golconda Fort",
+      "lng": "78.40097769978033",
+      "lat": "17.38348303713472",
+      "image": "./images/Golkonda Fort.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Birla Mandir",
+      "lng": "78.46919661439043",
+      "lat": "17.40698410490425",
+      "image": "./images/Birla Mandir.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Tank Bund",
+      "lng": "78.4738",
+      "lat": "17.4239",
+      "image": "./images/TANK BUND.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Chilkur Balaji Temple",
+      "lng": "78.29880667209032",
+      "lat": "17.35874343821867",
+      "image": "./images/Chilkoor Balaji Temple.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Salar Jung Museum",
+      "lng": "78.48030567126071",
+      "lat": "17.37136674284697",
+      "image": "./images/Salar Jung Museum.png"
+    }
+  ]
