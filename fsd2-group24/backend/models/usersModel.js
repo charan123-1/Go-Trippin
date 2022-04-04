@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const jwt = require('jsonwebtoken')
+const jwt = require('jsonwebtoken') //JSON Web Token (JWT) authentication middleware.
 const Joi = require("joi");
 const passwordComplexity = require("joi-password-complexity");
 

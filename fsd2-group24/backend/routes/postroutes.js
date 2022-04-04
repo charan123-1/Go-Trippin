@@ -20,7 +20,7 @@ router.post('/', upload.single("image"), async(req, res) => {
     })
     try {
         await postImage.save();
-        response.send("Inserted data")
+        res.send("Inserted data")
     } catch (err) {
         console.log(err)
     }

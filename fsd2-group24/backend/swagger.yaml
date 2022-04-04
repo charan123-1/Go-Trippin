@@ -55,7 +55,10 @@ tags:
   - name: Flashtorchitems
     description: API to manage the Swimming items.  
   - name: Chargeritems
-    description: API to manage the Charger items.  
+    description: API to manage the Charger items.
+  - name: Upload
+    description: Post Image
+  
   
 
 paths:
@@ -682,7 +685,21 @@ paths:
       responses: 
         '201':
           description: Created
-  
+  /upload:
+    post:
+      summary: Upload a file.
+      tags: [Upload]
+      requestBody:
+        required: true
+        content:
+          image/png:
+            schema:
+              type: string
+              format: binary
+      responses: 
+        '201':
+          description: Uploaded
+
   
 components:
   schemas:
@@ -1457,7 +1474,19 @@ components:
         image": "./images/Mi.jpg"
         rating: 4.5
         numReviews: 8499
-    
+    Upload:
+      type: object
+      required:
+        - image
+      properties:
+        image:
+          type: string
+          format:  binary
+          description: Post image
+      example:
+        image: "./images/Mi.jpg"
+        
+      
     
     
     
