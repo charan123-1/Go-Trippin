@@ -911,7 +911,16 @@
       "image": "./images/C:\\fakepath\\Screenshot (1).png"
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "productId": 47,
+      "quantity": 1,
+      "name": "Dettol Antiseptic Liquid",
+      "price": 331,
+      "image": "./images/Dettol Antiseptic Liquid.jpg",
+      "id": 1
+    }
+  ],
   "accommodation": [
     {
       "id": 1,

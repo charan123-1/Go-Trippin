@@ -7,9 +7,16 @@ const Review = require('../models/reviewModel')
 
 //To add individual review.
 router.post('/', async (request, response) => {
-    const text = request.body.text
+    const id = request.body.id
+    const rate = request.body.rate
+    const value = request.body.value
+    const message = request.body.message
+
     const reviews = new Review({
-        text: text
+        id: id,
+        rate: rate,
+        value: value,
+        message: message
     })
     try {
         await reviews.save();

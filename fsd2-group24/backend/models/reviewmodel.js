@@ -1,9 +1,21 @@
 const mongoose = require('mongoose');
 
 const reviewTemplate = new mongoose.Schema({
-    text: {
+    id:{
+        type: Number,
+        required: true
+    },
+    rate: {
         type: String,
         required: true,
+    },
+    value:{
+        type: Number,
+        required: true
+    },
+    message:{
+        type: String,
+        required: true
     }
 })
 

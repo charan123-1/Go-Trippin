@@ -1,0 +1,50 @@
+[
+    {
+      "id": 43,
+      "name": "Dettol Adhesive Band Aid ",
+      "price": 199,
+      "image": "./images/bandaids.jpg",
+      "rating": 4,
+      "numReviews": 99
+    },
+    {
+      "id": 44,
+      "name": "AHM Emergency First Aid Bag",
+      "price": 499,
+      "image": "./images/AHM Emergency First Aid Bag.jpg",
+      "rating": 4.5,
+      "numReviews": 101
+    },
+    {
+      "id": 45,
+      "name": "Saco Sanitisation Storage kit",
+      "price": 314,
+      "image": "./images/Saco store.jpg",
+      "rating": 3.5,
+      "numReviews": 6
+    },
+    {
+      "id": 46,
+      "name": "Mamaearth Mosquito Repellent Gel",
+      "price": 84,
+      "image": "./images/Mamaearth Natural Mosquito Repellent Gel.jpg",
+      "rating": 4,
+      "numReviews": 1991
+    },
+    {
+      "id": 47,
+      "name": "Dettol Antiseptic Liquid",
+      "price": 331,
+      "image": "./images/Dettol Antiseptic Liquid.jpg",
+      "rating": 4,
+      "numReviews": 10080
+    },
+    {
+      "id": 48,
+      "name": "Electral FDC Electral ORS",
+      "price": 50,
+      "image": "./images/ORS.jpg",
+      "rating": 4,
+      "numReviews": 29
+    }
+  ]

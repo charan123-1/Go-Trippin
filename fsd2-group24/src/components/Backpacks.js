@@ -6,7 +6,7 @@ function Backpacks() {
     const [backpack, setBackpack] = useState([])
     // read json data
     useEffect(() => {
-        fetch('http://localhost:5000/backpackItems').then(res => {
+        fetch('http://localhost:4000/backpack').then(res => {
             return res.json();
         })
             .then(data => {

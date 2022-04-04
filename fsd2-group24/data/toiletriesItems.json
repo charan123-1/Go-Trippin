@@ -1,0 +1,58 @@
+[
+    {
+      "id": 49,
+      "name": "Portable Dental Cleaning set ",
+      "price": 175,
+      "image": "./images/Dental Cleaning set.jpg",
+      "rating": 4,
+      "numReviews": 696
+    },
+    {
+      "id": 50,
+      "name": "Presto Tissues",
+      "price": 330,
+      "image": "./images/Tissues.jpg",
+      "rating": 4.5,
+      "numReviews": 3011
+    },
+    {
+      "id": 51,
+      "name": "Fix My Curls Wash Day Bundle",
+      "price": 582,
+      "image": "./images/FixMyCurls.jpg",
+      "rating": 4,
+      "numReviews": 98
+    },
+    {
+      "id": 52,
+      "name": "PHILIPS Grooming kit",
+      "price": 1749,
+      "image": "./images/Grooming kit.jpg",
+      "rating": 4,
+      "numReviews": 80
+    },
+    {
+      "id": 53,
+      "name": "Palmolive Aroma Body Wash",
+      "price": 349,
+      "image": "./images/Body Wash.jpg",
+      "rating": 4,
+      "numReviews": 5362
+    },
+    {
+      "id": 54,
+      "name": "Dettol Squeezy Hand Wash",
+      "price": 29,
+      "image": "./images/Hand Wash.jpg",
+      "rating": 3.5,
+      "numReviews": 7
+    },
+    {
+      "id": 55,
+      "name": "Gypsy Disposable Toilet Seat Covers",
+      "price": 235,
+      "image": "./images/Gypsy Disposable Toilet Seat Covers -30 Sheets (2 x 15).jpg",
+      "rating": 3.5,
+      "numReviews": 7
+    }
+  ]

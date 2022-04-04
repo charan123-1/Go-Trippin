@@ -38,12 +38,25 @@ tags:
     description: API to manage the Swimming items.  
   - name: Reviews
     description: API to manage the reviews.
+  - name: Backpackitems
+    description: API to manage the Backpack items.
+  - name: Clothingitems
+    description: API to manage the clothing items.
+  - name: Footwearitems
+    description: API to manage the footwear items.
+  - name: Medicationitems
+    description: API to manage the medication items.
+  - name: Toiletriesitems
+    description: API to manage the toiletries items.
+  - name: Skincareitems
+    description: API to manage the skincare items.  
   - name: Walletitems
     description: API to manage the Wallet items. 
   - name: Flashtorchitems
     description: API to manage the Swimming items.  
   - name: Chargeritems
     description: API to manage the Charger items.  
+  
 
 paths:
   /todos:
@@ -454,6 +467,150 @@ paths:
         '201':
           description: Created
   
+  /backpack:
+    get:
+      summary: Lists all the backpack items
+      tags: [Backpackitems]
+      responses:
+        "200":
+          description: The list of backpack items.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Backpackitems'
+    post:
+      summary: Creates a backpack item.
+      tags: [Backpackitems]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Backpackitems'
+      responses: 
+        '201':
+          description: Created
+  
+  /clothing:
+    get:
+      summary: Lists all the clothing items
+      tags: [Clothingitems]
+      responses:
+        "200":
+          description: The list of clothing items.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Clothingitems'
+    post:
+      summary: Creates a clothing item.
+      tags: [Clothingitems]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Clothingitems'
+      responses: 
+        '201':
+          description: Created
+
+  /footwear:
+    get:
+      summary: Lists all the footwear items
+      tags: [Footwearitems]
+      responses:
+        "200":
+          description: The list of footwear items.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Footwearitems'
+    post:
+      summary: Creates a footwear item.
+      tags: [Footwearitems]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Footwearitems'
+      responses: 
+        '201':
+          description: Created
+
+  /medication:
+    get:
+      summary: Lists all the medication items
+      tags: [Medicationitems]
+      responses:
+        "200":
+          description: The list of medication items.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Medicationitems'
+    post:
+      summary: Creates a medication item.
+      tags: [Medicationitems]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Medicationitems'
+      responses: 
+        '201':
+          description: Created
+  
+  /toiletries:
+    get:
+      summary: Lists all the toiletries items
+      tags: [Toiletriesitems]
+      responses:
+        "200":
+          description: The list of toiletries items.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Toiletriesitems'
+    post:
+      summary: Creates a toiletries item.
+      tags: [Toiletriesitems]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Toiletriesitems'
+      responses: 
+        '201':
+          description: Created
+  
+  /skincare:
+    get:
+      summary: Lists all the skincare items
+      tags: [Skincareitems]
+      responses:
+        "200":
+          description: The list of skincare items.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Skincareitems'
+    post:
+      summary: Creates a skincare item.
+      tags: [Skincareitems]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Skincareitems'
+      responses: 
+        '201':
+          description: Created
+
   /walletitems:
     get:
       summary: Lists all the wallet items
@@ -526,8 +683,7 @@ paths:
         '201':
           description: Created
   
-
-
+  
 components:
   schemas:
     Todo:
@@ -986,6 +1142,217 @@ components:
         value: 3
         message: "New review"
     
+    Backpackitems:
+      type: object
+      required:
+        - name
+        - price
+        - image
+        - rating
+        - numReviews
+      properties:
+        id:
+          type: integer
+          description: The id of each item.
+        name:
+          type: string
+          description: The name of the item.
+        price:
+          type: integer 
+          description: The price of the item.
+        image:
+          type: string
+          description: The image of the item.
+        rating:
+          type: string
+          description: The rating of the item.
+        numReviews:
+          type: integer
+          description: The number of reviews of the item.
+      example:
+        id: 7
+        name: "AFN fashion"
+        price: 999
+        image: "./images/afnfashion.jpg"
+        rating: 4.5
+        numReviews": 132
+    
+    Clothingitems:
+      type: object
+      required:
+        - name
+        - price
+        - image
+        - rating
+        - numReviews
+      properties:
+        id:
+          type: integer
+          description: The id of each item.
+        name:
+          type: string
+          description: The name of the item.
+        price:
+          type: integer 
+          description: The price of the item.
+        image:
+          type: string
+          description: The image of the item.
+        rating:
+          type: string
+          description: The rating of the item.
+        numReviews:
+          type: integer
+          description: The number of reviews of the item.
+      example:
+        id: 13
+        name: "Toodii Mens Coat"
+        price: 1749
+        image: "./images/Toodii Mens Coat.jpg"
+        rating: 4.5
+        numReviews: 132
+    
+    Footwearitems:
+      type: object
+      required:
+        - name
+        - price
+        - image
+        - rating
+        - numReviews
+      properties:
+        id:
+          type: integer
+          description: The id of each item.
+        name:
+          type: string
+          description: The name of the item.
+        price:
+          type: integer 
+          description: The price of the item.
+        image:
+          type: string
+          description: The image of the item.
+        rating:
+          type: string
+          description: The rating of the item.
+        numReviews:
+          type: integer
+          description: The number of reviews of the item.
+      example:
+        id: 1
+        name: "Puma Shoes"
+        price: 3000
+        image: "./images/puma.jpg"
+        rating: 4.5
+        numReviews": 12
+    
+    Medicationitems:
+      type: object
+      required:
+        - name
+        - price
+        - image
+        - rating
+        - numReviews
+      properties:
+        id:
+          type: integer
+          description: The id of each item.
+        name:
+          type: string
+          description: The name of the item.
+        price:
+          type: integer 
+          description: The price of the item.
+        image:
+          type: string
+          description: The image of the item.
+        rating:
+          type: string
+          description: The rating of the item.
+        numReviews:
+          type: integer
+          description: The number of reviews of the item.
+      example:
+        id: 43
+        name: "Dettol Adhesive Band Aid "
+        price: 199
+        image: "./images/bandaids.jpg"
+        rating: 4
+        numReviews: 99
+    
+    Toiletriesitems:
+      type: object
+      required:
+        - name
+        - price
+        - image
+        - rating
+        - numReviews
+      properties:
+        id:
+          type: integer
+          description: The id of each item.
+        name:
+          type: string
+          description: The name of the item.
+        price:
+          type: integer 
+          description: The price of the item.
+        image:
+          type: string
+          description: The image of the item.
+        rating:
+          type: string
+          description: The rating of the item.
+        numReviews:
+          type: integer
+          description: The number of reviews of the item.
+      example:
+        id: 49
+        name: "Portable Dental Cleaning set "
+        price: 175
+        image: "./images/Dental Cleaning set.jpg"
+        rating: 4
+        numReviews: 696
+    
+    Skincareitems:
+      type: object
+      required:
+        - name
+        - price
+        - image
+        - rating
+        - numReviews
+      properties:
+        id:
+          type: integer
+          description: The id of each item.
+        name:
+          type: string
+          description: The name of the item.
+        price:
+          type: integer 
+          description: The price of the item.
+        image:
+          type: string
+          description: The image of the item.
+        rating:
+          type: string
+          description: The rating of the item.
+        numReviews:
+          type: integer
+          description: The number of reviews of the item.
+      example:
+        id: 37
+        name: "VLCC De Tan Sunscreen Gel Creme"
+        price: 279
+        image: "./images/VLCC De Tan Sunscreen Gel Creme.jpg"
+        rating: 4
+        numReviews: 3321
+
+
     Walletitems:
       type: object
       required:

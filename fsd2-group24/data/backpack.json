@@ -1,0 +1,50 @@
+[
+    {
+      "id": 7,
+      "name": "AFN fashion",
+      "price": 999,
+      "image": "./images/afnfashion.jpg",
+      "rating": 4.5,
+      "numReviews": 132
+    },
+    {
+      "id": 8,
+      "name": "Trunkit",
+      "price": 699,
+      "image": "./images/trunkit.jpg",
+      "rating": 4.5,
+      "numReviews": 142
+    },
+    {
+      "id": 9,
+      "name": "ADDU BAG",
+      "price": 1009,
+      "image": "./images/ADDU BAG.jpg",
+      "rating": 4.5,
+      "numReviews": 202
+    },
+    {
+      "id": 10,
+      "name": "Hyper Adam",
+      "price": 1179,
+      "image": "./images/Hyper Adam.jpg",
+      "rating": 4.5,
+      "numReviews": 542
+    },
+    {
+      "id": 11,
+      "name": "Mount Track",
+      "price": 949,
+      "image": "./images/mount Track.jpg",
+      "rating": 4.5,
+      "numReviews": 700
+    },
+    {
+      "id": 12,
+      "name": "POLESTAR Xplore 55 L",
+      "price": 899,
+      "image": "./images/polestor.jpg",
+      "rating": 4.5,
+      "numReviews": 7
+    }
+  ]

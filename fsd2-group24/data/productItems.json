@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "name": "Puma Shoes",
+      "price": 3000,
+      "image": "./images/puma.jpg",
+      "rating": 4.5,
+      "numReviews": 12
+    },
+    {
+      "id": 2,
+      "name": "Adidas",
+      "price": 2099,
+      "image": "./images/adidas.jpg",
+      "rating": 4.5,
+      "numReviews": 12
+    },
+    {
+      "id": 3,
+      "name": "Campus",
+      "price": 803,
+      "image": "./images/campus.jpg",
+      "rating": 4.5,
+      "numReviews": 12
+    },
+    {
+      "id": 4,
+      "name": "Bacca Bucci",
+      "price": 1499,
+      "image": "./images/baccabucci.jpg",
+      "rating": 4.5,
+      "numReviews": 12
+    },
+    {
+      "id": 5,
+      "name": "Nike Shoes",
+      "price": 5999,
+      "image": "./images/nike.jpg",
+      "rating": 4.5,
+      "numReviews": 12
+    },
+    {
+      "id": 6,
+      "name": "A.Sharif",
+      "price": 5999,
+      "image": "./images/A.Sharif.jpg",
+      "rating": 4.5,
+      "numReviews": 12
+    }
+  ]
