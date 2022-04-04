@@ -6,7 +6,7 @@ function Scubadivings() {
     const [scubadiving, setScubadiving] = useState([])
     // reading json data
     useEffect(() => {
-        fetch('http://localhost:5000/ScubadivingItems').then(res => {
+        fetch('http://localhost:4000/scubadivingitems').then(res => {
             return res.json();
         })
             .then(data => {

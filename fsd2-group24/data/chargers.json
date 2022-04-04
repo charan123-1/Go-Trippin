@@ -1,0 +1,50 @@
+[
+    {
+      "id": 19,
+      "name": "Mi Pocket Power Bank Pro Black 10000mAh",
+      "price": 1399,
+      "image": "./images/Mi.jpg",
+      "rating": 4.5,
+      "numReviews": 8499
+    },
+    {
+      "id": 20,
+      "name": "Mi Power Bank 3i 20000mAh",
+      "price": 1699,
+      "image": "./images/Mi Power Bank 3i 20000mAh.jpg",
+      "rating": 4,
+      "numReviews": 2032
+    },
+    {
+      "id": 21,
+      "name": "OnePlus 10000 mAh Power Bank",
+      "price": 1009,
+      "image": "./images/OnePlus.jpg",
+      "rating": 4,
+      "numReviews": 22217
+    },
+    {
+      "id": 22,
+      "name": "Croma 10W Fast Charge 10000mAh",
+      "price": 1079,
+      "image": "./images/Croma.jpg",
+      "rating": 4,
+      "numReviews": 2182
+    },
+    {
+      "id": 23,
+      "name": "URBN 20000 mAh 20W Super Fast Charging Power Bank",
+      "price": 1199,
+      "image": "./images/URBN.jpg",
+      "rating": 4.5,
+      "numReviews": 6438
+    },
+    {
+      "id": 24,
+      "name": "Ambrane 10000 mAh Compact Power Bank",
+      "price": 599,
+      "image": "./images/Ambrane.jpg",
+      "rating": 4.5,
+      "numReviews": 7
+    }
+  ]

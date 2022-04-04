@@ -1,0 +1,50 @@
+[
+    {
+      "id": 13,
+      "name": "Toodii Mens Coat",
+      "price": 1749,
+      "image": "./images/Toodii Mens Coat.jpg",
+      "rating": 4.5,
+      "numReviews": 132
+    },
+    {
+      "id": 14,
+      "name": "Puma Jacket",
+      "price": 1399,
+      "image": "./images/puma jacket.jpg",
+      "rating": 4.5,
+      "numReviews": 142
+    },
+    {
+      "id": 15,
+      "name": "GOOD FEEL Cap Combo",
+      "price": 299,
+      "image": "./images/GOOD FEEL Cap Combo.jpg",
+      "rating": 4.5,
+      "numReviews": 2100
+    },
+    {
+      "id": 16,
+      "name": "ZUNBELLA Unisex Disposable Portable Raincoat",
+      "price": 299,
+      "image": "./images/ZUNBELLA Unisex Disposable Portable Raincoat.jpg",
+      "rating": 3,
+      "numReviews": 4
+    },
+    {
+      "id": 17,
+      "name": "Mini Disposable Compressed Washcloth",
+      "price": 269,
+      "image": "./images/Mini Disposable Compressed Washcloth.jpg",
+      "rating": 4,
+      "numReviews": 10
+    },
+    {
+      "id": 18,
+      "name": "Fabric Disposable 3 Ply Surgical Mask",
+      "price": 499,
+      "image": "./images/Fabric Disposable 3 Ply Surgical Mask.jpg",
+      "rating": 4,
+      "numReviews": 29239
+    }
+  ]

@@ -1,0 +1,26 @@
+[
+    {
+      "id": 71,
+      "name": "ADULT SCUBA DIVING MASK 100",
+      "price": 799,
+      "image": "./images/ADULT SCUBA DIVING MASK 100.jpg",
+      "rating": 4.4,
+      "numReviews": 288
+    },
+    {
+      "id": 72,
+      "name": "Scuba diving fins SCD 500 ",
+      "price": 1999,
+      "image": "./images/Scuba diving fins SCD 500.jpg",
+      "rating": 4,
+      "numReviews": 193
+    },
+    {
+      "id": 73,
+      "name": "Scuba-diving bag 65 litres",
+      "price": 2499,
+      "image": "./images/Scuba-diving bag 65 litres.jpg",
+      "rating": 4.5,
+      "numReviews": 505
+    }
+  ]

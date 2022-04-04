@@ -6,7 +6,7 @@ function Products() {
   const[items, setItems] =useState([])
   // reading json data
   useEffect(() => {
-    fetch('http://localhost:5000/productItems').then(res => {
+    fetch('http://localhost:4000/footwear').then(res => {
       return res.json();
     })
       .then(data => {

@@ -38,7 +38,7 @@ export function MapContainerAraku(props) {
     //fetching maps from the json server
 
   useEffect(() => {
-    fetch('http://localhost:5000/Arakumaps').then(res => {
+    fetch('http://localhost:4000/Arakumaps').then(res => {
       return res.json();
     })
       .then(data => {

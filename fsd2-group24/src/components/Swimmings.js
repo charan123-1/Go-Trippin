@@ -6,7 +6,7 @@ function Swimmings() {
     const [swimming, setSwimming] = useState([])
     // reading json data
     useEffect(() => {
-        fetch('http://localhost:5000/SwimmingItems').then(res => {
+        fetch('http://localhost:4000/swimmingitems').then(res => {
             return res.json();
         })
             .then(data => {

@@ -6,7 +6,7 @@ function Medications() {
     const [medication, setMedication] = useState([]) //initially setting the medication as empty list
     // reading json data
     useEffect(() => {
-        fetch('http://localhost:5000/MedicationItems').then(res => {
+        fetch('http://localhost:4000/medication').then(res => {
             return res.json();
         })
             .then(data => {

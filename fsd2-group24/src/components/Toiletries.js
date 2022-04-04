@@ -6,7 +6,7 @@ function Toiletries() {
     const [toiletrie, setToiletrie] = useState([])
     // Reading json data
     useEffect(() => {
-        fetch('http://localhost:5000/ToiletriesItems').then(res => {
+        fetch('http://localhost:4000/toiletries').then(res => {
             return res.json();
         })
             .then(data => {

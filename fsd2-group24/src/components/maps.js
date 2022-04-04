@@ -38,7 +38,7 @@ export function MapContainer(props) {
   };
   //fetching maps from the json server
   useEffect(() => {
-    fetch('http://localhost:5000/Vizagmaps').then(res => {
+    fetch('http://localhost:4000/Vizagmaps').then(res => {
       return res.json();
     })
       .then(data => {

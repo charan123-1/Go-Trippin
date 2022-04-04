@@ -6,7 +6,7 @@ function Chargers() {
     const [charger, setCharger] = useState([])
     // read json data
     useEffect(() => {
-        fetch('http://localhost:5000/chargerItems').then(res => {
+        fetch('http://localhost:4000/chargeritems').then(res => {
             return res.json();
         })
             .then(data => {

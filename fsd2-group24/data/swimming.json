@@ -1,0 +1,34 @@
+[
+    {
+      "id": 74,
+      "name": "SWIMMING GOGGLES BFIT CLEAR LENSES",
+      "price": 899,
+      "image": "./images/SWIMMING GOGGLES BFIT CLEAR LENSES.jpg",
+      "rating": 4.2,
+      "numReviews": 788
+    },
+    {
+      "id": 75,
+      "name": "Swim cap mesh",
+      "price": 99,
+      "image": "./images/Swim cap mesh.jpg",
+      "rating": 4.3,
+      "numReviews": 593
+    },
+    {
+      "id": 76,
+      "name": "Women's Una Ryma swimming top",
+      "price": 1499,
+      "image": "./images/Women's Una Ryma swimming top.jpg",
+      "rating": 4.5,
+      "numReviews": 44
+    },
+    {
+      "id": 77,
+      "name": "BOYS' SWIMMING FULL BOBY SUIT - COMBI 100",
+      "price": 1199,
+      "image": "./images/BOYS' SWIMMING FULL BOBY SUIT - COMBI 100.jpg",
+      "rating": 4.1,
+      "numReviews": 35
+    }
+  ]

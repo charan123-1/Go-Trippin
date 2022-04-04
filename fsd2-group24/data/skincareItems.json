@@ -1,0 +1,50 @@
+[
+    {
+      "id": 37,
+      "name": "VLCC De Tan Sunscreen Gel Creme",
+      "price": 279,
+      "image": "./images/VLCC De Tan Sunscreen Gel Creme.jpg",
+      "rating": 4,
+      "numReviews": 3321
+    },
+    {
+      "id": 38,
+      "name": "Neutriderm Moisturising Lotion",
+      "price": 850,
+      "image": "./images/Moisturizer.jpg",
+      "rating": 4.5,
+      "numReviews": 9970
+    },
+    {
+      "id": 39,
+      "name": "Plum Green Tea Face Wash",
+      "price": 293,
+      "image": "./images/Face wash.jpg",
+      "rating": 4.5,
+      "numReviews": 8196
+    },
+    {
+      "id": 40,
+      "name": "VLCC Skincare Combo",
+      "price": 467,
+      "image": "./images/Skincare Combo.jpg",
+      "rating": 4,
+      "numReviews": 504
+    },
+    {
+      "id": 41,
+      "name": "SteriAll Sanitizing Wipes",
+      "price": 276,
+      "image": "./images/Disinfectant wipes.jpg",
+      "rating": 4,
+      "numReviews": 111
+    },
+    {
+      "id": 42,
+      "name": "NIVEA Soft Original Care",
+      "price": 351,
+      "image": "./images/NIVEA Soft, Light Moisturizing Cream, 300ml & Nivea Original Care Lip Balm.jpg",
+      "rating": 4,
+      "numReviews": 188
+    }
+  ]

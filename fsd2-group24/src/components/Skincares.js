@@ -7,7 +7,7 @@ function Skincares() {
     const [skincare, setSkincare] = useState([])
     // reading json data
     useEffect(() => {
-        fetch('http://localhost:5000/skincareItems').then(res => {
+        fetch('http://localhost:4000/skincare').then(res => {
             return res.json();
         })
             .then(data => {

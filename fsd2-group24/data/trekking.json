@@ -1,0 +1,34 @@
+[
+    {
+      "id": 56,
+      "name": "Quechua Camping Tent MH100",
+      "price": 1999,
+      "image": "./images/tents.jpg",
+      "rating": 4,
+      "numReviews": 1631
+    },
+    {
+      "id": 57,
+      "name": "Quechua Hiking Bag 30 Litre NH100",
+      "price": 499,
+      "image": "./images/bags.jpg",
+      "rating": 4.6,
+      "numReviews": 3609
+    },
+    {
+      "id": 58,
+      "name": "Kalenji Running Rain Cap Adjustable",
+      "price": 449,
+      "image": "./images/caps.jpg",
+      "rating": 4.5,
+      "numReviews": 1450
+    },
+    {
+      "id": 59,
+      "name": "Forclaz Ultra-light reflective trekking ropes",
+      "price": 399,
+      "image": "./images/trekking ropes.jpg",
+      "rating": 4.1,
+      "numReviews": 20
+    }
+  ]

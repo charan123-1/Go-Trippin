@@ -6,7 +6,7 @@ function Surfings() {
     const [surfing, setSurfing] = useState([])
     // reading json data
     useEffect(() => {
-        fetch('http://localhost:5000/SurfingItems').then(res => {
+        fetch('http://localhost:4000/surfingitems').then(res => {
             return res.json();
         })
             .then(data => {

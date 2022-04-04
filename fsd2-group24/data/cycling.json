@@ -1,0 +1,26 @@
+[
+    {
+        "id": 68,
+        "name": "100 Winter Cycling Fleece Gloves",
+        "price": 399,
+        "image": "./images/100 Winter Cycling Fleece Gloves.jpg",
+        "rating": 4.4,
+        "numReviews": 2788
+      },
+      {
+        "id": 69,
+        "name": "Mountain Bike Helmet ST 50",
+        "price": 999,
+        "image": "./images/Mountain Bike Helmet ST 50.jpg",
+        "rating": 4.3,
+        "numReviews": 1593
+      },
+      {
+        "id": 70,
+        "name": "Jaspo Bolster Knee Pad",
+        "price": 399,
+        "image": "./images/Jaspo Bolster Professional Knee Pad.jpg",
+        "rating": 4.5,
+        "numReviews": 55
+      }
+    ]

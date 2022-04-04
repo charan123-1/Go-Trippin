@@ -1,0 +1,50 @@
+[
+    {
+      "id": 25,
+      "name": "Allen Solly",
+      "price": 599,
+      "image": "./images/Allen Solly.jpg",
+      "rating": 4,
+      "numReviews": 271
+    },
+    {
+      "id": 26,
+      "name": "Fur Jaden",
+      "price": 699,
+      "image": "./images/Fur jaden.jpg",
+      "rating": 4,
+      "numReviews": 721
+    },
+    {
+      "id": 27,
+      "name": "ABYS",
+      "price": 473,
+      "image": "./images/ABYS.jpg",
+      "rating": 3.5,
+      "numReviews": 29
+    },
+    {
+      "id": 28,
+      "name": "Bhrakuti",
+      "price": 348,
+      "image": "./images/Bhrakuti.jpg",
+      "rating": 4,
+      "numReviews": 26
+    },
+    {
+      "id": 29,
+      "name": "Elios",
+      "price": 595,
+      "image": "./images/Elios.jpg",
+      "rating": 4,
+      "numReviews": 3726
+    },
+    {
+      "id": 30,
+      "name": "Urban Forest",
+      "price": 798,
+      "image": "./images/Urban Forest.jpg",
+      "rating": 4.5,
+      "numReviews": 3016
+    }
+  ]
