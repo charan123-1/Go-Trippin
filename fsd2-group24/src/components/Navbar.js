@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState,useEffect,useContext } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
@@ -9,7 +9,9 @@ import { BsFillBagCheckFill } from 'react-icons/bs';
 import { GiTireIronCross, GiHamburgerMenu } from 'react-icons/gi';
 import { AiFillInfoCircle, AiFillHome} from 'react-icons/ai';
 import { FaUserEdit } from 'react-icons/fa';
+import { UserContext } from "../App"
 function Navbar() {
+  const { state, dispatch } = useContext(UserContext);
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false); //to set the dropdown for browse, first setting it as false
   const [dropdown2, setDropdown2] = useState(false);// to set the dropdown for experience, first setting it as false
@@ -55,37 +57,113 @@ function Navbar() {
       setDropdown2(false);
     }
   };
-
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    console.log("Logged Out!!")
+    dispatch({ type: "USER", payload: false })
+    console.log(state)
+    window.location.reload();
+  };
   useEffect(() => {
     showButton();
   }, []);
-
-  window.addEventListener('resize', showButton);
-  return (
-    <>
-      <nav className='navbar'>
-        {/* Logo */}
-        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          GoTrippin
-        </Link>
-        <div className='menu-icon' onClick={handleClick}>
-          {click ? <GiTireIronCross style={{ color: 'white' }} /> : <GiHamburgerMenu style={{ color: 'white' }}/>}
-        </div>
-        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+  const RenderMenu = () => {
+    if (state == true) {
+      console.log(state);
+      return (
+        <>
           <li className='nav-item'>
             <Link to='/' className='nav-links' onClick={closeMobileMenu}>
               <AiFillHome /> Home
             </Link>
           </li>
           <li className='nav-item'>
-               <Link
-                to='/about'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-              <AiFillInfoCircle style={{ color: 'white' }}/> About
+            <Link
+              to='/about'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              <AiFillInfoCircle style={{ color: 'white' }} /> About
+            </Link>
+          </li>
+          <li
+            className='nav-item'
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+          >
+           <Link
+              to='/'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              <BiSearchAlt /> Browse
+            </Link>
+            {dropdown && <Dropdown />}
+          </li>
+          <li className='nav-item'>
+            <Link
+              to='/shop'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              <BsFillBagCheckFill /> Shop
+            </Link>
+          </li>
+          <li className='nav-item'
+            onMouseEnter={onMouseEnter1}
+            onMouseLeave={onMouseLeave1}>
+            <Link
+              to='/experience'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              <FaUserEdit /> Experience
+              {dropdown2 && <Dropdown2 />}
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link
+              to='/'
+              className='nav-links'>
+              
               </Link>
-            </li>
+          </li>
+          <li className='nav-item'>
+            <Link
+              to='/logout'
+              className='nav-links'
+              onClick={handleLogout}
+            >
+              LogOut
+              {/* { props.status? "Logout":"Login"} */}
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link className='cart-img' to='/cart'> <img src={'images/cart-icon-28356-Windows.ico'} alt="cart" className="logo-img" /></Link>
+          </li>
+          <li className='nav-item'>
+            <Link className='cart-img' to='/todo'> <img src={'images/9068936.png'} alt="cart" className="logo-img2" /></Link>
+          </li>
+        </>
+      )
+    }
+    else {
+      return (
+        <>
+          <li className='nav-item'>
+            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <AiFillHome /> Home
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link
+              to='/about'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              <AiFillInfoCircle style={{ color: 'white' }} /> About
+            </Link>
+          </li>
           <li
             className='nav-item'
             onMouseEnter={onMouseEnter}
@@ -101,59 +179,67 @@ function Navbar() {
             {dropdown && <Dropdown />}
           </li>
           <li className='nav-item'>
-             <Link
-                to='/shop'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-               <BsFillBagCheckFill/> Shop
-              </Link>
-            </li>
+            <Link
+              to='/shop'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              <BsFillBagCheckFill /> Shop
+            </Link>
+          </li>
           <li className='nav-item'
             onMouseEnter={onMouseEnter1}
             onMouseLeave={onMouseLeave1}>
-              <Link
-                  to='/experience'
+            <Link
+              to='/experience'
               className='nav-links'
               onClick={closeMobileMenu}
-                    >
+            >
               <FaUserEdit /> Experience
-              {dropdown2 && <Dropdown2/>}
-              </Link>
-            </li>
-          <li>
+              {dropdown2 && <Dropdown2 />}
+            </Link>
+          </li>
+          <li className='nav-item'>
             <Link
               to='/sign-up'
-              className='nav-links-mobile'
-              onClick={closeMobileMenu}
+              className='nav-links'
             >
-              Sign Up
+              SignUp
+              {/* {props.status? "":"SignUp"} */}
             </Link>
-            </li>
-            <li>
-           <Link
-                to='/login'
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}>
-                Login
-              </Link>
-            </li>
-            <Link to='/sign-up'>
-          <li className='nav-item'>
-            {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
           </li>
-          </Link>
-          <Link to='/login' >
           <li className='nav-item'>
-            {button && <Button buttonStyle='btn--outline'>LOGIN</Button>}
+            <Link
+              to='/login'
+              className='nav-links'
+            >
+              LogIn
+              {/* { props.status? "Logout":"Login"} */}
+            </Link>
           </li>
-          </Link>
           <li className='nav-item'>
-            <Link className='cart-img' to='/cart'> <img src={'images/cart-icon-28356-Windows.ico' } alt="cart" className="logo-img" /></Link>
+            <Link className='cart-img' to='/cart'> <img src={'images/cart-icon-28356-Windows.ico'} alt="cart" className="logo-img" /></Link>
           </li>
           <li className='nav-item'>
             <Link className='cart-img' to='/todo'> <img src={'images/9068936.png'} alt="cart" className="logo-img2" /></Link>
           </li>
+        </>
+    )
+    }
+  }
+  window.addEventListener('resize', showButton);
+  return (
+    <>
+      <nav className='navbar'>
+        {/* Logo */}
+        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          GoTrippin
+        </Link>
+        <div className='menu-icon' onClick={handleClick}>
+          {click ? <GiTireIronCross style={{ color: 'white' }} /> : <GiHamburgerMenu style={{ color: 'white' }}/>}
+        </div>
+        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <RenderMenu/>
         </ul>
       </nav>
     </>
