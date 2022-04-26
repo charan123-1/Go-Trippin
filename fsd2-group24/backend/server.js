@@ -84,3 +84,5 @@ app.use('/medication', medicationItemsRouter)
 app.use('/toiletries', ToiletriesItemsRouter)
 app.use('/skincare', skincareItemsRouter)
 app.listen(4000, () => console.log("server is up and running"));
+
+module.exports = app; 
