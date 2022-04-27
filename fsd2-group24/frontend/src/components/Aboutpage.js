@@ -13,7 +13,7 @@ function Aboutpage(){
             <ul class="flex-container">
                 <li class="aboutus">
                     <h1>About Us</h1>
-                    <h2>GoTrippin is an online travel planning web application supporting a platform to enjoy a perfect vacation by fulfilling the demands of people looking for travel experiences.</h2>
+                    <h2>GoTrippin app is an online travel planning web application supporting a platform to enjoy a perfect vacation by fulfilling the demands of people looking for travel experiences.</h2>
                 </li>
                 <li class="aboutuspic">
                 
