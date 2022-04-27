@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router()
-const Surfingitems = require('../models/SurfingModel')
+const surfingitems = require('../models/surfingModel')
 
 
 //To get the surfing items
 router.get("/", async (req, res) => {
-    Surfingitems.find({}, (err, result) => {
+    surfingitems.find({}, (err, result) => {
         if (err) {
             res.send(err)
         }
