@@ -6,7 +6,20 @@ require('dotenv').config()
 const swaggerUi = require('swagger-ui-express')
 const YAML = require('yamljs');
 const swaggerDocument = YAML.load('./swagger.yaml');
-mongoose.connect(process.env.DATABASE_URL)
+async function main () {
+    const connectionOptions = {
+      useNewUrlParser: true,
+      useUnifiedTopology: true
+     }
+     
+     try {
+      await mongoose.connect(process.env.DATABASE_URL,connectionOptions)
+      console.log(`Connected to MongoDB`)
+     } catch (err) {
+      console.log(`Couldn't connect: ${err}`)
+     }
+}
+main()
 mongoose.Promise = global.Promise;
 
 //Database connection

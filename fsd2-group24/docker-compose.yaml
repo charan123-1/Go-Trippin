@@ -1,19 +1,51 @@
-version: "3.8"
+version: "3"
 services:
-  backend: ./backend
-  container_name: backend_c
-  ports:
-    - '4000:4000'
-  volumes:
-    - ./backend:/app
-    - ./app/node_modules
-  src:
-    build: ./frontend
-    container_name: frontend_c
-    ports:
-      - '3000:3000'
-    volumes:
-      - ./frontend:/app
-      - ./app/node_modules
+  frontend:
+    image: client2
     stdin_open: true
-    tty: true
+    ports:
+      - "3000:3000"
+    networks:
+      - mern-app
+  backend:
+    image: server1
+    ports:
+      - "8080:4000"
+    depends_on:
+      - mongo
+    networks:
+      - mern-app
+  mongo:
+    image: mongo:3.6.19-xenial
+    ports:
+      - "27017:27017"
+    networks:
+      - mern-app
+    volumes:
+      - mongo-data:/data/db
+networks:
+  mern-app:
+    driver: bridge
+volumes:
+  mongo-data:
+    driver: local
+# version: "3.8"
+# services:
+#   backend: 
+#     build: ./backend
+#     container_name: backend_c
+#     ports:
+#      - '4000:4000'
+#     volumes:
+#       - ./backend:/app
+#       - ./app/node_modules
+#   frontend:
+#     build: ./frontend
+#     container_name: frontend_c
+#     ports:
+#       - '3000:3000'
+#     # volumes:
+#     #   - ./frontend:/app
+#     #   - ./app/node_modules
+#     stdin_open: true
+#     tty: true
