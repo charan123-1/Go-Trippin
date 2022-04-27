@@ -26,9 +26,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: |
-          cd fsd2-group24
-          cd frontend
-          npm install
+    - run: cd fsd2-group24
+    - run: cd frontend
+    - run: npm install
     - run: npm run build
     - run: npm start
