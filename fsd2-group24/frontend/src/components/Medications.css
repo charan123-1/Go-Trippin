@@ -1,0 +1,13 @@
+.medication{
+    background-size : 100% 110vh;
+    height : 170vh;
+}
+.medication__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1024px;
+  width: 80%;
+  margin: 50px auto 0;
+  gap: 12px;
+  margin-bottom: 20px;
+}

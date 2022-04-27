@@ -96,6 +96,11 @@ app.use('/footwear', productItemsRouter)
 app.use('/medication', medicationItemsRouter)
 app.use('/toiletries', ToiletriesItemsRouter)
 app.use('/skincare', skincareItemsRouter)
-app.listen(4000, () => console.log("server is up and running"));
+const port = process.env.PORT || 4000
+
+if(process.env.NODE_ENV == "production"){
+    app.use(express.static("frontend/build"));
+}
+app.listen(port, () => console.log(`server is up and running at ${port}`));
 
 module.exports = app; 
