@@ -4,6 +4,8 @@
 
 ## Group Members:
 
+Dasari Charan Sai  	- 	S20190010038
+
 Shanjana Pulagala 	- 	S20190010160
 
 Virri Anusha 		- 	S20190010190
@@ -12,7 +14,6 @@ Riya Rajesh 		- 	S20190010152
 
 Palam Bindu Bhargavi 	- 	S20190010131
 
-Dasari Charan Sai  	- 	S20190010038
 
 ## Instructions to Run the Code:
 
